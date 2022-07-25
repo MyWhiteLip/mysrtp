@@ -1,0 +1,10 @@
+col0,col1,col2,col3
+Czech neighbourhood ID code,neighbourhood code,Czech Republic,allowed qualifiers constraint
+INSEE department code,INSEE code,France,allowed qualifiers constraint
+INSEE region code,INSEE code,France,allowed qualifiers constraint
+Tunisian geographic code,administrative territorial entity of Tunisia,Tunisia,type constraint
+Bangladesh administrative division code,Bangladesh Bureau of Statistics,Bangladesh,type constraint
+Indian census area code,2001 Census of India,India,type constraint
+Australian Statistical Geography 2016 ID,Australian Statistical Geography Standard 2016,Australia,type constraint
+Australian Standard Geographic Classification 2006 ID,Australian Standard Geographic Classification 2006,Australia,type constraint
+Australian Statistical Geography 2011 ID,Australian Statistical Geography Standard 2011,Australia,type constraint

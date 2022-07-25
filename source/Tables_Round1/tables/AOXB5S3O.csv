@@ -1,0 +1,11 @@
+col0,col1,col2,col3,col4
+ocular hypertension,urea,ophthalmology,abnormally high value,eye disease
+thrombogavitis,hydroxyurea,hematology,abnormally high value,blood platelet disease
+hypercalcemia,zoledronic acid,endocrinology,abnormally high value,calcium metabolism disease
+hypercholesterolemia,Fluvastatin,endocrinology,abnormally high value,hyperlipidemia
+hyperkalemia,Patiromer,endocrinology,abnormally high value,mineral metabolism disease
+hyperthermia,cefepime,intensive care medicine,cause of death,clinical sign
+ocular hypertension,urea,ophthalmology,disease,eye disease
+thrombogavitis,hydroxyurea,hematology,disease,blood platelet disease
+hypercalcemia,zoledronic acid,endocrinology,disease,calcium metabolism disease
+tachycardia,lidocaine,cardiology,abnormally high value,heart arrhythmia

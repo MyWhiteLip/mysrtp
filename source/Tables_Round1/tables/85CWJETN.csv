@@ -1,0 +1,16 @@
+col0,col1,col2,col3
+SquashFS,archive file format,Linux,"GNU General Public License, version 2.0 or later"
+XtreemFS,Distributed File System,Linux,BSD licenses
+Write Ahead Physical Block Logging,free and open-source software,NetBSD,3-clause BSD License
+Tux3,file system,Linux,"GNU General Public License, version 2.0"
+XtreemFS,file system,Linux,BSD licenses
+Write Ahead Physical Block Logging,file system,NetBSD,3-clause BSD License
+Professional File System,file system,AmigaOS,4-clause BSD license
+Parallel Virtual File System,file system,Linux kernel,GNU Lesser General Public License
+HAMMER,file system,DragonFly BSD,3-clause BSD License
+MagmaFS,file system,Linux,GNU General Public License
+SquashFS,file system,Linux,"GNU General Public License, version 2.0 or later"
+Tux3,free software,Linux,"GNU General Public License, version 2.0"
+XtreemFS,free software,Linux,BSD licenses
+Professional File System,free software,AmigaOS,4-clause BSD license
+Parallel Virtual File System,free software,Linux kernel,GNU Lesser General Public License

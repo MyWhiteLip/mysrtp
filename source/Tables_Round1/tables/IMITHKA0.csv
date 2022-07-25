@@ -1,0 +1,11 @@
+col0,col1,col2,col3
+Panda3D,C++,Python library,BSD licenses
+Pygame,C,Python library,GNU Lesser General Public License
+scikit-learn,C++,Python library,3-clause BSD License
+wxPython,C++,Python library,GNU General Public License
+NumPy,C,Python library,3-clause BSD License
+SciPy,C++,Python library,BSD licenses
+Tkinter,Python,Python library,BSD licenses
+OpenCV,C++,C library,3-clause BSD License
+wxPython,C++,C Python binding,GNU General Public License
+Pyftpdlib,Python,FTP server,MIT license

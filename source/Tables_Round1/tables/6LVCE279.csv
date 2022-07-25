@@ -1,0 +1,11 @@
+col0,col1,col2,col3,col4,col5
+musical motif,Symphony No. 5,musical quotation or excerpt,Wikidata property related to music,motif,type constraint
+musical quotation or excerpt,Für Elise,LilyPond notation,Wikidata property related to music,musical quotation,item requires statement constraint
+Gran Enciclopèdia de la Música ID,Elvis Presley,Gran Enciclopèdia Catalana ID,Wikidata property for an identifier,Gran Enciclopèdia de la Música,format constraint
+Melon song ID,Peek-a-Boo,Melon album ID,Wikidata property related to music,Melon,single value constraint
+SoundCloud ID,Basshunter,WhoSampled artist ID,Wikidata property related to music,SoundCloud,distinct values constraint
+IPI name number,Basshunter,ISWC,Wikidata property for an identifier that does not imply notability,Interested Parties Information,type constraint
+SoundCloud ID,Leona Lewis,MusicBrainz artist ID,Wikidata property related to music,SoundCloud,format constraint
+SIGIC institution ID,Slovenian Philharmonic Orchestra,SIGIC author ID,Wikidata property related to music,institution,single value constraint
+SIGIC group ID,Slovenski oktet,SIGIC author ID,Wikidata property related to music,musical group,single value constraint
+lowest note,Mariah Carey,highest note,Wikidata property related to music,note,single value constraint

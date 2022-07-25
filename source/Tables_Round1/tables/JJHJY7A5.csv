@@ -1,0 +1,5 @@
+col0,col1,col2,col3,col4,col5
+Phasmida Species File ID,Phasmida Species File,Wikidata property to identify taxa,Asprenas,OSF Online ID,single value constraint
+AfroMoths ID,AfroMoths,Wikidata property related to insects and entomology,Fulcrifera tricentra,MONA ID,single value constraint
+Mantodea Species File ID,Mantodea Species File,Wikidata property related to insects and entomology,Rhombodera basalis,Phasmida Species File ID,type constraint
+AfroMoths ID,AfroMoths,Wikidata property to identify taxa,Fulcrifera tricentra,MONA ID,single value constraint

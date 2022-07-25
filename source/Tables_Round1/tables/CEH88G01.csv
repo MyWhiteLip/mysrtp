@@ -1,0 +1,11 @@
+col0,col1,col2,col3,col4,col5,col6
+UDP-N-acetylglucosamine--N-acetylmuramyl-,cell division,transferase activity,protein,"N-acetylglucosaminyltransferase, MurG",cell membrane,Mycobacterium tuberculosis H37Rv
+50S ribosomal protein L1    Rv0641,protein biosynthesis,tRNA binding,protein,"Ribosomal protein L1, bacterial-type",ribosome,Mycobacterium tuberculosis H37Rv
+potassium-transporting ATPase subunit B    Rv1030,potassium ion transmembrane transport,potassium-transporting ATPase activity,protein,"P-type ATPase, cytoplasmic domain N",integral component of plasma membrane,Mycobacterium tuberculosis H37Rv
+NADH-quinone oxidoreductase subunit A    Rv3145,oxidation-reduction process,oxidoreductase activity,"protein obsoleted in UniProtKB, SwissProt, TrEMBL","NAD(P)H-quinone oxidoreductase subunit 3, bacterial/plastid",cell membrane,Mycobacterium tuberculosis H37Rv
+6-phosphofructokinase    Rv3010c,glycolytic process,phosphofructokinase activity,"protein obsoleted in UniProtKB, SwissProt, TrEMBL","Phosphofructokinase, mixed-substrate PFK group III",cytoplasm,Mycobacterium tuberculosis H37Rv
+NADH-quinone oxidoreductase subunit A    Rv3145,oxidation-reduction process,oxidoreductase activity,protein,"NAD(P)H-quinone oxidoreductase subunit 3, bacterial/plastid",cell membrane,Mycobacterium tuberculosis H37Rv
+potassium-transporting ATPase subunit B    Rv1030,potassium ion transport,metal ion binding,"protein obsoleted in UniProtKB, SwissProt, TrEMBL","P-type ATPase, cytoplasmic domain N",cell membrane,Mycobacterium tuberculosis H37Rv
+tRNA,methylation,transferase activity,"protein obsoleted in UniProtKB, SwissProt, TrEMBL",S-adenosyl-L-methionine-dependent methyltransferase,tRNA (m1A) methyltransferase complex,Mycobacterium tuberculosis H37Rv
+hypothetical protein    Rv0891c,intracellular signal transduction,phosphorus-oxygen lyase activity,"protein obsoleted in UniProtKB, SwissProt, TrEMBL",Nucleotide cyclase,intracellular,Mycobacterium tuberculosis H37Rv
+ornithine carbamoyltransferase    Rv1656,cellular amino acid biosynthetic process,transferase activity,"protein obsoleted in UniProtKB, SwissProt, TrEMBL",Ornithine carbamoyltransferase,cytoplasm,Mycobacterium tuberculosis H37Rv

@@ -1,0 +1,12 @@
+col0,col1,col2,col3,col4
+glucagon,The Ligand:GPCR:Gq complex dissociates,Homo sapiens,protein binding,extracellular
+endothelin 1,Endothelin,Homo sapiens,cytokine activity,cytoplasm
+glucagon,The Ligand:GPCR:Gq complex dissociates,Homo sapiens,glucagon receptor binding,cytoplasm
+endothelin 1,Endothelin,Homo sapiens,receptor binding,cytoplasm
+glucagon,The Ligand:GPCR:Gq complex dissociates,Homo sapiens,hormone activity,cytoplasm
+endothelin 1,Endothelin,Homo sapiens,hormone activity,cytoplasm
+glucagon,The Ligand:GPCR:Gq complex dissociates,Homo sapiens,protein binding,cytoplasm
+endothelin 1,ECE1 cleaves EDN1(53-90),Homo sapiens,protein binding,cytoplasm
+glucagon,glucagon processing,Homo sapiens,protein binding,cytoplasm
+ghrelin,ghrelin secretion,Homo sapiens,G-protein coupled receptor binding,glutamatergic synapse
+antibacterial peptide LL-37,Antimicrobial peptides,Homo sapiens,protein binding,specific granule lumen

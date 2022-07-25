@@ -1,0 +1,5 @@
+col0,col1,col2,col3,col4,col5,col6
+BIU Santé person ID,France,Wikidata property for authority control for people,Charles-Édouard Brown-Séquard,single value constraint,Bibliothèque interuniversitaire de Santé,Medicina author ID
+Médicos históricos doctor ID,Spain,Wikidata property for an identifier that suggests notability,Vital Aza Díaz,format constraint,Complutense University of Madrid,BIU Santé person ID
+Store medisinske leksikon ID,Norway,Wikidata property related to encyclopedias,plague,single value constraint,Store medisinske leksikon,Store norske leksikon ID
+BIU Santé person ID,France,Wikidata property related to medicine,Louis Pasteur,single value constraint,Bibliothèque interuniversitaire de Santé,Medicina author ID

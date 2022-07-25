@@ -1,0 +1,11 @@
+col0,col1,col2,col3,col4
+PubChem CID,single value constraint,Wikidata property related to chemistry,thalidomide,PubChem BioAssay ID (AID)
+Guide to Pharmacology Ligand ID,single value constraint,Wikidata property related to medicine,cocaine,Guide to Pharmacology Target ID
+WHO international non-proprietary names ID,single value constraint,Wikidata property to identify substances,vemurafenib,World Health Organisation International Nonproprietary Name
+ECHA InfoCard ID,single value constraint,Wikidata property to identify substances,diethylhexyl phthalate,CosIng number
+PubChem Substance ID,single value constraint,Wikidata property to identify substances,zeolite Y,PubChem CID
+isomeric SMILES,single value constraint,Wikidata property to identify substances,L-alanine,canonical SMILES
+ChEBI ID,single value constraint,Wikidata property to identify substances,acetylene,IEDB Epitope ID
+PubChem CID,single value constraint,Wikidata property to identify substances,thalidomide,PubChem BioAssay ID (AID)
+Guide to Pharmacology Ligand ID,single value constraint,Wikidata property to identify substances,cocaine,Guide to Pharmacology Target ID
+InChIKey,single value constraint,Wikidata property to identify substances,ethanol,InChI

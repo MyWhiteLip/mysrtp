@@ -1,0 +1,8 @@
+col0,col1,col2,col3,col4,col5
+Carnegie Hall agent ID,Sergei Rachmaninoff,Carnegie Hall event ID,Wikidata property related to music,Carnegie Hall linked open data,single value constraint
+Bait La Zemer Ha-Ivri artist ID,Tirza Atar,Bait La Zemer Ha-Ivri song ID,Wikidata property related to music,Bait La Zemer Ha-Ivri,single value constraint
+Songkick venue ID,Birmingham Town Hall,Songkick artist ID,Wikidata property related to music,Songkick,format constraint
+musical conductor,The Royal Opera,director/manager,Wikidata property related to music,conductor,type constraint
+Carnegie Hall agent ID,Sergei Rachmaninoff,Carnegie Hall event ID,"Wikidata property for authority control, with reciprocal use of Wikidata",Carnegie Hall linked open data,single value constraint
+V Live channel ID,The Boyz,YouTube channel ID,Wikidata property for an identifier,V Live (website),format constraint
+Songkick venue ID,Birmingham Town Hall,Songkick artist ID,Wikidata property for authority control for places,Songkick,format constraint

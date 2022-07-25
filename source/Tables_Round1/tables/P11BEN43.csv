@@ -1,0 +1,11 @@
+col0,col1,col2,col3,col4,col5
+BHL creator ID,BHL Page ID,Wikidata property for an identifier that suggests notability,format constraint,Biodiversity Heritage Library,Alexander Emanuel Agassiz
+half maximal effective concentration,median lethal concentration (LC50),Wikidata property for quantities,allowed units constraint,half maximal effective concentration,Ro 40-6055
+BioRxiv ID,arXiv ID,Wikidata property for items about scholarly articles,single value constraint,bioRxiv,TP53 copy number expansion is associated with the evolution of increased body size and an enhanced DNA damage response in elephants
+half maximal effective concentration,median lethal concentration (LC50),Wikidata property related to biology,allowed units constraint,half maximal effective concentration,Ro 40-6055
+cytogenetic location,genomic start,Wikidata property related to biology,type constraint,locus,ABO
+BHL creator ID,BHL Page ID,Wikidata property related to biology,format constraint,Biodiversity Heritage Library,Alexander Emanuel Agassiz
+BioRxiv ID,arXiv ID,Wikidata property related to biology,single value constraint,bioRxiv,TP53 copy number expansion is associated with the evolution of increased body size and an enhanced DNA damage response in elephants
+ZFIN Gene ID,Mouse Genome Informatics ID,Wikidata property related to biology,format constraint,Zebrafish Model Organism Database,bmp2a
+PDB ligand ID,PDB structure ID,Wikidata property related to biology,single value constraint,Protein Data Bank,vemurafenib
+minimal incubation period in humans,maximal incubation period in humans,Wikidata property related to biology,type constraint,incubation period,dengue fever

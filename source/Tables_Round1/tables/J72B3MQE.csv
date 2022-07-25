@@ -1,0 +1,5 @@
+col0,col1,col2,col3,col4,col5
+Todotango.com person ID,single value constraint,Todotango.com person ID,Argentina,eventually complete,Osvaldo Pugliese
+Raptekster.dk ID,single value constraint,Raptekster.dk,Denmark,always incomplete,Niarn
+Douban Musician ID,type constraint,Douban,People's Republic of China,always incomplete,Milladoiro
+Gaana.com artist ID,format constraint,Gaana.com,India,always incomplete,Sean Paul

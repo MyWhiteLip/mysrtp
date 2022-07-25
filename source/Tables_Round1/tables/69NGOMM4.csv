@@ -1,0 +1,8 @@
+col0,col1,col2,col3
+HPC,Dell EMC,Xeon,supercomputer
+"Fujitsu PFU RG1000, Core2Duo 1.5 GHz, GigEthernet",Fujitsu,Core 2 Duo,supercomputer
+Pleiades,Hewlett Packard Enterprise,Xeon,supercomputer
+"HP ProLiant SL390s G7 Xeon 4C X5677, GigE",Hewlett Packard Enterprise,Xeon,supercomputer
+Endeavor II,Intel,Xeon,supercomputer
+Rackable,Hewlett Packard Enterprise,Xeon,supercomputer
+"Lenovo x3550, Intel Xeon E5-2680v2  10C 2.8GHz, 10G Ethernet",Lenovo,Xeon,supercomputer

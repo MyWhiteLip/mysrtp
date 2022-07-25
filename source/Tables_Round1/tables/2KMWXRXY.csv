@@ -1,0 +1,12 @@
+col0,col1,col2,col3,col4,col5
+Microsoft Store product ID,distinct values constraint,Wikidata property related to movies,Amazon,Microsoft Store,Steam Application ID
+App Store app ID,format constraint,Wikidata property related to e-commerce,Amikumu,iTunes,Apple Music album ID
+Microsoft Store product ID,type constraint,Wikidata property for software,Amazon,Microsoft Store,App Store app ID (Global)
+introduced feature,type constraint,Wikidata property for software,MediaWiki 1.27,software feature,removed feature
+App Store app ID,item requires statement constraint,Wikidata property related to e-commerce,WhatsApp,iTunes,Apple Music album ID
+Microsoft Store product ID,type constraint,Wikidata property for software,Amazon,Microsoft Store,Steam Application ID
+App Store app ID,type constraint,Wikidata property related to e-commerce,Amikumu,iTunes,iTunes movie ID
+Hall of Light ID,single value constraint,Wikidata property related to video games,Amegas,Hall of Light,Lemon Amiga identifier
+video system,value type constraint,Wikidata property for software,F-Zero GX,computer hardware,operating system
+Uniform Resource Identifier Scheme,single value constraint,Wikidata property for software,Hypertext Transfer Protocol,Uniform Resource Identifier scheme,IANA service name
+Hall of Light ID,single value constraint,Wikidata property for software,Amegas,Hall of Light,Lemon Amiga identifier

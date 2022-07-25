@@ -1,0 +1,14 @@
+col0,col1,col2,col3,col4
+A13 motorway,Delft,Kleinpolderplein,Rotterdam,controlled-access highway
+A4 motorway,Amsterdam,A12 motorway,Amsterdam,rijksweg
+A2 motorway,Amsterdam,A25 motorway,Amsterdam,rijksweg
+A5 motorway,Westpoort,Coenplein,Amsterdam,rijksweg
+N11 road,Leiden,Zoeterwoude-Rijndijk junction,Leiden,rijksweg
+A13 motorway,Rotterdam,Kleinpolderplein,Rotterdam,rijksweg
+N11 road,Leiden,Zoeterwoude-Rijndijk junction,Leiden,two-lane expressway
+A4 motorway,Amsterdam,A12 motorway,Amsterdam,controlled-access highway
+A2 motorway,Amsterdam,A25 motorway,Amsterdam,controlled-access highway
+A5 motorway,Westpoort,Coenplein,Amsterdam,controlled-access highway
+A13 motorway,Rotterdam,Kleinpolderplein,Rotterdam,controlled-access highway
+A4 motorway,Amsterdam,A12 motorway,Ossendrecht,rijksweg
+A2 motorway,Maastricht,Amstel Interchange,Eijsden,rijksweg

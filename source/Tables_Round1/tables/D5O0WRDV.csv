@@ -1,0 +1,9 @@
+col0,col1,col2,col3,col4,col5,col6
+PZS hut ID,Alpine Association of Slovenia,Slovenia,Wikidata property related to tourism,Golica Lodge,distinct values constraint,ÖAV hut ID
+ÖAV hut ID,Austrian Alpine Club,Austria,Wikidata property to identify architectural structures,Glorer Hütte,single value constraint,PZS hut ID
+PZS hut ID,Alpine Association of Slovenia,Slovenia,Wikidata property to identify architectural structures,Golica Lodge,distinct values constraint,ÖAV hut ID
+ÖAV hut ID,Austrian Alpine Club,Austria,Wikidata property related to sport facilities,Glorer Hütte,single value constraint,PZS hut ID
+PZS hut ID,Alpine Association of Slovenia,Slovenia,Wikidata property related to sport facilities,Golica Lodge,distinct values constraint,ÖAV hut ID
+Zomato ID,Zomato,India,Wikidata property related to e-commerce,Mon Ami Gabi,distinct values constraint,Foursquare venue ID
+SAC ID,Swiss Alpine Club,Switzerland,Wikidata property to identify architectural structures,Forstberg,distinct values constraint,DAV hut ID
+Recreation.gov gateway ID,Recreation.gov,United States of America,Wikidata property for authority control for protected areas,Yosemite National Park,single value constraint,Recreation.gov campground ID

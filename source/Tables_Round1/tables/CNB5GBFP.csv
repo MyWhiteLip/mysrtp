@@ -1,0 +1,16 @@
+col0,col1,col2,col3,col4,col5
+pascal,Pa,1,SI derived unit with special name,pressure,metre
+hertz,Hz,1,SI derived unit with special name,frequency,second
+radian,rad,1,SI derived unit with special name,angle,metre
+coulomb,C,1,SI derived unit with special name,electric charge,second
+joule,J,1,SI derived unit with special name,energy,metre
+degree Celsius,°C,t378922,SI derived unit with special name,temperature,kelvin
+volt,V,1,SI derived unit with special name,voltage,ampere
+watt,W,1,SI derived unit with special name,power,second
+newton,N,1,SI derived unit with special name,force,kilogram
+coulomb,C,1,unit of charge,electric charge,second
+newton,N,1,unit of force,force,kilogram
+radian,rad,1,unit of angle,angle,metre
+watt,W,1,unit of power,power,second
+pascal,Pa,1,unit of pressure,pressure,metre
+joule,J,1,unit of energy,energy,metre

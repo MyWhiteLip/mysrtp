@@ -1,0 +1,13 @@
+col0,col1,col2,col3
+family name,bears this family name,conflicts-with constraint,Wikidata property for items about people
+website account on,have a social media account on this website,allowed qualifiers constraint,Wikidata property for items about people
+academic degree,academic degree held by,type constraint,Wikidata property for items about people
+honorific prefix,addressed using this honorary prefix,type constraint,Wikidata property for items about people
+member of,has member,type constraint,Wikidata property for items about people
+discography,discography of,distinct values constraint,Wikidata property for items about people
+official residence,official residence of,value requires statement constraint,Wikidata property for items about people
+eye color,people with this eye color,type constraint,Wikidata property used as depicts qualifier on Commons
+given name,bears this given name,conflicts-with constraint,Wikidata property for items about fictional characters
+family name,bears this family name,item requires statement constraint,Wikidata property for items about fictional characters
+eye color,people with this eye color,type constraint,Wikidata property related to color
+given name,bears this given name,conflicts-with constraint,Wikidata property encoding a vCard value

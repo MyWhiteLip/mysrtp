@@ -1,0 +1,6 @@
+col0,col1,col2,col3,col4
+dwm,window manager,MIT license,C,Unix-like
+9wm,window manager,MIT license,C,Unix-like
+Sawfish,window manager,"GNU General Public License, version 2.0",C,Unix-like
+xmonad,window manager,BSD licenses,Haskell,Unix-like
+ratpoison,free software,"GNU General Public License, version 2.0",C,GNU/Linux

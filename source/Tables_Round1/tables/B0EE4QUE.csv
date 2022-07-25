@@ -1,0 +1,16 @@
+col0,col1,col2,col3,col4,col5
+Visual Novel Database ID,Erica Mendez,Template:Vndb,allowed qualifiers constraint,Wikidata property to identify voice actors,always incomplete
+Guardiana ID,Sonic the Hedgehog,Template:Guardiana,single value constraint,Wikidata property for an identifier that suggests notability,eventually complete
+Hall of Light ID,Amegas,Template:Abime,single value constraint,Wikidata property for an identifier that suggests notability,eventually complete
+Guardiana ID,Sonic the Hedgehog,Template:Guardiana,single value constraint,Wikidata property related to video games,eventually complete
+Hall of Light ID,Amegas,Template:Abime,single value constraint,Wikidata property for software,eventually complete
+Ready64 ID,Attack of the Mutant Camels,Template:Ready64,single value constraint,Wikidata property for an identifier,eventually complete
+Hall of Light ID,Amegas,Template:Abime,single value constraint,Wikidata property for an identifier,eventually complete
+Guardiana ID,Sonic the Hedgehog,Template:Guardiana,single value constraint,Wikidata property for authority control for works,eventually complete
+GameSpot ID,Super Mario 64,Template:GameSpot,format constraint,Wikidata property related to video game news websites,always incomplete
+Plus/4 World ID,Zombi,Template:Plus4world,single value constraint,Wikidata property for an identifier that suggests notability,eventually complete
+Ready64 ID,Attack of the Mutant Camels,Template:Ready64,single value constraint,Wikidata property for an identifier that suggests notability,eventually complete
+GameSpot ID,Super Mario 64,Template:GameSpot,format constraint,Wikidata property related to video games,always incomplete
+Plus/4 World ID,Zombi,Template:Plus4world,single value constraint,Wikidata property related to video games,eventually complete
+Ready64 ID,Attack of the Mutant Camels,Template:Ready64,single value constraint,Wikidata property related to video games,eventually complete
+GameSpot ID,Super Mario 64,Template:GameSpot,format constraint,Wikidata property for an identifier,always incomplete

@@ -1,0 +1,15 @@
+col0,col1,col2,col3
+FIS freestyle skier ID,Wikidata property for authority control for people,freestyle skiing,single value constraint
+FIS cross-country skier ID,Wikidata property for authority control for people,cross-country skiing,single value constraint
+FIS alpine skier ID,Wikidata property for authority control for people,alpine skiing,single value constraint
+ISU figure skater ID,Wikidata property for authority control for people,International Skating Union,single value constraint
+SpeedSkatingBase.eu ID,Wikidata property for authority control for people,Speedskatingbase.eu,single value constraint
+Skiresort.info ID,Wikidata property for an identifier that suggests notability,ski resort,single value constraint
+Ski Jumping Hill Archive ID,Wikidata property for an identifier that suggests notability,Ski Jumping Hill Archive,single value constraint
+World Para Snowboard athlete ID,Wikidata property related to disability,World Para Snowboard,single value constraint
+Canadian Ski Hall of Fame inductee ID,Wikidata property related to a sports hall of fame,Canadian Ski Hall of Fame,distinct values constraint
+Skiresort.info ID,Wikidata property related to winter sports,ski resort,single value constraint
+Skijumping.pl jumper ID,Wikidata property related to winter sports,Skijumping.pl,single value constraint
+Ski Jumping Hill Archive ID,Wikidata property related to winter sports,Ski Jumping Hill Archive,single value constraint
+DSV person ID,Wikidata property related to winter sports,German Ski Association,single value constraint
+FIS speed skier ID,Wikidata property related to winter sports,International Ski Federation,single value constraint

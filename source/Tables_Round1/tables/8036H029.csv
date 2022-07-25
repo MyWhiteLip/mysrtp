@@ -1,0 +1,13 @@
+col0,col1,col2,col3,col4,col5
+coulomb,C,1,UCUM base unit,electric charge,second
+ohm,Ω,1,coherent SI unit,electrical resistance,ampere
+pascal,Pa,1,coherent SI unit,pressure,metre
+hertz,Hz,1,coherent SI unit,frequency,second
+radian,rad,1,coherent SI unit,angle,metre
+coulomb,C,1,coherent SI unit,electric charge,second
+joule,J,1,coherent SI unit,energy,metre
+volt,V,1,coherent SI unit,voltage,ampere
+watt,W,1,coherent SI unit,power,second
+newton,N,1,coherent SI unit,force,kilogram
+degree Celsius,°C,t378922,unit of temperature,temperature,kelvin
+ohm,Ω,1,SI derived unit with special name,electrical resistance,ampere

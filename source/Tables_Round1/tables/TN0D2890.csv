@@ -1,0 +1,5 @@
+col0,col1,col2,col3,col4,col5
+MySQL,proprietary license,Sun Microsystems,open-source software,C++,relational database
+Microsoft SQL Server,end-user license agreement,Microsoft,proprietary software,C#,relational database
+SAP HANA,end-user license agreement,SAP SE,application,C++,in-memory database
+Apache Phoenix,"Apache Software License, Version 2.0",Apache Software Foundation,free software,Java,Structured Query Language

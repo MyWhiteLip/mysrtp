@@ -1,0 +1,11 @@
+col0,col1,col2,col3,col4
+GNU Emacs,Microsoft Windows,GTK,text editing,Lisp
+Frescobaldi,Linux,Qt,text editing,Python
+gedit,cross-platform,GTK,text editing,Python
+Zim,Berkeley Software Distribution,GTK,text editing,Python
+PyRoom,Unix-like,GTK,text editing,Python
+Zim,Linux,GTK,text editing,Python
+GNU Emacs,Microsoft Windows,Windows API,text editing,C
+GNU nano,Unix,ncurses,text editing,C
+GNU Emacs,GNU/Linux,GTK,text editing,C
+gedit,cross-platform,GTK,text editing,C

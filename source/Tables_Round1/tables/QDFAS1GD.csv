@@ -1,0 +1,5 @@
+col0,col1,col2,col3
+Barbarian R.C. ID,single value constraint,Barbarian Rugby Club,France
+FFR player ID,single value constraint,French Rugby Federation,France
+USA Rugby player ID,single value constraint,USA Rugby,United States of America
+Irish Rugby Football Union women's player ID,item requires statement constraint,Irish Rugby Football Union,Ireland

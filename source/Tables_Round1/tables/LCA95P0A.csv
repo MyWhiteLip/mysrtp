@@ -1,0 +1,11 @@
+col0,col1,col2,col3,col4
+"Pachyura Selys, 1839",genus,Pachyura,Soricidae,later homonym
+"Cytherea Lamarck, 1805",genus,"Cytherea Fabricius, 1794",Veneridae,later homonym
+"Pentaceros Gray, 1840",genus,"Pentaceros Cuvier, 1829",Oreasteridae,later homonym
+"Triton Laurenti, 1768",genus,"Triton Linnaeus, 1758",Salamandridae,later homonym
+Heterocheilidae  McAlpine,family,Heterocheilidae,Diptera,later homonym
+"Cytherea Lamarck, 1805",genus,"Cytherea Fabricius, 1794",Veneridae,synonym (taxonomy)
+"Pachyura Selys, 1839",genus,Pachyura,Soricidae,taxon
+"Pentaceros Gray, 1840",genus,"Pentaceros Cuvier, 1829",Oreasteridae,taxon
+"Triton Laurenti, 1768",genus,"Triton Linnaeus, 1758",Salamandridae,taxon
+Heterocheilidae  McAlpine,family,Heterocheilidae,Diptera,taxon

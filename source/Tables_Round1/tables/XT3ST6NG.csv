@@ -1,0 +1,16 @@
+col0,col1,col2,col3,col4
+Syndikat writer ID,850,Tim Herden,Syndikat,single value constraint
+NooSFere author ID,10298,Isaac Asimov,NooSFere,type constraint
+Bibliothèque de la Pléiade ID,651,Denis Diderot,Bibliothèque de la Pléiade,type constraint
+Institut culturel de Bretagne ID,1100,Théophile Jeusset,Dictionnaire des écrivains bretons du XXe siècle,item requires statement constraint
+Interbibly author ID,221,Anne de Rancourt,Interbibly,item requires statement constraint
+CICLIC author ID,228,Alain Grousset,"Centre pour le livre, l'image et la culture numérique",item requires statement constraint
+Livre et lecture en Bretagne ID,731,Paul Dirmeikis,Livre et lecture en Bretagne,item requires statement constraint
+Eulalie ID,219,Benoit Caudoux,Eulalie,item requires statement constraint
+Literature Ireland ID,392,Peig Sayers,Literature Ireland,item requires statement constraint
+Bibliothèque de la Pléiade ID,651,Denis Diderot,Bibliothèque de la Pléiade,item requires statement constraint
+Institut culturel de Bretagne ID,1100,Théophile Jeusset,Dictionnaire des écrivains bretons du XXe siècle,distinct values constraint
+Interbibly author ID,221,Anne de Rancourt,Interbibly,distinct values constraint
+CICLIC author ID,228,Alain Grousset,"Centre pour le livre, l'image et la culture numérique",distinct values constraint
+Livre et lecture en Bretagne ID,731,Paul Dirmeikis,Livre et lecture en Bretagne,distinct values constraint
+Eulalie ID,219,Benoit Caudoux,Eulalie,distinct values constraint

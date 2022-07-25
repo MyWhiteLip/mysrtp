@@ -1,0 +1,15 @@
+col0,col1,col2,col3,col4
+part of the series,Wikidata property for the relationship of the element to its class,conflicts-with constraint,"The Lion, the Witch, and the Wardrobe",series of creative works
+inventory number,Wikidata property for a multi-source identifier,format constraint,The Night Watch,item of collection or exhibition
+developer,Wikidata property for software,type constraint,Super Mario Bros.,video game developer
+original broadcaster,Wikidata property for items about works,single value constraint,The Simpsons,broadcaster
+designed by,Wikidata property for items about works,type constraint,iPhone,designer
+copyright license,Wikidata property for items about works,type constraint,Inkscape,license
+inventory number,Wikidata property for items about works,format constraint,The Night Watch,item of collection or exhibition
+part of the series,Wikidata property for items about works,conflicts-with constraint,"The Lion, the Witch, and the Wardrobe",series of creative works
+developer,Wikidata property for items about works,type constraint,Super Mario Bros.,video game developer
+performer,Wikidata property for items about people,type constraint,Rent,music artist
+part of the series,Wikidata property to indicate a source,conflicts-with constraint,"The Lion, the Witch, and the Wardrobe",series of creative works
+place of publication,Wikidata property for specifying the location of an event,type constraint,Psychonauts,place of publication
+country of origin,Wikidata property for items about works,conflicts-with constraint,Breaking Bad,country of origin
+radio format,Wikidata property for items about works,type constraint,CIDC-FM,radio format

@@ -1,0 +1,14 @@
+col0,col1,col2,col3,col4,col5
+hecto,deca,h,100,kilo,SI prefix
+deci,centi,d,0.1,deca,SI prefix
+zepto,yocto,z,0.000000000000000000001,atto,SI prefix
+gibi,mebi,Gi,1073741824,tebi,UCUM prefix
+tebi,gibi,Ti,1099511627776,pebi,UCUM prefix
+micro,nano,µ,0.000001,milli,UCUM prefix
+tera,giga,T,1000000000000,peta,UCUM prefix
+peta,tera,P,1000000000000000,exa,UCUM prefix
+gibi,mebi,Gi,1073741824,tebi,binary prefix
+tebi,gibi,Ti,1099511627776,pebi,binary prefix
+micro,nano,µ,0.000001,milli,SI prefix
+tera,giga,T,1000000000000,peta,SI prefix
+peta,tera,P,1000000000000000,exa,SI prefix

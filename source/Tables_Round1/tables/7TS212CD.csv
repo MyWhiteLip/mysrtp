@@ -1,0 +1,14 @@
+col0,col1,col2,col3
+V* IR Vel,J2000.0,Vela,long period variable
+WRAY 18-152,J2000.0,Vela,long period variable
+V* UU Vel,J2000.0,Vela,long period variable
+CSS 1138,J2000.0,Lyra,long period variable
+V* WY Pyx,J2000.0,Pyxis,long period variable
+V* AK Mon,J2000.0,Monoceros,long period variable
+Hen 4-13,J2000.0,Puppis,long period variable
+V* V653 Ori,J2000.0,Orion,long period variable
+Hen 3-825,J2000.0,Centaurus,long period variable
+DCMC J052255.75-694117.5,J2000.0,Dorado,long period variable
+V* KQ Sct,J2000.0,Scutum,semiregular variable star
+V* V850 Cas,J2000.0,Cassiopeia,semiregular variable star
+V* BG And,J2000.0,Andromeda,semiregular variable star

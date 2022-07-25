@@ -1,0 +1,16 @@
+col0,col1,col2,col3
+10^14,15,one hundred billion,5
+10^17,18,one hundred quadrillion,5
+10^29,30,one hundred octillion,5
+10^13,14,ten trillion,5
+10^19,20,ten quintillion,5
+10^44,45,one hundred septillion,5
+10^14,15,one hundred billion,2
+10^17,18,one hundred quadrillion,2
+10^29,30,one hundred octillion,2
+10^13,14,ten trillion,2
+10^19,20,ten quintillion,2
+10^44,45,one hundred septillion,2
+10^303,304,one centillion,5
+10^600,601,centillion,5
+10^31,32,ten nonillion,5

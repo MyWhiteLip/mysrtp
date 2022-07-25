@@ -1,0 +1,7 @@
+col0,col1,col2,col3,col4,col5
+Uppsala University Alvin ID,format constraint,Dictionary of Swedish National Biography ID,Alvin,250000,Wikidata property for authority control
+abART person ID,single value constraint,abART institution ID,Archive of Fine Arts,160203,Wikidata property for items about people
+ULAN ID,single value constraint,artist-info location ID,Union List of Artist Names,293158,Wikidata property for authority control by VIAF member
+Getty AAT ID,format constraint,Library of Congress Genre/Form Terms ID,Art & Architecture Thesaurus,46591,Wikidata property related to architecture
+abART person ID,single value constraint,abART document ID,Archive of Fine Arts,160203,Wikidata property for authority control for people
+abART document ID,single value constraint,abART exhibition ID,Archive of Fine Arts,189885,Wikidata property for authority control

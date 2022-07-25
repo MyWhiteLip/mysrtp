@@ -1,0 +1,8 @@
+col0,col1,col2,col3,col4,col5
+Gran Enciclopèdia de la Música ID,Elvis Presley,Gran Enciclopèdia Catalana ID,Wikidata property for an identifier,Gran Enciclopèdia de la Música,single value constraint
+setlist.fm venue ID,Royal Albert Hall,MusicBrainz place ID,Wikidata property for an identifier,setlist.fm,single value constraint
+Carnegie Hall event ID,The Governor's Vrouw,Carnegie Hall agent ID,Wikidata property for an identifier,Carnegie Hall linked open data,single value constraint
+Melon song ID,Peek-a-Boo,Melon artist ID,Wikidata property for authority control,Melon,format constraint
+Bait La Zemer Ha-Ivri artist ID,Tirza Atar,Bait La Zemer Ha-Ivri song ID,Wikidata property for authority control for artists,Bait La Zemer Ha-Ivri,single value constraint
+Melon song ID,Let It Be,Spotify track ID,Wikidata property related to music,Melon,single value constraint
+V Live channel ID,The Boyz,YouTube channel ID,Wikidata property related to music,V Live (website),format constraint

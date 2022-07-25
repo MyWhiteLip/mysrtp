@@ -1,0 +1,9 @@
+col0,col1,col2,col3
+local dialing code,country calling code,format constraint,telephone numbering plan
+road number,traffic sign,single value constraint,road number
+trunk prefix,local dialing code,property scope constraint,trunk prefix
+call sign,callsign of airline,format constraint,call sign
+mobile network code,mobile country code,format constraint,mobile network code
+street number,located on street,format constraint,street number
+runway,IATA airport code,format constraint,runway
+inventory number,collection,format constraint,item of collection or exhibition

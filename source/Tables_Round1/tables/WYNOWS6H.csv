@@ -1,0 +1,11 @@
+col0,col1,col2,col3
+Palm OS,Access,proprietary software,C
+CyanogenMod,Cyanogen Inc,GNU General Public License,C
+Tizen,Intel,GNU General Public License,C
+CyanogenMod,Cyanogen Inc,Android Open Source Project,C++
+iPadOS,Apple Inc.,proprietary software license,C++
+iOS 13,Apple Inc.,proprietary software license,C++
+MIUI,Xiaomi,"Apache Software License, Version 2.0",C++
+Android,Google,"GNU General Public License, version 2.0",C++
+MIUI,Xiaomi,"GNU General Public License, version 3.0",C++
+Huawei EMUI,Huawei,proprietary license,C++

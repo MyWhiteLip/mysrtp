@@ -1,0 +1,10 @@
+col0,col1,col2,col3,col4,col5
+Russian Athletics ID,Ivan Ukhov,Wikidata property related to athletics,World Athletics athlete ID,single value constraint,All-Russia Athletic Federation
+Polish Athletics Federation ID,Karol Hoffmann,Wikidata property related to athletics,World Athletics athlete ID,single value constraint,Polski Związek Lekkiej Atletyki
+JAAF athlete ID,Asuka Cambridge,Wikidata property related to athletics,World Athletics athlete ID,single value constraint,Japan Association of Athletics Federations
+World of O athlete ID,Simone Niggli-Luder,Wikidata property related to athletics,IOF athlete ID,single value constraint,World of O
+Royal Dutch Athletics Federation athlete ID,Dafne Schippers,Wikidata property related to athletics,FIDAL athlete ID,format constraint,Royal Dutch Athletics Federation
+Russian Athletics ID,Ivan Ukhov,Wikidata property for an identifier,World Athletics athlete ID,single value constraint,All-Russia Athletic Federation
+Polish Athletics Federation ID,Karol Hoffmann,Wikidata property for an identifier,World Athletics athlete ID,single value constraint,Polski Związek Lekkiej Atletyki
+JAAF athlete ID,Asuka Cambridge,Wikidata property for an identifier,World Athletics athlete ID,single value constraint,Japan Association of Athletics Federations
+Russian Athletics ID,Ivan Ukhov,Wikidata property for authority control for people,World Athletics athlete ID,single value constraint,All-Russia Athletic Federation

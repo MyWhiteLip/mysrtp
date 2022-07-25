@@ -1,0 +1,5 @@
+col0,col1,col2,col3,col4
+PuTTY,free and open-source software,MIT license,C,Microsoft Windows
+rxvt,free and open-source software,GNU General Public License,C,Unix-like
+xterm,free and open-source software,Historical Permission Notice and Disclaimer,C,Unix-like
+OpenSSH,Secure Shell,ISC license,C,Linux

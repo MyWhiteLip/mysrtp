@@ -1,0 +1,12 @@
+col0,col1,col2,col3,col4,col5
+located on street,street,White House,Wikidata property to indicate a location,location,located in the administrative territorial entity
+member of,member,Iron Man,Wikidata property for items about people,affiliation,position held
+member of sports team,sports team,Diego Maradona,Wikidata property for items about people,member of,coach of sports team
+street number,house numbering,White House,Wikidata qualifier,series ordinal,street address (DEPRECATED)
+father,father,Indira Gandhi,Wikidata property encoding a vCard value,relative,mother
+place of death,place of death,René Descartes,Wikidata property encoding a vCard value,location,place of birth
+place of birth,place of birth,Elena Kagan,Wikidata property encoding a vCard value,location,category for people born here
+father,father,Indira Gandhi,Wikidata property for human relationships,relative,mother
+place of death,place of death,René Descartes,Wikidata property for birth or death,location,place of birth
+place of birth,place of birth,Julius Caesar,Wikidata property encoding a vCard value,location,place of burial
+country,country,Antarctica,Wikidata property for places,located in the administrative territorial entity,country of citizenship

@@ -1,0 +1,5 @@
+col0,col1,col2,col3,col4
+vertical depth,Wikidata property for physical quantities,lowest point,allowed units constraint,length
+event distance,Wikidata property for physical quantities,length,type constraint,length
+focal height,Wikidata property for physical quantities,height,item requires statement constraint,elevation above sea level
+half-life,Wikidata property for physical quantities,mean lifetime,single value constraint,duration

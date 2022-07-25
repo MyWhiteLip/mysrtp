@@ -1,0 +1,6 @@
+col0,col1,col2,col3,col4,col5
+BRAHMS artist ID,single value constraint,B.R.A.H.M.S.,France,eventually complete,Danielle Arrigoni
+Bugs! artist ID,format constraint,Bugs!,South Korea,always incomplete,Logic
+CDMC musician ID,single value constraint,Centre de documentation de la musique contemporaine,France,eventually complete,Jean-Claude Wolff
+Douban Musician ID,single value constraint,Douban,People's Republic of China,always incomplete,Milladoiro
+Bugs! artist ID,format constraint,Bugs!,South Korea,always incomplete,Basshunter

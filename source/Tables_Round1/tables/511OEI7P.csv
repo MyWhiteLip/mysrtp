@@ -1,0 +1,8 @@
+col0,col1,col2,col3
+abART group ID,Artěl,Wikidata property related to art,is complete for existing items only
+abART exhibition ID,Documenta 11,Wikidata property related to art,always incomplete
+abART document ID,Feast of the Rosary,Wikidata property related to art,always incomplete
+abART person ID,Alphonse Mucha,Wikidata property related to art,always incomplete
+abART exhibition ID,Documenta 11,Wikidata property related to events,always incomplete
+abART institution ID,Moravské zemské muzeum,Wikidata property to identify organisations,eventually complete
+abART group ID,Artěl,Wikidata property to identify organisations,is complete for existing items only

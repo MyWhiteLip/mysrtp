@@ -1,0 +1,15 @@
+col0,col1,col2,col3,col4,col5
+ZooBank publication ID,Ecological guild evolution and the discovery of the world's smallest vertebrate.,Wikidata property related to animals and zoology,ZooBank ID for name or act,single value constraint,ZooBank
+IPNI publication ID,The Cactaceae,Wikidata property for authority control for academic journals,BPH journal ID,single value constraint,International Plant Names Index
+ZooBank publication ID,Ecological guild evolution and the discovery of the world's smallest vertebrate.,Wikidata property for authority control for academic journals,ZooBank ID for name or act,single value constraint,ZooBank
+IPNI publication ID,The Cactaceae,Wikidata property related to plants and botany,BPH journal ID,single value constraint,International Plant Names Index
+Publons Publication ID,"Economic and Humanistic Burden of Dry Eye Disease in Europe, North America, and Asia: A Systematic Literature Review",Wikidata property for items about scholarly articles,Publons author ID,format constraint,Publons
+IPNI publication ID,The Cactaceae,Wikidata property for items about scholarly articles,BPH journal ID,single value constraint,International Plant Names Index
+ZooBank publication ID,Ecological guild evolution and the discovery of the world's smallest vertebrate.,Wikidata property for items about scholarly articles,ZooBank ID for name or act,single value constraint,ZooBank
+Dialnet article ID,Necrología de D. José López Sallaberry,Wikidata property for items about scholarly articles,Dialnet author ID,single value constraint,Dialnet
+Scopus EID,The dynamics of contractual and relational governance: Evidence from long-term public–private procurement arrangements,Wikidata property for items about scholarly articles,Scopus Author ID,single value constraint,Scopus
+CiteSeerX article ID,The immune response in autism: a new frontier for autism research,Wikidata property for authority control for works,Google Scholar paper ID,single value constraint,CiteSeerX
+Publons Publication ID,"Economic and Humanistic Burden of Dry Eye Disease in Europe, North America, and Asia: A Systematic Literature Review",Wikidata property for authority control for works,Publons author ID,format constraint,Publons
+Dialnet article ID,Necrología de D. José López Sallaberry,Wikidata property for authority control for works,Dialnet author ID,single value constraint,Dialnet
+Scopus EID,The dynamics of contractual and relational governance: Evidence from long-term public–private procurement arrangements,Wikidata property for authority control for works,Scopus Source ID,type constraint,Scopus
+number of pages,The Diary of a Young Girl,Wikidata property for items about scholarly articles,page(s),type constraint,page

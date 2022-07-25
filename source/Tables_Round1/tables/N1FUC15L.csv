@@ -1,0 +1,11 @@
+col0,col1,col2,col3,col4
+Cluster P4 Xeon 2.4 GHz,128,Myrinet,Linux,323.7
+P4 Cluster 1.7 GHz,128,Myrinet,Linux,221.6
+"BladeCenter HS20 Cluster, Xeon EM64T 3.2 GHz",252,Myrinet,Linux,1.2
+"BladeCenter HS20 Cluster, Xeon EM64T 3.2 GHz",252,Myrinet,Linux,1.2
+"BladeCenter HS20 Cluster, Xeon EM64T 3.2 GHz",252,Myrinet,Linux,1.2
+TeraGrid Cluster Itanium 2 1 GHz,252,Myrinet,Linux,798.3
+TeraGrid Cluster Itanium 2 1 GHz,252,Myrinet,Linux,798.3
+"BladeCenter HS20 Cluster, Xeon EM64T 3.2 GHz",252,Myrinet,Linux,1.2
+"BladeCenter HS20 Cluster, Xeon EM64T 3.2 GHz",252,Myrinet,Linux,1.6
+Netfinity Cluster PIII 933 MHz,520,Myrinet,Linux,285

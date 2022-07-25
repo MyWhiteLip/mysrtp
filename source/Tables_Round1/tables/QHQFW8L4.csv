@@ -1,0 +1,11 @@
+col0,col1,col2,col3,col4,col5,col6
+Petit Futé site ID,Le Petit Futé,France,Wikidata property related to tourism,Crete,single value constraint,Michelin Voyages ID
+ÖAV hut ID,Austrian Alpine Club,Austria,Wikidata property related to tourism,Sesvennahütte,single value constraint,SAC ID
+Petit Futé site ID,Le Petit Futé,France,Wikidata property for an identifier,Crete,single value constraint,Michelin Voyages ID
+Zomato ID,Zomato,India,Wikidata property for authority control for places,Mon Ami Gabi,item requires statement constraint,Foursquare venue ID
+Recreation.gov campground ID,Recreation.gov,United States of America,Wikidata property related to tourism,South Rim Campground,format constraint,Recreation.gov point of interest ID
+Petit Futé site ID,Le Petit Futé,France,Wikidata property related to tourism,Crete,type constraint,Routard.com place ID
+Zomato ID,Zomato,India,Wikidata property for authority control for places,Mon Ami Gabi,single value constraint,Foursquare venue ID
+ÖAV hut ID,Austrian Alpine Club,Austria,Wikidata property for an identifier that suggests notability,Glorer Hütte,single value constraint,PZS hut ID
+PZS hut ID,Alpine Association of Slovenia,Slovenia,Wikidata property for an identifier that suggests notability,Golica Lodge,distinct values constraint,ÖAV hut ID
+ÖAV hut ID,Austrian Alpine Club,Austria,Wikidata property related to tourism,Glorer Hütte,single value constraint,PZS hut ID
