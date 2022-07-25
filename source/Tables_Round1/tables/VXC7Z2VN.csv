@@ -1,0 +1,6 @@
+col0,col1,col2,col3
+All Blacks player ID,single value constraint,New Zealand national rugby union team,New Zealand
+Rugby Australia ID,single value constraint,Rugby Australia,Australia
+Chile Rugby player ID,single value constraint,Chilean Rugby Federation,Chile
+SA Rugby player ID,single value constraint,South African Rugby Union,South Africa
+Welsh Rugby Union women's player ID,item requires statement constraint,Welsh Rugby Union,United Kingdom

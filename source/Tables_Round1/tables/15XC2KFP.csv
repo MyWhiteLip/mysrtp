@@ -1,0 +1,9 @@
+col0,col1,col2,col3,col4
+GNU Emacs,OpenBSD,GTK,text editing,C
+Leafpad,Unix-like,GTK,text editing,C
+Bluefish,Unix-like,GTK,text editing,C
+GNU Emacs,macOS,GTK,text editing,C
+Bluefish,macOS,GTK,text editing,C
+GNU Emacs,Microsoft Windows,GTK,text editing,C
+Bluefish,Microsoft Windows,GTK,text editing,C
+KWrite,Unix-like,Qt,text editing,C++

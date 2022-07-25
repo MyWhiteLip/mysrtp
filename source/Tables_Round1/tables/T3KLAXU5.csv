@@ -1,0 +1,16 @@
+col0,col1,col2,col3,col4,col5
+cutting site of restriction enzyme,isoschizomer,Wikidata property related to biology,format constraint,restriction enzyme,EcoRI
+NeuroNames ID,BrainInfo ID (hierarchical),Wikidata property related to biology,type constraint,NeuroNames,thalamus
+ZFIN Gene ID,Saccharomyces Genome Database ID,Wikidata property related to biology,format constraint,Zebrafish Model Organism Database,bmp2a
+maximal incubation period in humans,minimal incubation period in humans,Wikidata property related to biology,type constraint,incubation period,dengue fever
+miRBase pre-miRNA ID,miRBase mature miRNA ID,Wikidata property related to biology,single value constraint,miRBase,hsa-mir-127
+NeuroNames ID,BrainInfo ID (hierarchical),Wikidata property related to medicine,type constraint,NeuroNames,thalamus
+maximal incubation period in humans,minimal incubation period in humans,Wikidata property related to medicine,type constraint,incubation period,dengue fever
+ZFIN Gene ID,Saccharomyces Genome Database ID,Wikidata property for an identifier,format constraint,Zebrafish Model Organism Database,bmp2a
+miRBase pre-miRNA ID,miRBase mature miRNA ID,Wikidata property for an identifier,single value constraint,miRBase,hsa-mir-127
+NeuroNames ID,BrainInfo ID (hierarchical),Wikidata property for authority control,type constraint,NeuroNames,thalamus
+MeSH term ID,MeSH code,Wikidata property related to biology,format constraint,Medical Subject Headings,neoplasm
+MeSH concept ID,MeSH descriptor ID,Wikidata property for authority control,single value constraint,Medical Subject Headings,acetaminophen
+MeSH term ID,MedlinePlus ID,Wikidata property for a multi-source identifier,single value constraint,Medical Subject Headings,neoplasm
+MeSH concept ID,MeSH descriptor ID,Wikidata property related to chemistry,format constraint,Medical Subject Headings,amoxapine
+MeSH term ID,MeSH descriptor ID,Wikidata property to identify substances,property scope constraint,Medical Subject Headings,amoxapine

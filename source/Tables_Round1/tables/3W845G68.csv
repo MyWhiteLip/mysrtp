@@ -1,0 +1,14 @@
+col0,col1,col2,col3,col4
+Generate Your Projects,3-clause BSD License,macOS,build automation,Python
+BitBake,GNU General Public License,Linux,build automation,Python
+OpenEmbedded,MIT license,Linux,build automation,shell script
+CMake,3-clause BSD License,Ubuntu,build automation,C++
+Buildroot,"GNU General Public License, version 2.0 or later",Linux,build automation,C
+Gradle,"Apache Software License, Version 2.0",cross-platform,build automation,Java
+Apache Ant,"Apache Software License, Version 2.0",cross-platform,build automation,Java
+qmake,GNU Lesser General Public License,Microsoft Windows,build automation,C++
+Apache Maven,"Apache Software License, Version 2.0",cross-platform,build automation,Java
+Apache Ant,"Apache Software License, Version 2.0",cross-platform,interpreted language,Java
+Apache Maven,"Apache Software License, Version 2.0",cross-platform,package management system,Java
+menuconfig,GNU General Public License,Linux,application,C
+Apache Ant,"Apache Software License, Version 2.0",cross-platform,programming language,Java

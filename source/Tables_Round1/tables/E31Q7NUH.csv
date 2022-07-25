@@ -1,0 +1,16 @@
+col0,col1,col2,col3,col4
+half maximal effective concentration,allowed units constraint,Wikidata property for quantities,half maximal inhibitory concentration (IC50),half maximal effective concentration
+median lethal concentration,allowed qualifiers constraint,Wikidata property for quantities,median lethal dose (LD50),median lethal concentration
+half maximal effective concentration,allowed units constraint,Wikidata property related to biology,half maximal inhibitory concentration (IC50),half maximal effective concentration
+PDB ligand ID,single value constraint,Wikidata property related to biology,PDB structure ID,Protein Data Bank
+safety classification and labelling,type constraint,Wikidata property related to chemistry,NFPA Special,safety classification
+half maximal effective concentration,allowed units constraint,Wikidata property related to chemistry,half maximal inhibitory concentration (IC50),half maximal effective concentration
+has active ingredient,inverse constraint,Wikidata property related to chemistry,has listed ingredient,active ingredient
+negative allosteric modulator of,property scope constraint,Wikidata property related to chemistry,activator of,allosteric modulator
+positive allosteric modulator of,property scope constraint,Wikidata property related to chemistry,activator of,allosteric modulator
+inhibitor of,property scope constraint,Wikidata property related to chemistry,activator of,enzyme inhibitor
+antagonist of,property scope constraint,Wikidata property related to chemistry,activator of,antagonist
+agonist of,property scope constraint,Wikidata property related to chemistry,activator of,agonist
+PDB ligand ID,single value constraint,Wikidata property related to chemistry,PDB structure ID,Protein Data Bank
+stereoisomer of,item requires statement constraint,Wikidata property related to chemistry,tautomer of,stereoisomers
+ClinicalTrials.gov Identifier,single value constraint,Wikidata property related to chemistry,OpenTrials ID,ClinicalTrials.gov

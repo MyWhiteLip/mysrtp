@@ -1,0 +1,5 @@
+col0,col1,col2,col3,col4
+GnuCOBOL,compiler,COBOL,"GNU General Public License, version 3.0",Microsoft Windows
+Turbo C++,compiler,C++,freeware,Microsoft Windows
+Clang,compiler,C++,Apache License,Unix-like
+Free Pascal,compiler,Object Pascal,"GNU General Public License, version 2.0",Linux

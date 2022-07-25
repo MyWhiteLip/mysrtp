@@ -1,0 +1,5 @@
+col0,col1,col2,col3,col4
+KASUMI,1999-01-01,MISTY1,64,block cipher
+ICE,1997-01-01,Data Encryption Standard,64,block cipher
+CS-Cipher,1998-01-01,SAFER,64,block cipher
+Idea NXT,2003-01-01,International Data Encryption Algorithm,64,block cipher

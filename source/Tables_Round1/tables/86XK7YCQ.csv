@@ -1,0 +1,13 @@
+col0,col1,col2,col3,col4
+Mountain Project ID,Wikidata property related to geology,Peakbagger mountain ID,Mountain Project,single value constraint
+Bavarian geotope ID,Wikidata property related to geology,WDPA ID,geotope,single value constraint
+LoJ peak ID,Wikidata property related to geology,Peakbagger mountain ID,Lists of John,single value constraint
+Mountain Project ID,Wikidata property for authority control for places,Peakbagger mountain ID,Mountain Project,single value constraint
+Bavarian geotope ID,Wikidata property for authority control for places,WDPA ID,geotope,single value constraint
+LoJ peak ID,Wikidata property for authority control for places,Peakbagger mountain ID,Lists of John,single value constraint
+SAC ID,Wikidata property related to sport facilities,DAV hut ID,Swiss Alpine Club,single value constraint
+Mountain Project ID,Wikidata property related to sport facilities,Peakbagger mountain ID,Mountain Project,single value constraint
+SAC ID,Wikidata property related to geology,DAV hut ID,Swiss Alpine Club,single value constraint
+VOGRIPA ID,Wikidata property related to geology,Smithsonian volcano ID,Volcano Global Risk Identification and Analysis Project,single value constraint
+Mountain Project ID,Wikidata property related to geology,Peakbagger mountain ID,Mountain Project,distinct values constraint
+VOGRIPA ID,Wikidata property for authority control for places,Smithsonian volcano ID,Volcano Global Risk Identification and Analysis Project,single value constraint

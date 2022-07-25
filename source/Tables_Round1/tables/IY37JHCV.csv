@@ -1,0 +1,11 @@
+col0,col1,col2,col3,col4
+Rotten Tomatoes ID,Rotten Tomatoes,prefix,United States of America,distinct values constraint
+CANTIC ID,Name and Title Authority File of Catalonia,VIAF component,Spain,distinct values constraint
+NSZL ID,National Széchényi Library,VIAF component,Hungary,distinct values constraint
+NORAF ID,Norwegian authority file,VIAF component,Norway,distinct values constraint
+CiNii author ID,CiNii,prefix,Japan,distinct values constraint
+NCL ID,National Central Library,VIAF component,Taiwan,format constraint
+National Library of Israel ID,National Library of Israel,VIAF component,Israel,format constraint
+Libraries Australia ID,National Library of Australia,VIAF component,Australia,format constraint
+Vatican Library ID,Vatican Library,VIAF component,Vatican City,format constraint
+CONOR ID,CONOR,VIAF component,Slovenia,format constraint

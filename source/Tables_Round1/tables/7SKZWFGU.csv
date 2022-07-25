@@ -1,0 +1,5 @@
+col0,col1,col2,col3,col4
+minute,unit of time,min,hour,0.0006944444
+year,unit of time,a,decade,12
+day,unit of time,d,week,1
+second,UCUM base unit,s,centimetre–gram–second system of units,1000

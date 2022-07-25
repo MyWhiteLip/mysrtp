@@ -1,0 +1,13 @@
+col0,col1,col2,col3,col4
+Terminal,terminal emulator,GNU General Public License,C,Linux
+mintty,terminal emulator,"GNU General Public License, version 3.0 or later",C,Microsoft Windows
+Dropbear,terminal emulator,MIT license,C,Unix-like
+GNOME Terminal,terminal emulator,"GNU General Public License, version 3.0",C,Linux
+Yakuake,terminal emulator,GNU General Public License,C++,Linux
+Minicom,terminal emulator,GNU General Public License,C,Linux
+OpenSSH,terminal emulator,ISC license,C,Linux
+PuTTY,terminal emulator,MIT license,C,Microsoft Windows
+rxvt,terminal emulator,GNU General Public License,C,Unix-like
+xterm,terminal emulator,Historical Permission Notice and Disclaimer,C,Unix-like
+Konsole,terminal emulator,"GNU Free Documentation License, version 1.2",C++,Unix-like
+OpenSSH,free and open-source software,ISC license,C,Linux

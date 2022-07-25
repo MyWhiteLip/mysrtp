@@ -1,0 +1,11 @@
+col0,col1,col2,col3
+RE 6,Verkehrsverbund Berlin-Brandenburg,train service,Wittenberge station
+RB 33,Verkehrsverbund Berlin-Brandenburg,train service,Berlin-Wannsee station
+RB 41,Verkehrsverbund Berlin-Brandenburg,train service,Cottbus Hauptbahnhof
+RE 66,Verkehrsverbund Berlin-Brandenburg,Regional-Express,Szczecin Główny
+RE 18,Verkehrsverbund Berlin-Brandenburg,Regional-Express,Cottbus Hauptbahnhof
+RE 6,Verkehrsverbund Berlin-Brandenburg,Regional-Express,Wittenberge station
+RB 66,Verkehrsverbund Berlin-Brandenburg,Regionalbahn,Szczecin Główny
+RB 19,Verkehrsverbund Berlin-Brandenburg,Regionalbahn,Berlin-Gesundbrunnen station
+RB 5,Nordhessischer Verkehrsverbund,Regionalbahn,Kassel Central Station
+RB 8,Nordhessischer Verkehrsverbund,Regionalbahn,Göttingen station

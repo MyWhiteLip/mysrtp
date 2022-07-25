@@ -1,0 +1,5 @@
+col0,col1,col2,col3
+Irish Rugby Football Union men's player ID,item requires statement constraint,Irish Rugby Football Union,Ireland
+Irish Rugby Football Union women's player ID,distinct values constraint,Irish Rugby Football Union,Ireland
+Irish Rugby Football Union men's player ID,distinct values constraint,Irish Rugby Football Union,Ireland
+Irish Rugby Football Union women's player ID,format constraint,Irish Rugby Football Union,Ireland

@@ -1,0 +1,5 @@
+col0,col1,col2,col3,col4,col5
+BRAHMS artist ID,single value constraint,B.R.A.H.M.S.,France,eventually complete,Esa-Pekka Salonen
+Les Enfoirés participant ID,single value constraint,Les Enfoirés,France,is complete,Lilian Thuram
+Douban Musician ID,single value constraint,Douban,People's Republic of China,always incomplete,Enya
+Bugs! artist ID,format constraint,Bugs!,South Korea,always incomplete,Taylor Swift

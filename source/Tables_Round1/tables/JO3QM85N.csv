@@ -1,0 +1,16 @@
+col0,col1,col2,col3,col4,col5,col6
+Comédie-Française ID,Wikidata property for authority control for people,Anne Kessler,single value constraint,CESAR person ID,France,Salle Richelieu
+Flanders Arts Institute person ID,Wikidata property for authority control for people,Ivo van Hove,format constraint,Flanders Arts Institute venue ID,Belgium,Flanders Arts Institute
+Comédie-Française ID,Wikidata property for an identifier that suggests notability,Anne Kessler,single value constraint,CNT ID,France,Salle Richelieu
+TPA person ID,Wikidata property related to theater,Karin Viard,single value constraint,CNT ID,France,Théâtres parisiens associés
+Comédie-Française ID,Wikidata property related to theater,Anne Kessler,single value constraint,CNT ID,France,Salle Richelieu
+TPA person ID,Wikidata property for authority control for people,Karin Viard,single value constraint,CNT ID,France,Théâtres parisiens associés
+Comédie-Française ID,Wikidata property for an identifier that suggests notability,Henri Rollan,distinct values constraint,CESAR person ID,France,Salle Richelieu
+TPA person ID,Wikidata property for authority control for people,Karin Viard,single value constraint,CESAR person ID,France,Théâtres parisiens associés
+Flanders Arts Institute production ID,Wikidata property related to theater,Disfigure Study,single value constraint,Flanders Arts Institute venue ID,Belgium,Flanders Arts Institute
+TPA person ID,Wikidata property related to theater,Nina Meurisse,single value constraint,CESAR person ID,France,Théâtres parisiens associés
+Flanders Arts Institute production ID,Wikidata property for authority control for works,Disfigure Study,single value constraint,Flanders Arts Institute venue ID,Belgium,Flanders Arts Institute
+TPA person ID,Wikidata property for authority control for people,Nina Meurisse,single value constraint,CESAR person ID,France,Théâtres parisiens associés
+Flanders Arts Institute person ID,Wikidata property related to theater,Ivo van Hove,single value constraint,Flanders Arts Institute venue ID,Belgium,Flanders Arts Institute
+Flanders Arts Institute venue ID,Wikidata property related to theater,Royal Flemish Theatre,single value constraint,Flanders Arts Institute organisation ID,Belgium,Flanders Arts Institute
+Flanders Arts Institute person ID,Wikidata property for an identifier,Ivo van Hove,single value constraint,Flanders Arts Institute venue ID,Belgium,Flanders Arts Institute

@@ -1,0 +1,13 @@
+col0,col1,col2,col3,col4,col5,col6
+Kansas Sports Hall of Fame ID,Shalee Lehning,single value constraint,United States of America,Kansas Sports Hall of Fame,Kansas,Wikidata property for authority control for people
+Hawai‘i Sports Hall of Fame ID,David Ishii,single value constraint,United States of America,Hawaii Sports Hall of Fame,Hawaii,Wikidata property for authority control for people
+Alberta Sports Hall of Fame and Museum athlete ID,Cheryl Bernard,single value constraint,Canada,Alberta Sports Hall of Fame and Museum,Alberta,Wikidata property related to a sports hall of fame
+BC Sports Hall of Fame athlete ID,Cyclone Taylor,single value constraint,Canada,BC Sports Hall of Fame,British Columbia,Wikidata property related to a sports hall of fame
+Virginia Sports Hall of Fame ID,Donna Andrews,single value constraint,United States of America,Virginia Sports Hall of Fame and Museum,Virginia,Wikidata property related to a sports hall of fame
+Missouri Sports Hall of Fame ID,Jim Holtgrieve,single value constraint,United States of America,Missouri Sports Hall of Fame,Missouri,Wikidata property related to a sports hall of fame
+Tennessee Sports Hall of Fame athlete ID,Barbara Jones,single value constraint,United States of America,Tennessee Sports Hall of Fame,Tennessee,Wikidata property related to a sports hall of fame
+Alberta Sports Hall of Fame and Museum athlete ID,Cheryl Bernard,single value constraint,Canada,Alberta Sports Hall of Fame and Museum,Alberta,Wikidata property for authority control for people
+BC Sports Hall of Fame athlete ID,Cyclone Taylor,single value constraint,Canada,BC Sports Hall of Fame,British Columbia,Wikidata property for authority control for people
+Virginia Sports Hall of Fame ID,Donna Andrews,single value constraint,United States of America,Virginia Sports Hall of Fame and Museum,Virginia,Wikidata property for authority control for people
+Missouri Sports Hall of Fame ID,Jim Holtgrieve,single value constraint,United States of America,Missouri Sports Hall of Fame,Missouri,Wikidata property for authority control for people
+Tennessee Sports Hall of Fame athlete ID,Barbara Jones,distinct values constraint,United States of America,Tennessee Sports Hall of Fame,Tennessee,Wikidata property for authority control for people

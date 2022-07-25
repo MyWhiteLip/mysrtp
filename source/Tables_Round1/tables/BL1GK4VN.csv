@@ -1,0 +1,6 @@
+col0,col1,col2,col3,col4
+PuTTY,application,MIT license,C,Microsoft Windows
+Windows Terminal,free software,MIT license,C++,Windows 10
+st,free software,X11 license,C,Unix-like
+ConEmu,free software,3-clause BSD License,C++,Microsoft Windows
+Guake,free software,GNU General Public License,Python,Linux

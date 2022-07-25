@@ -1,0 +1,10 @@
+col0,col1,col2,col3
+wxPython,C++,free software,GNU General Public License
+NumPy,C,free software,3-clause BSD License
+SciPy,C++,free software,BSD licenses
+toolforge,Python,Python library,"GNU General Public License, version 3.0 or later"
+redis-py,Python,Python library,MIT license
+Plumbum,Python,Python library,MIT license
+gevent,Python,Python library,MIT license
+PyMC3,Python,Python library,Apache License
+scikit-image,Python,Python library,3-clause BSD License

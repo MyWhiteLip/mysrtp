@@ -1,0 +1,10 @@
+col0,col1,col2,col3
+Irish Rugby Football Union women's player ID,Ireland,item requires statement constraint,Joy Neville
+Irish Rugby Football Union women's sevens player ID,Ireland,distinct values constraint,Joy Neville
+Irish Rugby Football Union women's player ID,Ireland,format constraint,Joy Neville
+Irish Rugby Football Union women's sevens player ID,Ireland,single value constraint,Joy Neville
+Irish Rugby Football Union women's player ID,Ireland,single value constraint,Joy Neville
+LFH player ID,France,single value constraint,Helena Ryšánková
+Japan Rugby Football Union women's sevens player ID,Japan,single value constraint,Chiharu Nakamura
+Rugby Football Union women's sevens player ID,United Kingdom,single value constraint,Heather Fisher
+Japan Rugby Football Union women's player ID,Japan,single value constraint,Ayaka Suzuki

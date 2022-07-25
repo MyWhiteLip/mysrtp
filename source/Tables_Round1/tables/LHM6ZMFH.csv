@@ -1,0 +1,11 @@
+col0,col1,col2,col3,col4
+YouTube channel ID,Wikidata property for an identifier that does not imply notability,"add a ""website username"" qualifier, using P554",YouTube video ID,format constraint
+Twitter username,Wikidata property for an identifier that does not imply notability,"do not include the ""@"" symbol",Douban site name,one-of qualifier value property constraint
+YouTube channel ID,Wikidata property related to online communities,"add a ""website username"" qualifier, using P554",YouTube video ID,format constraint
+Twitter username,Wikidata property for an identifier,"do not include the ""@"" symbol",Douban site name,one-of qualifier value property constraint
+YouTube channel ID,Wikidata property for authority control,"add a ""website username"" qualifier, using P554",YouTube video ID,format constraint
+Twitter username,Wikidata property for items about organizations,"do not include the ""@"" symbol",Douban site name,one-of qualifier value property constraint
+Ameblo username,Wikidata property associated with the sites,"from 3 to 24 letters, the characters that can be used are half size alphanumeric characters (lowercase letters only) and hyphens (-)",LINE BLOG user ID,single value constraint
+YouTube channel ID,Wikidata property related to streaming media services,"add a ""website username"" qualifier, using P554",YouTube video ID,format constraint
+Ameblo username,Wikidata property for an identifier that does not imply notability,"from 3 to 24 letters, the characters that can be used are half size alphanumeric characters (lowercase letters only) and hyphens (-)",LINE BLOG user ID,single value constraint
+Flickr user ID,Wikidata property for an identifier that does not imply notability,Turn a username into a user ID with the webform found at https://www.webfx.com/tools/idgettr/,website username,format constraint

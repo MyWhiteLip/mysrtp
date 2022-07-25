@@ -1,0 +1,7 @@
+col0,col1,col2,col3,col4,col5
+Melon song ID,Let It Be,Spotify track ID,Wikidata property for authority control,Melon,single value constraint
+SoundCloud ID,Basshunter,MusicBrainz artist ID,Wikidata property for an identifier that does not imply notability,SoundCloud,type constraint
+musical conductor,Orfeó Català,director/manager,Wikidata property related to music,conductor,type constraint
+SoundCloud ID,Basshunter,MusicBrainz artist ID,Wikidata property for authority control,SoundCloud,type constraint
+musical conductor,Orfeó Català,director/manager,Wikidata property for items about organizations,conductor,type constraint
+Gran Enciclopèdia de la Música ID,Elvis Presley,Gran Enciclopèdia Catalana ID,Wikidata property related to encyclopedias,Gran Enciclopèdia de la Música,single value constraint

@@ -1,0 +1,7 @@
+col0,col1,col2,col3,col4,col5
+Apache Phoenix,"Apache Software License, Version 2.0",Apache Software Foundation,relational database management system,Java,Structured Query Language
+Virtuoso Universal Server,"GNU General Public License, version 2.0",OpenLink Software,relational database management system,C,triplestore
+H-Store,"GNU General Public License, version 3.0",Massachusetts Institute of Technology,relational database management system,C++,database
+Apache Hive,"Apache Software License, Version 2.0",Apache Software Foundation,relational database management system,Java,data warehouse
+SAP HANA,end-user license agreement,SAP SE,relational database management system,C++,in-memory database
+IBM Db2,end-user license agreement,IBM,relational database management system,C++,relational database

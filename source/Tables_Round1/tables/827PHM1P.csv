@@ -1,0 +1,5 @@
+col0,col1,col2,col3,col4,col5,col6
+Scottish Charity number,always incomplete,Charity Commission no.,single value constraint,Wikidata property to identify organisations,Office of the Scottish Charity Regulator,United Kingdom
+P-number,always incomplete,CVR number,single value constraint,Wikidata property to identify organisations,Danish Business Authority,Denmark
+NCES District ID,eventually complete,NCES School ID,single value constraint,Wikidata property for an identifier,National Center for Education Statistics,United States of America
+P-number,always incomplete,CVR number,single value constraint,Wikidata property for places,Danish Business Authority,Denmark

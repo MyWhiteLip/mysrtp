@@ -1,0 +1,12 @@
+col0,col1,col2,col3
+Network Telemetry,service on internet,Google Cloud Platform,Google
+Cloud Armor,service on internet,Google Cloud Platform,Google
+Velostrata,service on internet,Google Cloud Platform,Google
+Bigquery Data Transfer Service,service on internet,Google Cloud Platform,Google
+Cloud Storage Transfer Service,service on internet,Google Cloud Platform,Google
+Transfer Appliance,service on internet,Google Cloud Platform,Google
+Cloud Data Transfer,service on internet,Google Cloud Platform,Google
+Drive Enterprise,service on internet,Google Cloud Platform,Google
+Cloud Filestore,service on internet,Google Cloud Platform,Google
+Cloud Storage for Firebase,service on internet,Google Cloud Platform,Google
+Cloud Healthcare API,service on internet,Google Cloud Platform,Google

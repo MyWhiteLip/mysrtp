@@ -1,0 +1,8 @@
+col0,col1,col2,col3,col4,col5,col6
+Preferred Hotels & Resorts hotel ID,Preferred Hotels & Resorts,Wikidata property for authority control for hotels,Historic Hotels Worldwide ID,single value constraint,eventually complete,Gondwana Game Reserve
+Relais & Châteaux ID,Relais & Châteaux,Wikidata property related to tourism,Michelin Restaurants ID,distinct values constraint,eventually complete,Chila
+Goibibo Hotel ID,Goibibo,Wikidata property related to e-commerce,Booking.com hotel ID,single value constraint,always incomplete,Trident Nariman Point
+OYO Hotel ID,OYO Rooms,Wikidata property related to e-commerce,Booking.com hotel ID,single value constraint,always incomplete,Capital O 29027 Monteria Resort
+Goibibo Hotel ID,Goibibo,Wikidata property for authority control for hotels,Booking.com hotel ID,single value constraint,always incomplete,Trident Nariman Point
+OYO Hotel ID,OYO Rooms,Wikidata property for authority control for hotels,Cleartrip hotel ID,distinct values constraint,always incomplete,Capital O 29027 Monteria Resort
+Expedia hotel ID,Expedia Group,Wikidata property for authority control for hotels,Booking.com hotel ID,single value constraint,always incomplete,Raffles Hotel

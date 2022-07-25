@@ -1,0 +1,6 @@
+col0,col1,col2,col3
+JSON-LD,serialization,2014-01-16,data serialization format
+N-Triples,serialization,2014-02-25,data serialization format
+RDF/XML,serialization,2014-02-25,XML application
+SPARQL 1.1 Query Language,query language,2013-03-21,W3C Recommendation
+Web Annotation Data Model,annotation,2017-02-23,W3C Recommendation

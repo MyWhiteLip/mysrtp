@@ -1,0 +1,7 @@
+col0,col1,col2,col3,col4
+canonical SMILES,format constraint,Wikidata property to identify substances,ethanol,isomeric SMILES
+MeSH term ID,property scope constraint,Wikidata property related to chemistry,acetaminophen,MeSH descriptor ID
+MeSH concept ID,format constraint,Wikidata property for authority control,neoplasm,MeSH descriptor ID
+MeSH term ID,property scope constraint,Wikidata property to identify substances,Pros1,MeSH code
+MeSH concept ID,single value constraint,Wikidata property related to chemistry,amoxapine,MeSH descriptor ID
+National Drug Code,format constraint,Wikidata property to identify substances,vemurafenib,European Medicines Agency product number

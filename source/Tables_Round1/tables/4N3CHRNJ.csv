@@ -1,0 +1,16 @@
+col0,col1,col2,col3,col4,col5,col6
+Glutamate ionotropic receptor NMDA type subunit 2C,protein binding,"Glutamate [NMDA] receptor, epsilon subunit, C-terminal",NMDA receptor,L-aspartic Acid,GRIN2C,protein
+Glutamate ionotropic receptor NMDA type subunit 2A,metal ion binding,"Receptor, ligand binding region",NMDA receptor,L-aspartic Acid,GRIN2A,protein
+Gamma-aminobutyric acid type A receptor subunit alpha1,benzodiazepine receptor activity,Neurotransmitter-gated ion-channel transmembrane domain,cysteine loop ligand-gated ion channel receptor,alprazolam,GABRA1,protein
+Glutamate ionotropic receptor NMDA type subunit 2A,protein binding,"Glutamate [NMDA] receptor, epsilon subunit, C-terminal",NMDA receptor,ketamine,GRIN2A,protein
+Ryanodine receptor 2,protein kinase binding,"Ryanodine receptor, SPRY domain 1",Ryanodine receptor 2,adenosine triphosphate,RYR2,protein
+Glutamate ionotropic receptor NMDA type subunit 2A,protein binding,"Glutamate [NMDA] receptor, epsilon subunit, C-terminal",NMDA receptor,amantadine,GRIN2A,protein
+Ryanodine receptor 1,ion channel activity,"Inositol 1,4,5-trisphosphate/ryanodine receptor domain",Ryanodine receptor,caffeine,RYR1,protein
+Glutamate ionotropic receptor NMDA type subunit 1,calcium ion binding,"Receptor, ligand binding region",NMDA receptor,L-aspartic Acid,GRIN1,protein
+Gamma-aminobutyric acid type A receptor subunit alpha1,drug binding,"Neurotransmitter-gated ion-channel, conserved site",cysteine loop ligand-gated ion channel receptor,alprazolam,GABRA1,protein
+Histone deacetylase 8,protein binding,Histone deacetylase domain,protein,butyric acid,HDAC8,protein
+Cyclin dependent kinase 19,protein serine/threonine kinase activity,Protein kinase domain,protein,ponatinib,CDK19,protein
+Histone deacetylase 3,protein binding,Histone deacetylase domain,protein,butyric acid,HDAC3,protein
+Transient receptor potential cation channel subfamily A member 1,identical protein binding,Ion transport domain,TRPA,methylglyoxal,TRPA1,protein
+Ryanodine receptor 2,ion channel activity,Ryanodine Receptor TM 4-6,Ryanodine receptor 2,caffeine,RYR2,protein
+"Inositol 1,4,5-trisphosphate receptor type 1",protein binding,Ion transport domain,"Inositol 1,4,5-trisphosphate receptor",adenosine triphosphate,ITPR1,protein

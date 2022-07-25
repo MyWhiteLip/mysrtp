@@ -1,0 +1,16 @@
+col0,col1,col2,col3,col4,col5
+artist-info curator ID,single value constraint,ULAN ID,artist-info,7504,Wikidata property for authority control for people
+ADAGP artist ID,format constraint,PictoRight ID code,ADAGP directory,5000,Wikidata property for authority control for artists
+Dictionnaire critique des historiens de l'art ID,single value constraint,Dictionary of Art Historians ID,Dictionnaire critique des historiens de l'art actifs en France de la Révolution à la Première Guerre mondiale,316,Wikidata property related to historiography
+Getty AAT ID,distinct values constraint,Thésaurus de la désignation des objets mobiliers ID,Art & Architecture Thesaurus,47267,Wikidata property related to architecture
+Dictionnaire critique des historiens de l'art ID,single value constraint,Dictionary of Art Historians ID,Dictionnaire critique des historiens de l'art actifs en France de la Révolution à la Première Guerre mondiale,316,Wikidata property related to art
+RKDlibrary ID,single value constraint,RKDimages ID,RKDlibrary,299806,Wikidata property related to art
+ADAGP artist ID,format constraint,PictoRight ID code,ADAGP directory,5000,Wikidata property related to art
+Sandrart.net person ID,single value constraint,Sandrart.net artwork ID,Sandrart.net,5163,Wikidata property related to art
+Getty AAT ID,distinct values constraint,Thésaurus de la désignation des objets mobiliers ID,Art & Architecture Thesaurus,47267,Wikidata property related to art
+ADAGP artist ID,format constraint,PictoRight ID code,ADAGP directory,5000,Wikidata property to identify organisations
+RKDlibrary ID,single value constraint,RKDimages ID,RKDlibrary,299806,Wikidata property for an identifier
+Dictionnaire critique des historiens de l'art ID,single value constraint,Dictionary of Art Historians ID,Dictionnaire critique des historiens de l'art actifs en France de la Révolution à la Première Guerre mondiale,316,Wikidata property for authority control for people
+Sandrart.net person ID,single value constraint,Sandrart.net artwork ID,Sandrart.net,5163,Wikidata property for authority control for people
+Getty AAT ID,format constraint,Thésaurus de la désignation des objets mobiliers ID,Art & Architecture Thesaurus,47267,Wikidata property for authority control
+abART group ID,single value constraint,abART person ID,Archive of Fine Arts,4220,Wikidata property related to art

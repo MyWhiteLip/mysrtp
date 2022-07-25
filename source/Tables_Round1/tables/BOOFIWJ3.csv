@@ -1,0 +1,14 @@
+col0,col1,col2,col3
+thiosulfate ion,dianion,thiosulfate transport,111.929
+hexafluorophosphate ion,monoanion,hexafluorophosphate,144.964
+hydroxide ion,monoanion,hydroxide salts,17.003
+thiocyanate,monoanion,thiocyanate metabolic process,57.975
+acetate ion,polyatomic anion,response to acetate,59.013304
+hexafluorophosphate ion,polyatomic anion,hexafluorophosphate,144.964
+thiosulfate ion,polyatomic anion,thiosulfate transport,111.929
+hydroxide ion,polyatomic anion,hydroxide salts,17.003
+thiocyanate,polyatomic anion,thiocyanate metabolic process,57.975
+acetate ion,lyate ion,response to acetate,59.013304
+hydroxide ion,lyate ion,hydroxide salts,17.003
+acetate ion,metabolite,response to acetate,59.013304
+oxalate ion,dianion,oxalate transmembrane transporter activity,87.98

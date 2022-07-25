@@ -1,0 +1,13 @@
+col0,col1,col2,col3,col4,col5
+NooSFere book ID,single value constraint,The End of Eternity,Wikidata property to identify books,NooSFere,ISFDB title ID
+Paris Faculty of Letters professor ID,item requires statement constraint,Victor Basch,Wikidata property for authority control for people,Les Professeurs de la Faculté des lettres de Paris,Paris Faculty of Science professor ID
+Diccionari de la Literatura Catalana ID,single value constraint,Jacint Verdaguer,Wikidata property related to literature,Catalan Literature Dictionary,Gran Enciclopèdia Catalana ID
+NooSFere edition ID,format constraint,Atlas des brumes et des ombres,Wikidata property to identify books,NooSFere,ISFDB publication ID
+Diccionari de la Literatura Catalana ID,single value constraint,Jacint Verdaguer,Wikidata property for an identifier,Catalan Literature Dictionary,Gran Enciclopèdia Catalana ID
+NooSFere series ID,format constraint,The Night's Dawn Trilogy,Wikidata property for an identifier that suggests notability,NooSFere,NooSFere book ID
+NooSFere story ID,single value constraint,The Last Castle,Wikidata property for authority control for works,NooSFere,ISFDB title ID
+RoMEO publisher ID,format constraint,Geological Society of America,Wikidata property for an identifier that suggests notability,SHERPA/RoMEO,Sherpa Juliet ID
+PRELIB organization ID,single value constraint,Rhône-Poulenc,Wikidata property related to literature,Research project on literature in the Breton language,PRELIB person ID
+RoMEO publisher ID,format constraint,Geological Society of America,Wikidata property related to literature,SHERPA/RoMEO,Sherpa Juliet ID
+NooSFere story ID,conflicts-with constraint,The Last Castle,Wikidata property related to literature,NooSFere,ISFDB title ID
+PRELIB organization ID,single value constraint,Rhône-Poulenc,Wikidata property to identify organisations,Research project on literature in the Breton language,PRELIB person ID

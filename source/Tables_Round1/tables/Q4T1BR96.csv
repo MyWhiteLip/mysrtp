@@ -1,0 +1,14 @@
+col0,col1,col2,col3,col4
+RFC 2153: PPP Vendor Extensions,RFC 1661: The Point-to-Point Protocol (PPP),Point-to-point protocol,Request for Comments,RFC 7042: IANA Considerations and IETF Protocol and Documentation Usage for IEEE 802 Parameters
+RFC 3363: Representing Internet Protocol version 6,RFC 2673: Binary Labels in the Domain Name System,Domain Name System,Request for Comments,RFC 6672: DNAME Redirection in the DNS
+RFC 1570: PPP LCP Extensions,RFC 1548: The Point-to-Point Protocol (PPP),Link Control Protocol,Request for Comments,RFC 2484: PPP LCP Internationalization Configuration Option
+RFC 3443: Time To Live,RFC 3032: MPLS Label Stack Encoding,Multiprotocol Label Switching,Request for Comments,"RFC 5462: Multiprotocol Label Switching (MPLS) Label Stack Entry: ""EXP"" Field Renamed to ""Traffic Class"" Field"
+"RFC 2236: Internet Group Management Protocol, Version 2",RFC 1112: Host extensions for IP multicasting,Internet Group Management Protocol,Request for Comments,"RFC 3376: Internet Group Management Protocol, Version 3"
+RFC 5722: Handling of Overlapping IPv6 Fragments,"RFC 2460: Internet Protocol, Version 6 (IPv6) Specification",IPv6,Request for Comments,"RFC 6946: Processing of IPv6 ""Atomic"" Fragments"
+RFC 2868: RADIUS Attributes for Tunnel Protocol Support,RFC 2865: Remote Authentication Dial In User Service (RADIUS),RADIUS,Request for Comments,RFC 3575: IANA Considerations for RADIUS (Remote Authentication Dial In User Service)
+RFC 2817: Upgrading to TLS Within HTTP/1.1,RFC 2616: Hypertext Transfer Protocol -- HTTP/1.1,HTTPS,Request for Comments,RFC 7230: Hypertext Transfer Protocol (HTTP/1.1): Message Syntax and Routing
+RFC 2290: Mobile-IPv4 Configuration Option for PPP IPCP,RFC 2002: IP Mobility Support,Internet Protocol Control Protocol,Request for Comments,RFC 2794: Mobile IP Network Access Identifier Extension for IPv4
+RFC 3575: IANA Considerations for RADIUS,RFC 2868: RADIUS Attributes for Tunnel Protocol Support,RADIUS,Request for Comments,RFC 6929: Remote Authentication Dial In User Service (RADIUS) Protocol Extensions
+RFC 4443: Internet Control Message Protocol,RFC 2780: IANA Allocation Guidelines For Values In the Internet Protocol and Related Headers,Internet Control Message Protocol for IPv6,Request for Comments,RFC 4884: Extended ICMP to Support Multi-Part Messages
+RFC 2874: DNS Extensions to Support IPv6 Address Aggregation and Renumbering,RFC 1886: DNS Extensions to support IP version 6,Domain Name System,Request for Comments,RFC 3152: Delegation of IP6.ARPA
+RFC 5727: Change Process for the Session Initiation Protocol,RFC 3969: The Internet Assigned Number Authority (IANA) Uniform Resource Identifier (URI) Parameter Registry for the Session Initiation Protocol (SIP),Session Initiation Protocol,Request for Comments,RFC 7957: DISPATCH-Style Working Groups and the SIP Change Process

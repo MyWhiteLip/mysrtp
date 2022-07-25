@@ -1,0 +1,16 @@
+col0,col1,col2,col3,col4
+Cretaceous,Paleogene,Late Cretaceous,geochronological unit,Jurassic
+Cambrian,Ordovician,Terreneuvian,system,Ediacaran
+Ordovician,Silurian,Lower Ordovician,system,Cambrian
+Jurassic,Cretaceous,Early Jurassic,system,Triassic
+Cretaceous,Paleogene,Late Cretaceous,system,Jurassic
+Cambrian,Ordovician,Terreneuvian,geological period,Ediacaran
+Ordovician,Silurian,Lower Ordovician,geological period,Cambrian
+Jurassic,Cretaceous,Early Jurassic,geological period,Triassic
+Cretaceous,Paleogene,Late Cretaceous,geological period,Jurassic
+Carboniferous,Permian,Pennsylvanian,system,Devonian
+Permian,Triassic,Cisuralian,system,Carboniferous
+Triassic,Jurassic,Late Triassic,system,Permian
+Carboniferous,Permian,Pennsylvanian,geological period,Devonian
+Permian,Triassic,Cisuralian,geological period,Carboniferous
+Triassic,Jurassic,Late Triassic,geological period,Permian

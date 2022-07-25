@@ -1,0 +1,15 @@
+col0,col1,col2,col3,col4,col5
+Recommendation U.75,ITU-T recommendation version,8,International Telecommunication Union,English,Automatic called telex answerback check
+Recommendation U.74,ITU-T recommendation version,5,International Telecommunication Union,English,Extraction of telex selection information from a calling telex answerback
+Recommendation U.70,ITU-T recommendation version,5,International Telecommunication Union,English,Telex service signals for telex to teletex interworking
+Recommendation U.40,ITU-T recommendation version,8,International Telecommunication Union,English,Reactions by automatic terminals connected to the telex network in the event of ineffective call attempts or signalling incidents
+Recommendation U.201,ITU-T recommendation version,22,International Telecommunication Union,English,Interworking between the teletex service and the telex service
+Recommendation U.12,ITU-T recommendation version,30,International Telecommunication Union,English,Terminal and transit control signalling system for telex and similar services on international circuits (type D signalling)
+Recommendation T.30,ITU-T recommendation version,104,International Telecommunication Union,English,Procedures for document facsimile transmission in the general switched telephone network
+Recommendation T.101,ITU-T recommendation version,838,International Telecommunication Union,English,International interworking for Videotex services
+Recommendation T.101,ITU-T recommendation version,80,International Telecommunication Union,English,International interworking for Videotex services
+Recommendation T.100,ITU-T recommendation version,47,International Telecommunication Union,English,International information exchange for interactive Videotex
+Recommendation S.4,ITU-T recommendation version,6,International Telecommunication Union,English,Special use of certain characters of the International Telegraph Alphabet No. 2
+Recommendation Q.931,ITU-T recommendation version,352,International Telecommunication Union,English,ISDN user-network interface layer 3 specification for basic call control
+Recommendation Q.921,ITU-T recommendation version,118,International Telecommunication Union,English,ISDN user-network interface - Data link layer specification
+Recommendation I.431,ITU-T recommendation version,32,International Telecommunication Union,English,Primary rate user-network interface - Layer 1 specification

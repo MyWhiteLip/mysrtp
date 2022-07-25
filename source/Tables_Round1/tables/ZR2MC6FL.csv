@@ -1,0 +1,16 @@
+col0,col1,col2,col3,col4
+Telegram username,Wikidata property for an identifier that does not imply notability,"do not include the ""@"" symbol or t.me link",Snapchat username,allowed qualifiers constraint
+Wikimedia username,Wikidata property related to online communities,Disclosing others' usernames violates the WMF privacy policy and may result in a block; see Wikidata:Oversight if you want to remove your information.,website account on,format constraint
+Telegram username,Wikidata property for Wikivoyage listings,"do not include the ""@"" symbol or t.me link",Snapchat username,allowed qualifiers constraint
+Wikimedia username,Wikidata property for authority control for people,Disclosing others' usernames violates the WMF privacy policy and may result in a block; see Wikidata:Oversight if you want to remove your information.,website account on,format constraint
+Telegram username,Wikidata property for Wikivoyage listings,"do not include the ""@"" symbol or t.me link",website account on,allowed qualifiers constraint
+Twitter username,Wikidata property for an identifier,"do not include the ""@"" symbol",Bilibili userID,allowed qualifiers constraint
+Pornhub ID,Wikidata property for an identifier that does not imply notability,Property is only for people with /pornstar/ in their profile URL.,Adult Film Database actor ID,single value constraint
+Wikimedia username,Wikidata property for an identifier that does not imply notability,Disclosing others' usernames violates the WMF privacy policy and may result in a block; see Wikidata:Oversight if you want to remove your information.,website account on,format constraint
+Pornhub ID,Wikidata property related to erotica or pornography,Property is only for people with /pornstar/ in their profile URL.,Adult Film Database actor ID,single value constraint
+Wikimedia username,Wikidata property about Wikimedia entities,Disclosing others' usernames violates the WMF privacy policy and may result in a block; see Wikidata:Oversight if you want to remove your information.,website account on,format constraint
+Pornhub ID,Wikidata property for authority control for people,Property is only for people with /pornstar/ in their profile URL.,Adult Film Database actor ID,single value constraint
+Twitter user numeric ID,Wikidata qualifier,do not include the @-username,website account on,single value constraint
+Telegram username,Wikidata property for items about people,"do not include the ""@"" symbol or t.me link",Facebook ID,distinct values constraint
+Twitter username,Wikidata property for Wikivoyage listings,"do not include the ""@"" symbol",tweet ID,single best value constraint
+Telegram username,Wikidata property for Wikivoyage listings,"do not include the ""@"" symbol or t.me link",Skype username,format constraint

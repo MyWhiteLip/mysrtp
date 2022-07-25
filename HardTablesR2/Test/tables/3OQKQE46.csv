@@ -1,0 +1,7 @@
+col0,col1,col2,col3
+PML PML::RARA A216V,ortho-arsenite ion,PML,
+NRG1 SDC4::NRG1,,NRG1,afatinib
+ABL1 BCR::ABL F317R,axitinib,ABL1,
+ABL1 BCR::ABL L248V,imatinib mesylate / nilotinib combination therapy,ABL1,
+ALK EML4::ALK  V1180L,alectinib,ALK,brigatinib
+ALK NPM::ALK,,ALK,crizotinib

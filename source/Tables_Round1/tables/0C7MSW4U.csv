@@ -1,0 +1,16 @@
+col0,col1,col2,col3,col4,col5,col6
+UDP-N-acetylglucosamine--N-acetylmuramyl-,cell division,transferase activity,"protein obsoleted in UniProtKB, SwissProt, TrEMBL","N-acetylglucosaminyltransferase, MurG",cell membrane,Mycobacterium tuberculosis H37Rv
+chaperone protein DnaJ    Rv2373c,DNA replication,metal ion binding,protein,HSP40/DnaJ peptide-binding,cytoplasm,Mycobacterium tuberculosis H37Rv
+UDP-N-acetylglucosamine--N-acetylmuramyl-,lipid glycosylation,"UDP-N-acetyl-D-glucosamine:N-acetylmuramoyl-L-alanyl-D-glutamyl-meso-2,6-diaminopimelyl-D-alanyl-D-alanine-diphosphoundecaprenol 4-beta-N-acetylglucosaminlytransferase activity",protein,"N-acetylglucosaminyltransferase, MurG",membrane,Mycobacterium tuberculosis H37Rv
+30S ribosomal protein S7    Rv0683,protein biosynthesis,RNA binding,"protein obsoleted in UniProtKB, SwissProt, TrEMBL","Ribosomal protein S7, bacterial/organellar-type",ribosome,Mycobacterium tuberculosis H37Rv
+phosphoglycerate kinase    Rv1437,glycolytic process,ATP binding,"protein obsoleted in UniProtKB, SwissProt, TrEMBL","Phosphoglycerate kinase, N-terminal",cytoplasm,Mycobacterium tuberculosis H37Rv
+thioredoxin reductase    Rv3913,oxidation-reduction process,oxidoreductase activity,"protein obsoleted in UniProtKB, SwissProt, TrEMBL",Thioredoxin reductase,cytoplasm,Mycobacterium tuberculosis H37Rv
+urease accessory protein UreF    Rv1851,nitrogen compound metabolic process,nickel cation binding,"protein obsoleted in UniProtKB, SwissProt, TrEMBL",Urease accessory protein UreF,cytoplasm,Mycobacterium tuberculosis H37Rv
+30S ribosomal protein S7    Rv0683,protein biosynthesis,RNA binding,protein,"Ribosomal protein S7, bacterial/organellar-type",ribosome,Mycobacterium tuberculosis H37Rv
+phosphoglycerate kinase    Rv1437,glycolytic process,ATP binding,protein,"Phosphoglycerate kinase, N-terminal",cytoplasm,Mycobacterium tuberculosis H37Rv
+thioredoxin reductase    Rv3913,oxidation-reduction process,oxidoreductase activity,protein,Thioredoxin reductase,cytoplasm,Mycobacterium tuberculosis H37Rv
+urease accessory protein UreF    Rv1851,nitrogen compound metabolic process,nickel cation binding,protein,Urease accessory protein UreF,cytoplasm,Mycobacterium tuberculosis H37Rv
+50S ribosomal protein L1    Rv0641,protein biosynthesis,tRNA binding,"protein obsoleted in UniProtKB, SwissProt, TrEMBL","Ribosomal protein L1, 3-layer alpha/beta-sandwich",large ribosomal subunit,Mycobacterium tuberculosis H37Rv
+cation transporter ATPase J    Rv3743c,cation transport,hydrolase activity,protein,"P-type ATPase, cytoplasmic domain N",cell membrane,Mycobacterium tuberculosis H37Rv
+potassium-transporting ATPase subunit B    Rv1030,potassium ion transport,metal ion binding,protein,"P-type ATPase, cytoplasmic domain N",cell membrane,Mycobacterium tuberculosis H37Rv
+chaperone protein DnaJ    Rv2373c,response to heat,heat shock protein binding,"protein obsoleted in UniProtKB, SwissProt, TrEMBL",HSP40/DnaJ peptide-binding,cytoplasm,Mycobacterium tuberculosis H37Rv

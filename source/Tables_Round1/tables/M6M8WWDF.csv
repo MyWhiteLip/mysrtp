@@ -1,0 +1,5 @@
+col0,col1,col2,col3
+professorship,holds this professorship,item requires statement constraint,Wikidata property for items about people
+notable work,is notable work of,value type constraint,Wikidata property for items about people
+given name,bears this given name,conflicts-with constraint,Wikidata property for items about people
+family name,bears this family name,item requires statement constraint,Wikidata property for items about people

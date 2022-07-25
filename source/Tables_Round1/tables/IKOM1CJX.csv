@@ -1,0 +1,8 @@
+col0,col1,col2,col3,col4
+Apache HTTP Server,"Apache Software License, Version 2.0",cross-platform,C,free software
+ejabberd,"GNU General Public License, version 2.0",cross-platform,Erlang,instant messaging client
+F-Droid server,"GNU Affero General Public License, version 3.0 or later",Linux,PHP,server software
+Synapse,"Apache Software License, Version 2.0",Unix-like,Python 3,server software
+GNU social,"GNU Affero General Public License, version 3.0 or later",cross-platform,PHP,server software
+PluXml,GNU General Public License,Microsoft Windows,PHP,server software
+Twister,BSD licenses,FreeBSD,C++,server software

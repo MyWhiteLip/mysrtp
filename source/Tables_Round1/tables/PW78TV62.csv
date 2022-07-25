@@ -1,0 +1,14 @@
+col0,col1,col2,col3,col4,col5,col6
+NORAF ID,Wikidata property for authority control by VIAF member,BIBSYS work ID,single value constraint,Clint Eastwood,National Library of Norway,Norway
+Portuguese National Library ID,Wikidata property for authority control by VIAF member,BND ID,format constraint,Josephus,National Library of Portugal,Portugal
+NSZL ID,Wikidata property for authority control by VIAF member,NSZL name authority ID,single value constraint,Istvan Szerdahelyi,National Széchényi Library,Hungary
+Biblioteca Nacional de España ID,Wikidata property for authority control by VIAF member,LEM ID,single value constraint,Sahel,Biblioteca Nacional de España,Spain
+RSL ID,Wikidata property for authority control by VIAF member,RSL scanned books identifier,format constraint,House of Abaza,Russian State Library,Russia
+NORAF ID,Wikidata property for authority control for people,BIBSYS work ID,single value constraint,Clint Eastwood,National Library of Norway,Norway
+NSZL ID,Wikidata property for authority control for people,NSZL name authority ID,single value constraint,Istvan Szerdahelyi,National Széchényi Library,Hungary
+RSL ID,Wikidata property for authority control by VIAF member,RSL scanned books identifier,single value constraint,Alexander Pushkin,Russian State Library,Russia
+SELIBR ID,Wikidata property for authority control by VIAF member,LIBRIS editions,single value constraint,Leonardo da Vinci,National Library of Sweden,Sweden
+Libraries Australia ID,Wikidata property for authority control by VIAF member,NLA Trove ID,single value constraint,Andrew Barton Paterson,National Library of Australia,Australia
+SBN author ID,Wikidata property for authority control by VIAF member,SBN books ID,single value constraint,Petrarch,Istituto Centrale per il Catalogo Unico,Italy
+National Diet Library Auth ID,Wikidata property for authority control by VIAF member,NDL bib ID,single value constraint,iridium,National Diet Library,Japan
+CiNii author ID,Wikidata property for authority control by VIAF member,CiNii book ID,distinct values constraint,Katsuko Saruhashi,National Institute of Informatics,Japan

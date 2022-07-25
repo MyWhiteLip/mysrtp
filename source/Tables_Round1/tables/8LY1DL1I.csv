@@ -1,0 +1,16 @@
+col0,col1,col2,col3,col4
+hydroxocobalamin,carbon,Hematinic,hydroxocobalamin,20
+metformin,hydrogen,anti-diabetic medication,metformin,2
+amoxicillin,carbon,enzyme inhibitor,amoxicillin,1
+abacavir,hydrogen,reverse-transcriptase inhibitor,abacavir,0.6
+hydroxocobalamin,carbon,vitamin B,hydroxocobalamin,20
+amoxicillin,carbon,antibiotic,amoxicillin,1
+clotrimazole,hydrogen,14-alpha Demethylase Inhibitors,Clotrimazole,0.1
+ethionamide,carbon,Fatty Acid Synthesis Inhibitors,Ethionamide,0.75
+clotrimazole,hydrogen,local anti-infective agent,Clotrimazole,0.1
+ethionamide,carbon,antituberculous drug,Ethionamide,0.75
+clotrimazole,hydrogen,antifungal,Clotrimazole,0.1
+ephedrine,carbon,sympathomimetic drug,Ephedrine,8
+niacinamide,carbon,Enzyme activator,nicotinamide,0.15
+warfarin,carbon,anticoagulant,Warfarin,7.5
+ephedrine,carbon,stimulant,Ephedrine,8

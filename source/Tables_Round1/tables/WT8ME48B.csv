@@ -1,0 +1,12 @@
+col0,col1,col2,col3
+Kino-teatr.ua film ID,Wikidata property to identify films,Template:Kino-teatr film,single value constraint
+IAFD film ID,Wikidata property to identify films,Template:IAFD movie,single value constraint
+Adult Film Database film ID,Wikidata property to identify films,Template:Adult Film Database movie,single value constraint
+CineMagia film ID,Wikidata property to identify films,Template:Cinemagia,single value constraint
+Douban film ID,Wikidata property to identify films,Template:Douban,single value constraint
+Africultures movie ID,Wikidata property to identify films,Template:Africultures film,single value constraint
+"BFI Films, TV and people ID",Wikidata property to identify films,Template:BFI,format constraint
+Cinema.de ID,Wikidata property to identify films,Template:Cinema.de,single value constraint
+MyDramaList title ID,Wikidata property to identify films,Template:MyDramaList title,single value constraint
+Bangla Movie Database ID,Wikidata property to identify films,Template:BMDb name,single value constraint
+danskefilm film ID,Wikidata property to identify films,Template:Danskefilm title,format constraint

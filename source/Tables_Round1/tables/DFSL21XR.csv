@@ -1,0 +1,13 @@
+col0,col1,col2,col3,col4
+OpenSecrets organization ID,United States of America,OpenSecrets people ID,National Association of Realtors,type constraint
+BWSA ID,Netherlands,Handle ID,Willem Albarda,type constraint
+C-SPAN organization ID,United States of America,C-SPAN person ID,United States Senate,type constraint
+Bargeton ID,France,Personnel de l'administration préfectorale ID,Georges Abadie,item requires statement constraint
+French National Assembly ID,France,Sycomore ID,Nathalie Appéré,item requires statement constraint
+Italian Senate ID,Kingdom of Sardinia,Italian Senate of the Republic ID,Antonio Fogazzaro,item requires statement constraint
+OpenSecrets organization ID,United States of America,OpenSecrets people ID,National Association of Realtors,conflicts-with constraint
+Bargeton ID,France,Personnel de l'administration préfectorale ID,Jean-Pierre Abeille,distinct values constraint
+OpenSecrets organization ID,United States of America,OpenSecrets people ID,Perkins Coie LLP,distinct values constraint
+Bargeton ID,France,Personnel de l'administration préfectorale ID,Félix Achard,distinct values constraint
+Premiers préfets ID,France,Bargeton ID,Jules Pasquier,distinct values constraint
+Argentine deputy votations ID,Argentina,Argentine Chamber of Deputies ID,Néstor Pitrola,distinct values constraint

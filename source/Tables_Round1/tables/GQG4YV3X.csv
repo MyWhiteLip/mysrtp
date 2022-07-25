@@ -1,0 +1,7 @@
+col0,col1,col2,col3,col4,col5,col6
+Composer,cross-platform,2012-03-01,package management system,package management system,MIT license,PHP
+Homebrew,Linux,2009-01-01,package management system,package management system,BSD licenses,Ruby
+Cydia,iOS,2008-02-01,package management system,package management system,"GNU General Public License, version 3.0",Objective-C
+RPM Package Manager,Unix-like,1997-01-01,package management system,package management system,GNU General Public License,C
+aptitude,GNU,1999-01-01,package management system,package management system,"GNU General Public License, version 2.0",C++
+dpkg,Unix-like,1994-01-01,package management system,package management system,"GNU General Public License, version 2.0",C++

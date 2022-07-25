@@ -1,0 +1,5 @@
+col0,col1,col2,col3,col4
+Cryptomeria cipher,2003-01-01,Data Encryption Standard,64,block cipher
+DES-X,1984-01-01,Data Encryption Standard,64,block cipher
+GDES,1981-01-01,Data Encryption Standard,256,block cipher
+Akelarre,1996-01-01,International Data Encryption Algorithm,128,block cipher

@@ -1,0 +1,16 @@
+col0,col1,col2,col3,col4
+fluoxymesterone,Androgen receptor,336.21,Developmental Toxicant,fluoxymesterone
+estrone,Estrogen receptor 2,270.162,carcinogen,estrone
+prednisolone,Nuclear receptor subfamily 3 group C member 1,360.194,steroid,prednisolone
+prednisone,Nuclear receptor subfamily 3 group C member 1,358.178,steroid,prednisone
+methyltestosterone,Androgen receptor,302.225,steroid,methyltestosterone
+methylprednisolone,Nuclear receptor subfamily 3 group C member 1,374.209,steroid,methylprednisolone
+estrone,Estrogen receptor 2,270.162,steroid,estrone
+fluoxymesterone,Androgen receptor,336.21,steroid,fluoxymesterone
+prednisolone,Nuclear receptor subfamily 3 group C member 1,360.194,essential medicine,prednisolone
+methylprednisolone,Nuclear receptor subfamily 3 group C member 1,374.209,essential medicine,methylprednisolone
+prednisolone,Nuclear receptor subfamily 3 group C member 1,360.194,medication,prednisolone
+prednisone,Nuclear receptor subfamily 3 group C member 1,358.178,medication,prednisone
+methyltestosterone,Androgen receptor,302.225,medication,methyltestosterone
+methylprednisolone,Nuclear receptor subfamily 3 group C member 1,374.209,medication,methylprednisolone
+estrone,Estrogen receptor 2,270.162,medication,estrone

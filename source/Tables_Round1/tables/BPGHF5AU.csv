@@ -1,0 +1,8 @@
+col0,col1,col2,col3,col4
+PuTTY,terminal client,MIT license,C,Microsoft Windows
+Windows Terminal,terminal emulator,MIT license,C++,Windows 10
+Tilix,terminal emulator,Mozilla Public License,D,Linux
+st,terminal emulator,X11 license,C,Unix-like
+ConEmu,terminal emulator,3-clause BSD License,C++,Microsoft Windows
+Guake,terminal emulator,GNU General Public License,Python,Linux
+Tilda,terminal emulator,"GNU General Public License, version 2.0",C,Linux

@@ -1,0 +1,12 @@
+col0,col1,col2,col3
+Ruby-GNOME2,"GNU Lesser General Public License, version 2.1",cross-platform,C
+Tk,BSD licenses,cross-platform,C
+Allegro,zlib License,iOS,C
+GTK,"GNU Lesser General Public License, version 2.1",Unix-like,C
+Xaw,MIT license,Unix-like,C
+XForms,GNU Lesser General Public License,Unix-like,C
+LessTif,GNU Lesser General Public License,Unix-like,C
+GTK,"GNU Lesser General Public License, version 2.1",macOS,C
+Allegro,zlib License,macOS,C
+GTK,"GNU Lesser General Public License, version 2.1",Microsoft Windows,C
+Allegro,zlib License,Microsoft Windows,C

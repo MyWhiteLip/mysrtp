@@ -1,0 +1,16 @@
+col0,col1,col2,col3,col4
+Window Maker,GNU package,GNU General Public License,C,OpenBSD
+dwm,Dynamic window manager,MIT license,C,Unix-like
+i3,tiling window manager,BSD licenses,C,Unix-like
+xmonad,tiling window manager,BSD licenses,Haskell,Unix-like
+Blackbox,stacking window manager,MIT license,C++,Unix-like
+Xfwm,free and open-source software,"GNU General Public License, version 2.0",C,Linux
+i3,free and open-source software,BSD licenses,C,Unix-like
+Xfwm,window manager,"GNU General Public License, version 2.0",C,Linux
+ratpoison,window manager,"GNU General Public License, version 2.0",C,GNU/Linux
+i3,window manager,BSD licenses,C,Unix-like
+LightDM,window manager,"GNU General Public License, version 3.0",C,Linux
+FVWM,window manager,GNU General Public License,C,Unix-like
+KWin,window manager,GNU Lesser General Public License,C++,Unix-like
+Metacity,window manager,GNU General Public License,C,Linux
+Window Maker,window manager,GNU General Public License,C,OpenBSD

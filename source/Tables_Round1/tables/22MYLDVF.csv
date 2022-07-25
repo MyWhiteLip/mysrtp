@@ -1,0 +1,12 @@
+col0,col1,col2,col3
+InfluxDB,2013-09-24,database management system,Go
+Hyperdex,2011-01-01,database management system,C++
+Tarantool,2008-01-01,database management system,C
+Hibari,2010-01-01,database management system,Erlang
+Gadfly,1994-01-01,database management system,Python
+Aerospike database,2012-01-01,database management system,C
+C-Store,2005-01-01,database management system,C++
+Apache Accumulo,2011-12-16,database management system,Java
+Adminer,2007-07-11,database management system,PHP
+Apache HBase,2006-01-01,database management system,Java
+MongoDB,2009-01-01,database management system,JavaScript

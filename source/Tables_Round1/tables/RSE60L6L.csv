@@ -1,0 +1,16 @@
+col0,col1,col2,col3,col4
+half maximal effective concentration,allowed units constraint,Wikidata property for quantities,median lethal concentration (LC50),half maximal effective concentration
+half maximal inhibitory concentration,property scope constraint,Wikidata property for quantities,half maximal effective concentration (EC50),half maximal inhibitory concentration
+median lethal concentration,allowed qualifiers constraint,Wikidata property for quantities,half maximal effective concentration (EC50),median lethal concentration
+half maximal effective concentration,allowed units constraint,Wikidata property related to biology,median lethal concentration (LC50),half maximal effective concentration
+half maximal inhibitory concentration,property scope constraint,Wikidata property related to biology,half maximal effective concentration (EC50),half maximal inhibitory concentration
+half maximal effective concentration,allowed units constraint,Wikidata property related to chemistry,median lethal concentration (LC50),half maximal effective concentration
+half maximal inhibitory concentration,property scope constraint,Wikidata property related to chemistry,half maximal effective concentration (EC50),half maximal inhibitory concentration
+negative allosteric modulator of,property scope constraint,Wikidata property related to chemistry,agonist of,allosteric modulator
+positive allosteric modulator of,property scope constraint,Wikidata property related to chemistry,agonist of,allosteric modulator
+inhibitor of,property scope constraint,Wikidata property related to chemistry,agonist of,enzyme inhibitor
+antagonist of,property scope constraint,Wikidata property related to chemistry,agonist of,antagonist
+agonist of,property scope constraint,Wikidata property related to chemistry,antagonist of,agonist
+median lethal concentration,allowed qualifiers constraint,Wikidata property related to medicine,half maximal effective concentration (EC50),median lethal concentration
+median lethal dose,type constraint,Wikidata property related to chemistry,median lethal concentration (LC50),median lethal dose
+upper flammable limit,allowed units constraint,Wikidata property related to chemistry,lower flammable limit,flammability limit

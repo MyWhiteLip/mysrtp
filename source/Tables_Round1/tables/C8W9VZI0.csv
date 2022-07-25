@@ -1,0 +1,16 @@
+col0,col1,col2,col3
+WRAY 18-178,J2000.0,Vela,SRA semi-regular
+V* DK Vul,J2000.0,Vulpecula,SRA semi-regular
+V* V365 Cep,J2000.0,Cepheus,SRA semi-regular
+V* V1766 Cyg,J2000.0,Cygnus,SRA semi-regular
+SV* HV 6511,J2000.0,Centaurus,SRA semi-regular
+V* V393 Vel,J2000.0,Vela,SRB semi-regular
+V* V335 Sge,J2000.0,Sagitta,SRB semi-regular
+V* V597 Car,J2000.0,Carina,SRB semi-regular
+V* V728 Car,J2000.0,Carina,SRB semi-regular
+V* V812 Oph,J2000.0,Ophiuchus,SRB semi-regular
+V* V2003 Sgr,J2000.0,Sagittarius,SRB semi-regular
+V* FM Hya,J2000.0,Hydra,long period variable
+V* GI Lup,J2000.0,Lupus,long period variable
+S1* 449,J2000.0,Crux,long period variable
+V* V471 Sct,J2000.0,Scutum,long period variable

@@ -1,0 +1,13 @@
+col0,col1,col2,col3
+cryptosporidiosis,intestinal parasite infection,fever,10
+babesiosis,parasitic protozoa infectious disease,fever,4
+ehrlichiosis,tick-borne disease,fever,2
+campylobacteriosis,gastroenteritis,fever,7
+Mycoplasma pneumoniae infection,upper respiratory tract disease,cough,28
+ehrlichiosis,primary bacterial infectious disease,cough,2
+Mycoplasma pneumoniae infection,atypical pneumonia,cough,28
+ehrlichiosis,tick-borne disease,cough,2
+Mycoplasma pneumoniae infection,tracheobronchitis,fatigue,28
+Japanese encephalitis,flavivirus infectious disease,fatigue,15
+Mycoplasma pneumoniae infection,upper respiratory tract disease,fatigue,28
+ehrlichiosis,primary bacterial infectious disease,fatigue,2

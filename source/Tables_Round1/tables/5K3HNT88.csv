@@ -1,0 +1,16 @@
+col0,col1,col2,col3,col4,col5
+abART document ID,type constraint,abART person ID,Archive of Fine Arts,189885,Wikidata property for authority control
+abART person ID,single value constraint,abART institution ID,Archive of Fine Arts,160203,Wikidata property for an identifier that suggests notability
+Index of Historic Collectors and Dealers of Cubism ID,single value constraint,The Met object ID,Index of Historic Collectors and Dealers of Cubism,165,Wikidata property for an identifier that suggests notability
+abART person ID,single value constraint,abART institution ID,Archive of Fine Arts,160203,Wikidata property related to art
+Uppsala University Alvin ID,format constraint,Dictionary of Swedish National Biography ID,Alvin,250000,Wikidata property related to art
+Critique d'art ID,format constraint,Dictionary of Art Historians ID,Critique d'art,11000,Wikidata property related to art
+Index of Historic Collectors and Dealers of Cubism ID,single value constraint,The Met object ID,Index of Historic Collectors and Dealers of Cubism,165,Wikidata property related to art
+artist-info exhibition ID,distinct values constraint,ULAN ID,artist-info,212560,Wikidata property related to events
+Index of Historic Collectors and Dealers of Cubism ID,single value constraint,The Met object ID,Index of Historic Collectors and Dealers of Cubism,165,Wikidata property to identify organisations
+abART person ID,single value constraint,abART institution ID,Archive of Fine Arts,160203,Wikidata property for a multi-source identifier
+Critique d'art ID,format constraint,Dictionary of Art Historians ID,Critique d'art,11000,Wikidata property for an identifier
+artist-info exhibition ID,distinct values constraint,ULAN ID,artist-info,212560,Wikidata property for an identifier
+abART person ID,single value constraint,abART institution ID,Archive of Fine Arts,160203,Wikidata property for authority control for people
+Index of Historic Collectors and Dealers of Cubism ID,single value constraint,The Met object ID,Index of Historic Collectors and Dealers of Cubism,165,Wikidata property for authority control for people
+abART document ID,single value constraint,abART person ID,Archive of Fine Arts,189885,Wikidata property for authority control

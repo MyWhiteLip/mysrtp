@@ -1,0 +1,10 @@
+col0,col1,col2,col3,col4
+PeakFinder ID,Wikidata property related to geology,Bivouac.com mountain ID,PeakFinder,single value constraint
+peakware mountain ID,Wikidata property related to geology,SummitPost mountain ID,Peakware,single value constraint
+Bivouac.com mountain ID,Wikidata property related to geology,SummitPost mountain ID,Bivouac Mountain Encyclopedia,single value constraint
+SummitPost mountain ID,Wikidata property related to geology,Bivouac.com mountain ID,SummitPost,single value constraint
+Bivouac.com pass ID,Wikidata property for authority control for places,Bivouac.com mountain ID,Bivouac Mountain Encyclopedia,single value constraint
+PeakFinder ID,Wikidata property for authority control for places,Bivouac.com mountain ID,PeakFinder,single value constraint
+peakware mountain ID,Wikidata property for authority control for places,SummitPost mountain ID,Peakware,single value constraint
+Bivouac.com mountain ID,Wikidata property for authority control for places,SummitPost mountain ID,Bivouac Mountain Encyclopedia,single value constraint
+SummitPost mountain ID,Wikidata property for authority control for places,Bivouac.com mountain ID,SummitPost,single value constraint

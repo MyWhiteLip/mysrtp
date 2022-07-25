@@ -1,0 +1,10 @@
+col0,col1,col2,col3
+HKMDB film ID,Wikidata property to identify films,Template:HKMDB title,single value constraint
+Russiancinema.ru film ID,Wikidata property to identify films,Template:russiancinema.ru,single value constraint
+TCM Movie Database film ID,Wikidata property to identify films,Template:TCMDb title,single value constraint
+ČSFD film ID,Wikidata property to identify films,Template:CSFD film,single value constraint
+KINENOTE film ID,Wikidata property to identify films,Template:Kinejun title,single value constraint
+Allcinema film ID,Wikidata property to identify films,Template:Allcinema title,single value constraint
+Elonet movie ID,Wikidata property to identify films,Template:Elonet title,single value constraint
+Netflix ID,Wikidata property to identify films,Template:Netflix title,single value constraint
+DNF film ID,Wikidata property to identify films,Template:Danish National Filmography title,format constraint

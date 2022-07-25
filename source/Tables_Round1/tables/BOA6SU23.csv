@@ -1,0 +1,14 @@
+col0,col1,col2,col3
+PyPy,cross-platform,2002-01-01,MIT license
+Coq,cross-platform,1984-01-01,GNU Lesser General Public License
+MariaDB,Linux,2009-10-29,GNU Lesser General Public License
+ULE scheduler,FreeBSD,2003-01-26,BSD licenses
+CMS Made Simple,cross-platform,2004-07-01,GNU General Public License
+Zimbra,Unix-like,2005-07-26,GNU General Public License
+MariaDB,Linux,2009-10-29,GNU General Public License
+Zimbra,Linux,2005-07-26,GNU General Public License
+LibreNMS,Unix-like,2013-01-01,"GNU Affero General Public License, version 3.0"
+OpenBoard,Linux,2013-01-01,"GNU General Public License, version 3.0 or later"
+hebcal,Unix-like,1994-01-01,"GNU General Public License, version 2.0"
+jq,Unix-like,2012-01-01,MIT license
+litiengine,Microsoft Windows,2017-04-12,MIT license

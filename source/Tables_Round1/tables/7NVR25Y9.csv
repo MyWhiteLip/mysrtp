@@ -1,0 +1,11 @@
+col0,col1,col2,col3,col4
+cmus,ncurses,GNU General Public License,audio player software,C
+Quod Libet,GTK,GNU General Public License,audio player software,Python
+JuK,Qt,GNU General Public License,audio player software,C++
+Music Player Daemon,GTK,GNU General Public License,audio player software,C
+Clementine,Qt,"GNU General Public License, version 3.0",audio player software,C++
+Exaile,GTK,"GNU General Public License, version 2.0",audio player software,Python
+Beep Media Player,GTK,"GNU General Public License, version 2.0",audio player software,C
+Audacious,GTK,"GNU General Public License, version 2.0 or later",audio player software,C++
+Rhythmbox,GTK,"GNU General Public License, version 2.0 or later",audio player software,C
+Zinf,GTK,"GNU General Public License, version 2.0",audio player software,C++
