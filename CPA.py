@@ -166,13 +166,13 @@ def cpa_search(num,start,end):
     search1 = []
     search2 = []
     filelist = np.array(
-        pd.read_csv('/content/mysrtp/deal/Valid/gt/cpa_gt.csv', usecols=[0], header=None).iloc[start:end]).tolist()
+        pd.read_csv('mysrtp/deal/Valid/gt/cpa_gt.csv', usecols=[0], header=None).iloc[start:end]).tolist()
     collist_1 = np.array(
-        pd.read_csv('/content/mysrtp/deal/Valid/gt/cpa_gt.csv', usecols=[1], header=None).iloc[start:end]).tolist()
+        pd.read_csv('mysrtp/deal/Valid/gt/cpa_gt.csv', usecols=[1], header=None).iloc[start:end]).tolist()
     collist_2 = np.array(
-        pd.read_csv('/content/mysrtp/deal/Valid/gt/cpa_gt.csv', usecols=[2], header=None).iloc[start:end]).tolist()
+        pd.read_csv('mysrtp/deal/Valid/gt/cpa_gt.csv', usecols=[2], header=None).iloc[start:end]).tolist()
     for m in range(len(filelist)):
-        file = "/content/mysrtp/deal/Valid/tables/" + filelist[m][0] + ".csv"
+        file = "mysrtp/deal/Valid/tables/" + filelist[m][0] + ".csv"
         # 对指定列前五行CEA查询
         filecollist_1 = np.array(pd.read_csv(file , usecols=[collist_1[m][0]], header=None).head(10)).tolist()
         filecollist_2 = np.array(pd.read_csv(file, usecols=[collist_2[m][0]], header=None).head(10)).tolist()
