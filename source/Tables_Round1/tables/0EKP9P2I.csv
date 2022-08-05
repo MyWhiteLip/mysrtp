@@ -1,7 +1,0 @@
-col0,col1,col2,col3,col4
-NKCR AUT ID,Czech National Authority Database,VIAF component,Czech Republic,allowed qualifiers constraint
-Bibliothèque nationale de France ID,BnF authorities,VIAF component,France,allowed qualifiers constraint
-Library of Congress authority ID,Library of Congress Authorities,prefix,United States of America,allowed qualifiers constraint
-NCL ID,National Central Library,VIAF component,Taiwan,type constraint
-Libraries Australia ID,National Library of Australia,VIAF component,Australia,type constraint
-Vatican Library ID,Vatican Library,VIAF component,Vatican City,type constraint

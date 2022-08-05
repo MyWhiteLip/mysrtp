@@ -1,7 +1,0 @@
-col0,col1,col2,col3,col4,col5
-Dictionnaire critique des historiens de l'art ID,item requires statement constraint,Critique d'art ID,Dictionnaire critique des historiens de l'art actifs en France de la Révolution à la Première Guerre mondiale,316,Wikidata property related to historiography
-artist-info exhibition ID,single value constraint,ULAN ID,artist-info,212560,Wikidata property related to art
-artist-info location ID,single value constraint,ULAN ID,artist-info,12285,Wikidata property related to art
-artist-info curator ID,single value constraint,ULAN ID,artist-info,7504,Wikidata property related to art
-artist-info exhibition ID,single value constraint,ULAN ID,artist-info,212560,Wikidata property for an identifier
-artist-info location ID,single value constraint,ULAN ID,artist-info,12285,Wikidata property for an identifier

@@ -1,9 +1,0 @@
-col0,col1,col2,col3,col4,col5
-Firebird,IBM Public License,Firebird Foundation,relational database management system,C++,relational database
-Microsoft SQL Server,end-user license agreement,Microsoft,relational database management system,C#,relational database
-PostgreSQL,PostgreSQL License,PostgreSQL Global Development Group,relational database management system,C,relational database
-Oracle Database,end-user license agreement,Oracle Corporation,relational database management system,Java,multi-model database
-Ingres,GNU General Public License,Michael Stonebraker,relational database management system,C,relational database
-MySQL,proprietary license,Sun Microsystems,server software,C++,relational database
-Virtuoso Universal Server,"GNU General Public License, version 2.0",OpenLink Software,open-source software,C,triplestore
-Ingres,GNU General Public License,Michael Stonebraker,open-source software,C,relational database

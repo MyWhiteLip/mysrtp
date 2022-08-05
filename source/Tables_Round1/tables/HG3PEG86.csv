@@ -1,7 +1,0 @@
-col0,col1,col2,col3,col4,col5,col6
-LIBRIS editions,LIBRIS,Sweden,Se deg ikke tilbake (1996 ed.),single value constraint,SELIBR ID,Wikidata property to identify books
-Library of Congress Control Number,Library of Congress Control Number,United States of America,Treasure Island,single value constraint,Library of Congress authority ID,Wikidata property to identify books
-BN,National Library of the Argentine Republic,Argentina,El Señor Presidente (critical edition),single value constraint,BNA authority ID,Wikidata property to identify books
-NDL bib ID,National Diet Library,Japan,The Master of Go (1973),single value constraint,National Diet Library Auth ID,Wikidata property to identify books
-SUDOC editions,SUDOC,France,Mythes de la Grèce archaïque,single value constraint,IdRef ID,Wikidata property to identify books
-Open Library ID,Open Library,United States of America,Twenty Years After,type constraint,Internet Archive ID,Wikidata property to identify books

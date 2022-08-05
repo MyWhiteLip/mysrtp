@@ -69,7 +69,7 @@ def getsimi_base_on_bert(sentenceA, sentenceB):
 
 def writetocsv(result):
     # python2可以用file替代open
-    with open("test1.csv", "a", newline="") as csvfile:
+    with open("source/test1.csv", "a", newline="") as csvfile:
         writer = csv.writer(csvfile)
 
         # 先写入columns_name

@@ -1,6 +1,0 @@
-col0,col1,col2,col3,col4
-width,Wikidata property for physical quantities,height,conflicts-with constraint,length
-height,Wikidata property for physical quantities,width,single value constraint,length
-vertical depth,Wikidata property for physical quantities,lowest point,conflicts-with constraint,length
-optimum viable temperature,Wikidata property for physical quantities,minimum viable temperature,allowed units constraint,temperature
-maximum viable temperature,Wikidata property for physical quantities,minimum viable temperature,allowed units constraint,temperature

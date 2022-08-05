@@ -1,8 +1,0 @@
-col0,col1,col2,col3,col4,col5
-isoschizomer,recognition sequence,Wikidata property related to biology,type constraint,isoschizomer,HpaII
-recognition sequence,neoschizomer,Wikidata property related to biology,format constraint,recognition sequence,EcoRI
-muscle insertion,muscle origin,Wikidata property related to medicine,type constraint,muscle insertion,biceps brachii
-GONIAT place ID,GONIAT author ID,Wikidata property for an identifier that suggests notability,single value constraint,GONIAT,Longton
-chromosome count,ploidy,Wikidata property related to biology,range constraint,chromosome number,Homo sapiens
-GONIAT place ID,GONIAT author ID,Wikidata property related to biology,single value constraint,GONIAT,Longton
-MeSH term ID,MeSH descriptor ID,Wikidata property to identify substances,single value constraint,Medical Subject Headings,acetaminophen

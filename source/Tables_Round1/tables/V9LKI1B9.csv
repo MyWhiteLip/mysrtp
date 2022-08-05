@@ -1,5 +1,0 @@
-col0,col1,col2,col3,col4
-Catalogus Professorum Academiae Groninganae id,single value constraint,Netherlands,Geheugen van de VU person ID,Catalogus Professorum Academiae Groninganae
-NCES School ID,single value constraint,United States of America,NCES District ID,National Center for Education Statistics
-Theses.fr person ID,item requires statement constraint,France,National Thesis Number (France),Theses.fr
-Canal-U channel ID,format constraint,France,Canal-U person ID,Canal-U

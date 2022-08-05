@@ -1,6 +1,0 @@
-col0,col1,col2,col3
-legal citation of this text,Supreme Court docket number,format constraint,legal citation
-catalog code,inventory number,mandatory qualifier constraint,catalogue
-Gewässerkennzahl,GNIS ID,single value constraint,waterbody number
-street number,located on street,format constraint,house numbering
-International Standard Identifier for Libraries,DBS ID,single value constraint,International Standard Identifier for Libraries and Related Organizations

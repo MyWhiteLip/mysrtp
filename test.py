@@ -1,25 +1,12 @@
 # -*- coding:utf-8 -*-
 # @author  : Shuxin_Wang
 # @email   : 213202122@seu.edu.cn
-# @time    : 2022/6/6 
-# @function: Example of SearchManage.
-# @version : V1.00
-import random
-import types
+# @time    : 2022/7/21 
+# @function: test for searchmanage
+# @version : V0.4.1
+#
 
-import kwargs as kwargs
-import pandas as pd
-from google.cloud.talent_v4beta1 import types
-from spellchecker import SpellChecker
-from searchmanage import SearchManage
-from deal import get_item
-import similarity.simi
-import  requests
-import wikipedia
-
-from searchmanage.tools.Tools import agents
-
-"hynochetos jubatus"
-df=pd.read_csv("test1.csv")
-df.drop_duplicates(inplace=True)
-df.to_csv("aa.csv",index=False)
+from searchmanage import SearchManage, Wikipedia, SparqlQuery, BingQuery, Tools, SpellCheck
+search_m2 = SearchManage(key='ids', m_num=1000)
+re1=search_m2.search_run(points=["Q100"],keys=["labels"])
+print(re1)

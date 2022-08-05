@@ -1,5 +1,0 @@
-col0,col1,col2,col3,col4,col5,col6
-VK username,always incomplete,Douban username,single value constraint,Wikidata property to identify organisations,VK,Russia
-LiveJournal ID,always incomplete,VK username,single value constraint,Wikidata property for authority control for people,LiveJournal,Russia
-Federal-State Cooperative System ID,eventually complete,International Standard Identifier for Libraries,single value constraint,Wikidata property for an identifier that suggests notability,Institute of Museum and Library Services,United States of America
-Charity Navigator ID,"is complete, but new values may exist in the future",IRS Employer Identification Number,single value constraint,Wikidata property for an identifier that suggests notability,Charity Navigator,United States of America

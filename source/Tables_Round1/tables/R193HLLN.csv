@@ -1,5 +1,0 @@
-col0,col1,col2,col3,col4,col5,col6
-Flanders Arts Institute venue ID,Wikidata property for authority control for places,Royal Flemish Theatre,single value constraint,Flanders Arts Institute person ID,Belgium,Flanders Arts Institute
-Flanders Arts Institute production ID,Wikidata property for authority control for works,Disfigure Study,distinct values constraint,Flanders Arts Institute venue ID,Belgium,Flanders Arts Institute
-Irish playography person ID,Wikidata property for authority control for people,Ardal O'Hanlon,single value constraint,Irish playography play ID,Ireland,Irish Playography
-Irish playography play ID,Wikidata property for authority control for works,Borstal Boy,single value constraint,Irish playography person ID,Ireland,Irish Playography

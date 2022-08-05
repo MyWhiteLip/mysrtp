@@ -1,8 +1,0 @@
-col0,col1,col2,col3,col4
-Hoopla series ID,Wikidata property for items about works,single value constraint,The Hunger Games,Hoopla
-OverDrive series ID,Wikidata property for items about works,format constraint,For Dummies,"OverDrive, Inc."
-creator's signature,Wikidata property for items about works,format constraint,"The Annunciation, with Saint Emidius",signature
-access restriction status,Wikidata property for items about works,one-of constraint,President Barack Obama Hugs Congresswoman Gabrielle (Gabby) Giffords (NAID 118817949),access restriction
-imprimitur granted by,Wikidata property for items about works,conflicts-with constraint,Philosophiae Naturalis Principia Mathematica,imprimatur
-literary motif,Wikidata property for items about works,type constraint,Lolita,narrative motif
-announcement date,Wikidata property for items about works,conflicts-with constraint,Samsung Galaxy S9,announcement

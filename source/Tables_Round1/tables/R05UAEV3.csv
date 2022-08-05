@@ -1,5 +1,0 @@
-col0,col1,col2,col3,col4,col5,col6
-Store medisinske leksikon ID,Norway,Wikidata property for an identifier,plague,single value constraint,Store medisinske leksikon,Store norske leksikon ID
-BIU Santé person ID,France,Wikidata property for authority control for people,Louis Pasteur,single value constraint,Bibliothèque interuniversitaire de Santé,Medicina author ID
-FINESS medical facility ID,France,Wikidata property related to medicine,Assistance Publique – Hôpitaux de Paris,format constraint,FINESS,SIREN number
-National Drug Code,United States of America,pharmaceutical code,vemurafenib,format constraint,National Drug Code,European Medicines Agency product number

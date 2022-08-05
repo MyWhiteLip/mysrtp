@@ -1,9 +1,0 @@
-col0,col1,col2,col3,col4
-Alice,functional programming language,concurrent computing,2000-01-01,ML
-ML,functional programming language,functional programming,1973-01-01,ISWIM
-Alice,programming language,concurrent computing,2000-01-01,ML
-ML,programming language,functional programming,1973-01-01,ISWIM
-Wolfram Language,array programming language,array programming,1988-01-01,Smalltalk
-JavaScript,aspect-oriented programming,functional programming,1995-12-04,Scheme
-J,tacit programming language,tacit programming,1990-01-01,APL
-Dart,scripting language,object-oriented programming,2011-01-01,Java

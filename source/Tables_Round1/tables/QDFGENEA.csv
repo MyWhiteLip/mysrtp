@@ -1,5 +1,0 @@
-col0,col1,col2,col3,col4
-instance of,instance of,allowed qualifiers constraint,part of,Usage instructions in English
-subclass of,subclass of,conflicts-with constraint,instance of,"About this property, please read https://www.wikidata.org/wiki/Help:Basic_membership_properties"
-instance of,instance of,allowed qualifiers constraint,subclass of,Usage instructions in English
-access status,open access,single value constraint,copyright status,"May be used also with P1436 (collection or exhibition size) to indicate the access status of a collection or archive. May also be used directly as main value to indicate the access status of, e.g., the proceedings of an academic conference (Q2020153) or conference series (Q15900647) or news media (Q1193236) or broadcaster (Q15265344)"

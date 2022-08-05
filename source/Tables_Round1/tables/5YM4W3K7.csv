@@ -1,9 +1,0 @@
-col0,col1,col2,col3,col4
-Wikipedia:Flow,MediaWiki,"GNU General Public License, version 2.0 or later",Wikimedia project page,UnwatchArticle
-Help:CentralAuth,MediaWiki,"GNU General Public License, version 2.0 or later",Wikimedia project page,UserGetRights
-Extension:MailChimpSubscription,MediaWiki,GNU General Public License,MediaWiki extension,UserCreateForm
-Extension:MakeArticle,MediaWiki,GNU General Public License,MediaWiki extension,UnknownAction
-Extension:InviteSignup,MediaWiki,"GNU General Public License, version 2.0 or later",MediaWiki extension,UserCreateForm
-Extension:GoogleLogin/PreAuthManager,MediaWiki,MIT license,MediaWiki extension,UserCreateForm
-Extension:LiquidThreads,MediaWiki,"GNU General Public License, version 2.0 or later",MediaWiki extension,TitleMoveComplete
-Extension:LicenceOnUpload,MediaWiki,"GNU General Public License, version 3.0",MediaWiki extension,UploadForm:initial

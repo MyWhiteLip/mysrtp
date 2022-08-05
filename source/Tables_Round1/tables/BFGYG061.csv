@@ -1,8 +1,0 @@
-col0,col1,col2,col3,col4
-Arkivportalen archive ID,"This is the identifier for an archive after a person or organization. This identifier is not for the overarching archive institution, but the actual collection of material.",format constraint,Arkivportalen agent ID,Arkivportalen
-MUBI film ID,The numerical identifier can be found in the source of the film's page after 'mubi://film/,single value constraint,TCM Movie Database film ID,MUBI
-Steam platform bundle ID,"As of 2016, Steam doesn't allow game developers to publish and sell 4-pack bundles although bundles released before 2016 may still be found on the store. 4-pack bundles released after 2016 can usually be found on the Humble Bundle store",single value constraint,Steam Application ID,Steam
-AMPAS collections film ID,"This value is for the identifier in the URL for a film's record, and not for the ID number starting with ""W"" given on the page itself. These two numbers are sometimes the same, but not always.",single value constraint,Academy Awards Database film ID,Academy of Motion Picture Arts and Sciences
-Twitter user numeric ID,do not include the @-username,single value constraint,website account on,Twitter
-Arkivportalen agent ID,"This is the identifier for an archive creator, typically a person, organization, or an archive. Archive and archive creator are usually not the same entity.",single value constraint,Arkivportalen archive ID,Arkivportalen
-phone number,use RFC3966 format - e.g. +1-202-456-1414 https://github.com/googlei18n/libphonenumber or one of its ports is convenient to do automated validation and formatting,format constraint,fax number,telephone number

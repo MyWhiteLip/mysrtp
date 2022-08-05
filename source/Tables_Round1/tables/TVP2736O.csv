@@ -1,5 +1,0 @@
-col0,col1,col2,col3,col4,col5,col6
-Flanders Arts Institute venue ID,Wikidata property for authority control for places,Royal Flemish Theatre,single value constraint,Flanders Arts Institute organisation ID,Belgium,Flanders Arts Institute
-Flanders Arts Institute person ID,Wikidata property for authority control for people,Ivo van Hove,single value constraint,Flanders Arts Institute venue ID,Belgium,Flanders Arts Institute
-Xikao History ID,Wikidata property for an identifier,Aixinjueluo Pudong,distinct values constraint,Douban Drama ID,People's Republic of China,Chinese opera
-Flanders Arts Institute production ID,Wikidata property related to theater,Disfigure Study,format constraint,Flanders Arts Institute venue ID,Belgium,data.kunsten.be

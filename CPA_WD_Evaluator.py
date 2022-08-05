@@ -73,8 +73,8 @@ if __name__ == "__main__":
     # Lets assume the the ground_truth is a CSV file
     # and is present at data/ground_truth.csv
     # and a sample submission is present at data/sample_submission.csv
-    answer_file_path = "./deal/Valid/gt/cpa_gt.csv"
-    d = './CPA'
+    answer_file_path = "./HardTablesR2/Valid/gt/cpa_gt.csv"
+    d = './SMv4'
     for ff in os.listdir(d):
         _client_payload = {}
         print(ff)

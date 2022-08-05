@@ -1,6 +1,0 @@
-col0,col1,col2,col3,col4
-Blackbox,window manager,MIT license,C++,Unix-like
-Openbox,window manager,"GNU General Public License, version 2.0",C,Unix-like
-Enlightenment,window manager,2-clause BSD license,C,Unix-like
-IceWM,window manager,GNU Lesser General Public License,C++,Unix-like
-awesome,window manager,"GNU General Public License, version 2.0",C,Unix-like

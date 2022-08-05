@@ -1,8 +1,0 @@
-col0,col1,col2,col3,col4,col5,col6
-America's National Parks ID,Wikidata property related to e-commerce,NPCA ID,America's National Parks,distinct values constraint,United States of America,Mammoth Cave National Park
-Berlin protected area ID,Wikidata property for authority control for protected areas,Bavarian protected area ID,"Senate Department for Enviroment, Transport and Climate Protection",single value constraint,Germany,Großer Stein von Buchholz
-EUAP ID,Wikidata property for authority control for protected areas,WDPA ID,protected area of Italy,single value constraint,Italy,Stelvio National Park
-National Natural Landmarks site ID,Wikidata property for authority control for protected areas,NPS unit ID,National Natural Landmark,single value constraint,United States of America,Mount Mitchell State Park
-America's National Parks ID,Wikidata property for authority control for protected areas,NPCA ID,America's National Parks,single value constraint,United States of America,Mammoth Cave National Park
-National Forest Foundation ID,Wikidata property for authority control for protected areas,Wilderness Connect ID,National Forest Foundation,single value constraint,United States of America,Deschutes National Forest
-NPS unit ID,Wikidata property for authority control for protected areas,NPCA ID,National Park Service,format constraint,United States of America,Wupatki National Monument

@@ -1,8 +1,0 @@
-col0,col1,col2,col3,col4,col5
-BHL bibliography ID,format constraint,Wikidata property for authority control for academic journals,Biodiversity Heritage Library,Breviora,BHL Page ID
-ERIH PLUS ID,allowed qualifiers constraint,Wikidata property for authority control for academic journals,European Reference Index for the Humanities,Revista Española de Pedagogía,Norwegian Register journal ID
-BPH journal ID,single value constraint,Wikidata property related to plants and botany,Botanico Periodicum Huntianum,Annals of the New York Academy of Sciences,IPNI publication ID
-ZooBank publication ID,single value constraint,Wikidata property related to animals and zoology,ZooBank,Ecological guild evolution and the discovery of the world's smallest vertebrate.,ZooBank ID for name or act
-Research Papers in Economics Series handle,single value constraint,Wikidata property for authority control for academic journals,Research Papers in Economics,The American Economic Review,RePEc Short-ID
-Persée journal ID,single value constraint,Wikidata property for authority control for academic journals,Persée,Annales historiques de la Révolution française,Persée author ID
-IPNI publication ID,single value constraint,Wikidata property for authority control for academic journals,International Plant Names Index,The Cactaceae,BPH journal ID

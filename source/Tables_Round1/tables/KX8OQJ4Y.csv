@@ -1,5 +1,0 @@
-col0,col1,col2,col3,col4
-taxon,class,first-order metaclass,Code of nomenclature,clade
-isotope,nuclide,first-order metaclass,natural abundance,nuclide
-occupation,human activity,first-order metaclass,field of this occupation,profession
-anatomical structure,biological component,first-order metaclass,connects with,Body part

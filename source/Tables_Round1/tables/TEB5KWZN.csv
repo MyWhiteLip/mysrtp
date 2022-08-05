@@ -1,9 +1,0 @@
-col0,col1,col2,col3,col4,col5
-mebi,kibi,Mi,1048576,gibi,UCUM prefix
-pico,femto,p,0.000000000001,nano,UCUM prefix
-milli,micro,m,0.001,centi,UCUM prefix
-atto,zepto,a,0.000000000000000001,femto,UCUM prefix
-zetta,exa,Z,1000000000000000000000,yotta,UCUM prefix
-giga,mega,G,1000000000,tera,UCUM prefix
-centi,milli,c,0.01,deci,UCUM prefix
-kilo,hecto,k,1000,mega,UCUM prefix

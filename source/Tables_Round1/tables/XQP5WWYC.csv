@@ -1,8 +1,0 @@
-col0,col1,col2,col3,col4
-CONOR ID,CONOR,VIAF component,Slovenia,distinct values constraint
-NKCR AUT ID,Czech National Authority Database,VIAF component,Czech Republic,distinct values constraint
-Bibliothèque nationale de France ID,BnF authorities,VIAF component,France,distinct values constraint
-NTA ID,Koninklijke Bibliotheek,VIAF component,Netherlands,distinct values constraint
-SBN author ID,National Library Service of Italy,VIAF component,Italy,distinct values constraint
-SELIBR ID,LIBRIS,VIAF component,Sweden,distinct values constraint
-Library of Congress authority ID,Library of Congress Authorities,prefix,United States of America,distinct values constraint

@@ -1,7 +1,0 @@
-col0,col1,col2,col3
-World Curling Tour ID,Wikidata property related to winter sports,World Curling Tour,single value constraint
-IBSF athlete ID,Wikidata property related to winter sports,International Bobsleigh and Skeleton Federation,single value constraint
-FIL athlete ID,Wikidata property related to winter sports,International Luge Federation,single value constraint
-FIS snowboarder ID,Wikidata property related to winter sports,International Ski Federation,item requires statement constraint
-U.S. Ski and Snowboard Hall of Fame athlete ID,Wikidata property for authority control for people,National Ski Hall of Fame,single value constraint
-SpeedskatingResults.com speed skater ID,Wikidata property for authority control for people,SpeedskatingResults.com,single value constraint

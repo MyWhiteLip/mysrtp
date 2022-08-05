@@ -1,5 +1,0 @@
-col0,col1,col2,col3,col4,col5,col6
-Advanced Packaging Tool,macOS,1998-08-16,package management system,package management system,"GNU General Public License, version 2.0 or later",C++
-Synaptic Package Manager,Unix-like,2001-01-01,package management system,package management system,"GNU General Public License, version 2.0",C++
-Cydia,iOS,2008-02-01,package management system,mobile app,"GNU General Public License, version 3.0",Objective-C
-WAPT,Linux,2015-01-31,software deployment,free software,proprietary license,Python

@@ -1,7 +1,0 @@
-col0,col1,col2,col3
-station code,UIC station code,format constraint,Station code
-ISBN-13,ISBN-10,single value constraint,International Standard Book Number
-ticker symbol,cryptocurrency symbol,format constraint,ticker symbol
-postal code,floor number,format constraint,postal code
-BeWeb family ID,BeWeb church ID,type constraint,BeWeb
-BeWeb person ID,BeWeb church ID,type constraint,BeWeb
