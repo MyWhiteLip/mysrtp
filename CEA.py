@@ -48,7 +48,7 @@ def is_number(s):
 
 def writetocsv(result):
     # python2可以用file替代open
-    with open("test/test.csv", "a", newline="") as csvfile:
+    with open("content/test/test.csv", "a", newline="") as csvfile:
         writer = csv.writer(csvfile)
 
         # 先写入columns_name
