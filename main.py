@@ -93,97 +93,95 @@ search2 = []
 
 
 def start_search(points1, points2):
-
-
-for m in range(len(filelist)):
-    result = []
-    file = "D:/mysrtp/deal/Test/tables/" + filelist[m][0] + ".csv"
-    result.append(filelist[m][0])
-    result.append(collist_1[m][0])
-    result.append(collist_2[m][0])
-    # 对指定列前五行CEA查询
-    filecollist_1 = np.array(pd.read_csv(file, usecols=[collist_1[m][0]], header=None).head(7)).tolist()
-    filecollist_2 = np.array(pd.read_csv(file, usecols=[collist_2[m][0]], header=None).head(7)).tolist()
-    points1 = []
-    points2 = []
-    for cell1 in filecollist_1:
-        if cell1[0] != "col0":
-            word = SpellChecker.correction(self=spell, word=cell1[0])
-            points1.append(word)
-    print(points1)
-    re1 = search_m1.search_run(points=points1, keys='all')
-    for cell2 in filecollist_2:
-        if cell2[0] != "col" + str(collist_2[m][0]):
-            word = SpellChecker.correction(self=spell, word=cell2[0])
-            points2.append(word)
-    re2 = search_m1.search_run(points=points2, keys='all')
-    cont = re1['id']
-    value = re2['id']
-    text = []
-    puretext = []
-    for i in range(len(value)):
-        puretext.append(filecollist_2[i + 1][0])
-        if len(value[i]) == 0:
-            id_list = []
-            text.append(id_list)
-        else:
-            id_list = []
-            for id in value[i]:
-                id_list.append(id)
-            text.append(id_list)
-    # 对于cea若查到返回id，若查不到返回字符串
-    print(text)
-    print(cont)
-    allans = []
-    for i in range(len(cont)):
-        if len(cont[i]) == 0:
-            continue
-        else:
-            re2 = search_m2.search_run(points=cont[i],
-                                       keys=['claims/P/value'])
-            ans = re2["claims/P/value"]
-            for j in range(len(ans)):
-                mark = 0
-                tempmark = 0
-                tempans = ""
-                for key in ans[j]:
-                    flag = False
-                    for item in ans[j][key]:
-                        if is_number(puretext[i]) and is_number(str(item)[1:len(str(item))]) and (
-                                str(item)[0] == "+" or str(item)[0] == "-"):
-                            num1 = float(puretext[i])
-                            num2 = float(str(item))
-                            if num2 != 0:
-                                if abs((num1 - num2) / num2) < 0.15:
+    for m in range(len(filelist)):
+        result = []
+        file = "D:/mysrtp/deal/Test/tables/" + filelist[m][0] + ".csv"
+        result.append(filelist[m][0])
+        result.append(collist_1[m][0])
+        result.append(collist_2[m][0])
+        # 对指定列前五行CEA查询
+        filecollist_1 = np.array(pd.read_csv(file, usecols=[collist_1[m][0]], header=None).head(7)).tolist()
+        filecollist_2 = np.array(pd.read_csv(file, usecols=[collist_2[m][0]], header=None).head(7)).tolist()
+        points1 = []
+        points2 = []
+        for cell1 in filecollist_1:
+            if cell1[0] != "col0":
+                word = SpellChecker.correction(self=spell, word=cell1[0])
+                points1.append(word)
+        print(points1)
+        re1 = search_m1.search_run(points=points1, keys='all')
+        for cell2 in filecollist_2:
+            if cell2[0] != "col" + str(collist_2[m][0]):
+                word = SpellChecker.correction(self=spell, word=cell2[0])
+                points2.append(word)
+        re2 = search_m1.search_run(points=points2, keys='all')
+        cont = re1['id']
+        value = re2['id']
+        text = []
+        puretext = []
+        for i in range(len(value)):
+            puretext.append(filecollist_2[i + 1][0])
+            if len(value[i]) == 0:
+                id_list = []
+                text.append(id_list)
+            else:
+                id_list = []
+                for id in value[i]:
+                    id_list.append(id)
+                text.append(id_list)
+        # 对于cea若查到返回id，若查不到返回字符串
+        print(text)
+        print(cont)
+        allans = []
+        for i in range(len(cont)):
+            if len(cont[i]) == 0:
+                continue
+            else:
+                re2 = search_m2.search_run(points=cont[i],
+                                           keys=['claims/P/value'])
+                ans = re2["claims/P/value"]
+                for j in range(len(ans)):
+                    mark = 0
+                    tempmark = 0
+                    tempans = ""
+                    for key in ans[j]:
+                        flag = False
+                        for item in ans[j][key]:
+                            if is_number(puretext[i]) and is_number(str(item)[1:len(str(item))]) and (
+                                    str(item)[0] == "+" or str(item)[0] == "-"):
+                                num1 = float(puretext[i])
+                                num2 = float(str(item))
+                                if num2 != 0:
+                                    if abs((num1 - num2) / num2) < 0.15:
+                                        tempans = key
+                                        flag = True
+                                        break
+                            if similarity.simi.levenshtein(str(item), puretext[i]) > 0.3 or str(item) in text[
+                                i] or similarity.simi.ratio_similarity(str(item), puretext[i]) > 0.5:
+                                if str(item) in text[i] or str(item) == puretext[i]:
                                     tempans = key
                                     flag = True
                                     break
-                        if similarity.simi.levenshtein(str(item), puretext[i]) > 0.3 or str(item) in text[
-                            i] or similarity.simi.ratio_similarity(str(item), puretext[i]) > 0.5:
-                            if str(item) in text[i] or str(item) == puretext[i]:
-                                tempans = key
-                                flag = True
-                                break
-                            if check(str(item)):
-                                continue
-                            tempmark = getsimi_base_on_bert(str(item), puretext[i])
-                            if tempmark > 0.94 and tempmark > mark:
-                                tempans = key
-                                mark = tempmark
-                                print(tempmark)
-                    if flag:
-                        break
-                if tempans != "":
-                    allans.append(tempans)
-    collection_words = Counter(allans)
-    most_counterNum = collection_words.most_common(3)
-    if (len(most_counterNum) == 0):
-        result.append("noans")
-    elif most_counterNum[0][0] == "P31":
-        result.append("http://www.wikidata.org/prop/direct/" + most_counterNum[1][0])
-    else:
-        result.append("http://www.wikidata.org/prop/direct/" + most_counterNum[0][0])
-    writetocsv(result)
+                                if check(str(item)):
+                                    continue
+                                tempmark = getsimi_base_on_bert(str(item), puretext[i])
+                                if tempmark > 0.94 and tempmark > mark:
+                                    tempans = key
+                                    mark = tempmark
+                                    print(tempmark)
+                        if flag:
+                            break
+                    if tempans != "":
+                        allans.append(tempans)
+        collection_words = Counter(allans)
+        most_counterNum = collection_words.most_common(3)
+        if (len(most_counterNum) == 0):
+            result.append("noans")
+        elif most_counterNum[0][0] == "P31":
+            result.append("http://www.wikidata.org/prop/direct/" + most_counterNum[1][0])
+        else:
+            result.append("http://www.wikidata.org/prop/direct/" + most_counterNum[0][0])
+        writetocsv(result)
 
 
 # 对cell1与cell2进行cea查询，若能都出结果，则直接进行查询

@@ -40,35 +40,41 @@ def is_number(s):
 
 
 def get_results(QID):
+    flag=True
+    count=0
     if QID in gl.keymap:
         return
-    endpoint_url = "https://query.wikidata.org/sparql"
-    query = """SELECT ?wdLabel ?ps_Label ?wdpqLabel ?pq_Label { 
-        VALUES (?company) {(wd:""" + QID + """)} 
+    while flag:
+        count+=1
+        endpoint_url = "https://query.wikidata.org/sparql"
+        query = """SELECT ?wdLabel ?ps_Label ?wdpqLabel ?pq_Label { 
+            VALUES (?company) {(wd:""" + QID + """)} 
+    
+            ?company ?p ?statement . 
+            ?statement ?ps ?ps_ . 
+    
+            ?wd wikibase:claim ?p. 
+            ?wd wikibase:statementProperty ?ps. 
+    
+            OPTIONAL { 
+            ?statement ?pq ?pq_ . 
+            ?wdpq wikibase:qualifier ?pq . 
+            } 
+    
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "en" } 
+        } ORDER BY ?wd ?statement ?ps_ """
+        user_agent = "WDQS-example Python/%s.%s" % (sys.version_info[0], sys.version_info[1])
+        # TODO adjust user agent; see https://w.wiki/CX6
+        sparql = SPARQLWrapper(endpoint_url, agent=user_agent)
+        sparql.setQuery(query)
+        sparql.setReturnFormat(JSON)
+        results = sparql.query().convert()
+        text = []
+        for result in results["results"]["bindings"]:
+            if "ps_Label" in result:
+                if not is_number(result["ps_Label"]["value"]):
+                    text.append(result["ps_Label"]["value"])
+        if len(text)!=0 and count>=3:
+            gl.keymap[QID]=text
+            flag=False
 
-        ?company ?p ?statement . 
-        ?statement ?ps ?ps_ . 
-
-        ?wd wikibase:claim ?p. 
-        ?wd wikibase:statementProperty ?ps. 
-
-        OPTIONAL { 
-        ?statement ?pq ?pq_ . 
-        ?wdpq wikibase:qualifier ?pq . 
-        } 
-
-        SERVICE wikibase:label { bd:serviceParam wikibase:language "en" } 
-    } ORDER BY ?wd ?statement ?ps_ """
-    user_agent = "WDQS-example Python/%s.%s" % (sys.version_info[0], sys.version_info[1])
-    # TODO adjust user agent; see https://w.wiki/CX6
-    sparql = SPARQLWrapper(endpoint_url, agent=user_agent)
-    sparql.setQuery(query)
-    sparql.setReturnFormat(JSON)
-    results = sparql.query().convert()
-    text = ""
-    for result in results["results"]["bindings"]:
-        if "ps_Label" in result:
-            if not is_number(result["ps_Label"]["value"]):
-                text += result["ps_Label"]["value"]
-                text += " "
-    gl.keymap[QID]=text
