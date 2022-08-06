@@ -6,20 +6,24 @@
 # @version : V0.4.0
 #
 import random
+import threading
 from warnings import warn
 from typing import Union, List
 import requests
 import wikipedia
 from bs4 import BeautifulSoup
 from requests import ReadTimeout
-
+import gl
 from searchmanage.tools.Tools import AGENTS_
 from searchmanage.json_analysis import JsonAnalysis
 from searchmanage.tools import AnalysisTools
 from searchmanage.tools import Tools
 from similarity import simi
+from test import get_results
 
-agents=AGENTS_
+agents = AGENTS_
+
+
 def Bing(word):
     timeout = 30
     params = {
@@ -248,17 +252,17 @@ class Entities(JsonAnalysis):
                                             timeout=timeout)
                         json_ = get_.json()
             # BING纠正
-            if self.__params["action"] == "wbsearchentities":
-                if len(json_['search']) == 0 and not is_number(self.__params["search"]):
-                    word = self.__params["search"]
-                    word = wikipedia.suggest(word)
-                    if word is not None and word != "":
-                        self.__params["search"] = word
-                        get_ = requests.get(url=url,
-                                            params=self.__params,
-                                            headers={'User-Agent': random.choice(agents)},
-                                            timeout=timeout)
-                        json_ = get_.json()
+            # if self.__params["action"] == "wbsearchentities":
+            #     if len(json_['search']) == 0 and not is_number(self.__params["search"]):
+            #         word = self.__params["search"]
+            #         word = wikipedia.suggest(word)
+            #         if word is not None and word != "":
+            #             self.__params["search"] = word
+            #             get_ = requests.get(url=url,
+            #                                 params=self.__params,
+            #                                 headers={'User-Agent': random.choice(agents)},
+            #                                 timeout=timeout)
+            #             json_ = get_.json()
             # # wikipedia辅助
             if self.__params["action"] == "wbsearchentities":
                 if not is_number(self.__params["search"]):
@@ -319,6 +323,19 @@ class Entities(JsonAnalysis):
                     if "lable" in entity:
                         if simi.levenshtein(self.__params["search"], entity["label"]) <= 0.75:
                             json_["search"].remove(entity)
+            if self.__params["action"] == "wbsearchentities":
+                thread_list = []
+                for item in json_["search"]:
+                    thread = threading.Thread(target=get_results,
+                                              args=[item["id"]])
+                    thread.start()
+                    thread_list.append(thread)
+                for item in thread_list:
+                    item.join()
+
+
+
+
         except ReadTimeout:
             raise ValueError("Request time is over %fs." % timeout)
         except ValueError:
