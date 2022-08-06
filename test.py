@@ -76,7 +76,8 @@ def get_results(QID):
             if "ps_Label" in result:
                 if not is_number(result["ps_Label"]["value"]):
                     text.append(result["ps_Label"]["value"])
-        if len(text)!=0 and count>=3:
+        if len(text)!=0 or count>=5:
             gl.keymap[QID]=text
             flag=False
+            print(text)
 
