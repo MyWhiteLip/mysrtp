@@ -192,4 +192,4 @@ def startserach(start, end, freq,path=""):
             text = []
 
 
-startserach(0, 100, 100,"/content/mysr")
+startserach(0, 100, 100)
