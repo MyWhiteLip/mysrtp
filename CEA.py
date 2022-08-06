@@ -146,7 +146,8 @@ def start_write(index, re1, text_col, result):
         result_1.append(ans)
         writetocsv(result_1)
 
-
+valid_path="DataSets/ToughTablesR2-WD/Valid/gt/cea_gt.csv"
+test_path="DataSets/ToughTablesR2-WD/Test/target/cea_target.csv"
 points = []
 text = []
 file_temp = {}
@@ -155,11 +156,11 @@ file_temp = {}
 def startserach(start, end, freq,path=""):
     global points, text
     filelist = np.array(
-        pd.read_csv(path+'DataSets/ToughTablesR2-WD/Valid/gt/cea_gt.csv', usecols=[0], header=None).iloc[start:end]).tolist()
+        pd.read_csv(path+valid_path, usecols=[0], header=None).iloc[start:end]).tolist()
     rowlist_1 = np.array(
-        pd.read_csv(path+'DataSets/ToughTablesR2-WD/Valid/gt/cea_gt.csv', usecols=[1], header=None).iloc[start:end]).tolist()
+        pd.read_csv(path+valid_path, usecols=[1], header=None).iloc[start:end]).tolist()
     collist_1 = np.array(
-        pd.read_csv(path+'DataSets/ToughTablesR2-WD/Valid/gt/cea_gt.csv', usecols=[2], header=None).iloc[start:end]).tolist()
+        pd.read_csv(path+valid_path, usecols=[2], header=None).iloc[start:end]).tolist()
     for m in range(len(filelist)):
         df = None
         if filelist[m][0] not in file_temp:
