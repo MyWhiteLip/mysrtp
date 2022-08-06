@@ -124,7 +124,7 @@ def start_write(index, re1, text, claimtext, result):
     for i in range(len(claimtext)):
         claim_mark = similarity.simi.ratio_similarity(text, claimtext[i])
         if claim_mark > tempmark:
-            ans = re1[index][i]
+            ans = re1[i]
             tempmark = claim_mark
     if ans != "":
         result_1.append(ans)
@@ -139,15 +139,15 @@ file_temp = {}
 def startserach(start, end, freq):
     global points, text
     filelist = np.array(
-        pd.read_csv('DataSets/ToughTablesR2-WD/Valid/gt/cea_gt.csv', usecols=[0], header=None).iloc[start:end]).tolist()
+        pd.read_csv('DataSets/ToughTablesR2-WD/Test/target/cea_target.csv', usecols=[0], header=None).iloc[start:end]).tolist()
     rowlist_1 = np.array(
-        pd.read_csv('DataSets/ToughTablesR2-WD/Valid/gt/cea_gt.csv', usecols=[1], header=None).iloc[start:end]).tolist()
+        pd.read_csv('DataSets/ToughTablesR2-WD/Test/target/cea_target.csv', usecols=[1], header=None).iloc[start:end]).tolist()
     collist_1 = np.array(
-        pd.read_csv('DataSets/ToughTablesR2-WD/Valid/gt/cea_gt.csv', usecols=[2], header=None).iloc[start:end]).tolist()
+        pd.read_csv('DataSets/ToughTablesR2-WD/Test/target/cea_target.csv', usecols=[2], header=None).iloc[start:end]).tolist()
     for m in range(len(filelist)):
         df = None
         if filelist[m][0] not in file_temp:
-            file = "DataSetS/ToughTablesR2-WD/Valid/tables/" + filelist[m][0] + ".csv"
+            file = "DataSetS/ToughTablesR2-WD/Test/tables/" + filelist[m][0] + ".csv"
             df = pd.read_csv(file, header=None)
             file_temp[filelist[m][0]] = df
         else:
@@ -155,12 +155,13 @@ def startserach(start, end, freq):
         length = df.shape[1]
         col_text = ""
         for i in range(length):
-            if not pd.isna(df.iloc[rowlist_1[m][0], i]):
+            if not pd.isna(df.iloc[rowlist_1[m][0], i]) and i!=collist_1[m][0]:
                 col_text += df.iloc[rowlist_1[m][0], i]
         keyword = df.iloc[rowlist_1[m][0], collist_1[m][0]]
         points.append(keyword)
         text.append(col_text)
         if (m + 1) % freq == 0:
+            print(m+1)
             re1, re2, re3 = start_search(points)
             for i in range(len(re1)):
                 index = m - freq + i + 1
@@ -170,9 +171,9 @@ def startserach(start, end, freq):
                 result.append(collist_1[index][0])
                 if len(re1[i]) != 0:
                     threading.Thread(target=start_write,
-                                     args=(i, re1, text[i], re3[i], result)).start()
+                                     args=(i, re1[i], text[i], re3[i], result)).start()
             points = []
             text = []
 
 
-startserach(0, 1000, 1000)
+startserach(200000,500000, 500)
