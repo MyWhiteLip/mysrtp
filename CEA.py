@@ -191,7 +191,7 @@ def startserach(start, end, freq,path=""):
                     word.replace(" ","")
                     word=get_correct_id(word)
                     if word is not None:
-                        text[i]=[word]
+                        re1[i]=[word]
                 if len(re1[i]) != 0:
                     threading.Thread(target=start_write,
                                      args=(i, re1[i], text[i], result)).start()

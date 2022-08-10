@@ -229,122 +229,114 @@ class Entities(JsonAnalysis):
         self.clear()
 
         try:
-            json_ = {}
-            flag = False
+
+            tempword = ""
             if self.__params["action"] == "wbsearchentities":
-                if self.__params["search"] in gl.json_map:
-                    json_=gl.json_map[self.__params["search"]]
-            if not flag:
-                tempword = ""
-                if self.__params["action"] == "wbsearchentities":
-                    tempword = self.__params["search"]
+                tempword = self.__params["search"]
 
-                get_ = requests.get(url=url,
-                                    params=self.__params,
-                                    headers={'User-Agent': random.choice(agents)},
-                                    timeout=timeout)
-                json_ = get_.json()
-                if self.__params["action"] == "wbsearchentities":
-                    if len(json_['search']) == 0 and not is_number(self.__params["search"]):
-                        word = self.__params["search"]
-                        word = wikipedia.suggest(word)
-                        if word is not None and word != "":
-                            self.__params["search"] = word
-                            get_ = requests.get(url=url,
-                                                params=self.__params,
-                                                headers={'User-Agent': random.choice(agents)},
-                                                timeout=timeout)
-                            json_ = get_.json()
-                            self.__params["search"] = tempword
-                # wikipedia辅助
-                if self.__params["action"] == "wbsearchentities":
-                    if len(json_['search']) == 0 and not is_number(self.__params["search"]):
+            get_ = requests.get(url=url,
+                                params=self.__params,
+                                headers={'User-Agent': random.choice(agents)},
+                                timeout=timeout)
+            json_ = get_.json()
+            if self.__params["action"] == "wbsearchentities":
+                if len(json_['search']) == 0 and not is_number(self.__params["search"]):
+                    word = self.__params["search"]
+                    word = wikipedia.suggest(word)
+                    if word is not None and word != "":
+                        self.__params["search"] = word
+                        get_ = requests.get(url=url,
+                                            params=self.__params,
+                                            headers={'User-Agent': random.choice(agents)},
+                                            timeout=timeout)
+                        json_ = get_.json()
+                        self.__params["search"] = tempword
+            # wikipedia辅助
+            if self.__params["action"] == "wbsearchentities":
+                if len(json_['search']) == 0 and not is_number(self.__params["search"]):
+                    word = Bing(self.__params["search"])
+                    count = 0
+                    while word is None and count <= 2:
                         word = Bing(self.__params["search"])
-                        count = 0
-                        while word is None and count <= 2:
-                            word = Bing(self.__params["search"])
-                            count += 1
-                        if word is not None and word != "":
-                            self.__params["search"] = word
-                            get_ = requests.get(url=url,
-                                                params=self.__params,
-                                                headers={'User-Agent': random.choice(agents)},
-                                                timeout=timeout)
-                            json_ = get_.json()
-                # bing纠正
-                if self.__params["action"] == "wbsearchentities":
-                    for entity in json_["search"]:
-                        if "lable" in entity:
-                            if simi.levenshtein(self.__params["search"], entity["label"]) <= 0.65:
-                                json_["search"].remove(entity)
-                # bing查询
-                if self.__params["action"] == "wbsearchentities":
-                    if not is_number(self.__params["search"]):
-                        count = 0
-                        while len(json_['search']) == 0 and count <= 3:
-                            count = count + 1
-                            params = {
-                                "q": tempword + " site:wikidata.org",
-                                "setlang": "en-us",
-                                "form": "QBLH",
-                                "go": "search"
+                        count += 1
+                    if word is not None and word != "":
+                        self.__params["search"] = word
+                        get_ = requests.get(url=url,
+                                            params=self.__params,
+                                            headers={'User-Agent': random.choice(agents)},
+                                            timeout=timeout)
+                        json_ = get_.json()
+            # bing纠正
+            if self.__params["action"] == "wbsearchentities":
+                for entity in json_["search"]:
+                    if "lable" in entity:
+                        if simi.levenshtein(self.__params["search"], entity["label"]) <= 0.65:
+                            json_["search"].remove(entity)
+            # bing查询
+            if self.__params["action"] == "wbsearchentities":
+                if not is_number(self.__params["search"]):
+                    count = 0
+                    while len(json_['search']) == 0 and count <= 3:
+                        count = count + 1
+                        params = {
+                            "q": tempword + " site:wikidata.org",
+                            "setlang": "en-us",
+                            "form": "QBLH",
+                            "go": "search"
+                        }
+                        result = str(requests.get("https://www.bing.com/search", params=params, timeout=timeout,
+                                                  headers={'User-Agent': random.choice(agents)}
+                                                  ).content)
+                        res = [i for i in range(len(result)) if
+                               result.startswith("https://www.wikidata.org/wiki/", i)]
+                        count1 = 0
+                        search_list = []
+                        for start in res:
+                            if count1 >= 10:
+                                break
+                            index = start + len("https://www.wikidata.org/wiki/")
+                            ans = "Q"
+                            for i in range(10):
+                                if is_number(result[i + index]):
+                                    ans += result[i + index]
+                            if ans != "Q":
+                                json_["search"].append({"id": ans})
+                                search_list.append(ans)
+                            count1 += 1
+                        # 对id列表查询
+                        if len(json_["search"]) != 0 and len(search_list) != 0:
+                            __params = {
+                                'ids': search_list,
+                                'action': 'wbgetentities',
+                                'format': 'json',
+                                'languages': 'en',
+                                'redirects': None,
+                                'sites': None,
+                                'title': None,
+                                'props': None,
+                                'languagefallback': None,
+                                'normalize': None,
+                                'sitefilter': None
                             }
-                            result = str(requests.get("https://www.bing.com/search", params=params, timeout=timeout,
-                                                      headers={'User-Agent': random.choice(agents)}
-                                                      ).content)
-                            res = [i for i in range(len(result)) if
-                                   result.startswith("https://www.wikidata.org/wiki/", i)]
-                            count1 = 0
-                            search_list = []
-                            for start in res:
-                                if count1 >= 10:
-                                    break
-                                index = start + len("https://www.wikidata.org/wiki/")
-                                ans = "Q"
-                                for i in range(10):
-                                    if is_number(result[i + index]):
-                                        ans += result[i + index]
-                                if ans != "Q":
-                                    json_["search"].append({"id": ans})
-                                    search_list.append(ans)
-                                count1 += 1
-                            # 对id列表查询
-                            if len(json_["search"]) != 0 and len(search_list) != 0:
-                                __params = {
-                                    'ids': search_list,
-                                    'action': 'wbgetentities',
-                                    'format': 'json',
-                                    'languages': 'en',
-                                    'redirects': None,
-                                    'sites': None,
-                                    'title': None,
-                                    'props': None,
-                                    'languagefallback': None,
-                                    'normalize': None,
-                                    'sitefilter': None
-                                }
-                                res = requests.get(url=url, params=__params, timeout=timeout,
-                                                   headers={'User-Agent': random.choice(agents)}).json()["entities"]
-                                for entity in json_["search"]:
-                                    if entity["id"] in res and "labels" in res[entity["id"]] and "en" in \
-                                            res[entity["id"]][
-                                                "labels"]:
-                                        if simi.levenshtein(self.__params["search"],
-                                                            res[entity["id"]]["labels"]["en"]["value"]) <= 0.65:
-                                            json_["search"].remove(entity)
+                            res = requests.get(url=url, params=__params, timeout=timeout,
+                                               headers={'User-Agent': random.choice(agents)}).json()["entities"]
+                            for entity in json_["search"]:
+                                if entity["id"] in res and "labels" in res[entity["id"]] and "en" in \
+                                        res[entity["id"]][
+                                            "labels"]:
+                                    if simi.levenshtein(self.__params["search"],
+                                                        res[entity["id"]]["labels"]["en"]["value"]) <= 0.65:
+                                        json_["search"].remove(entity)
 
-                if self.__params["action"] == "wbsearchentities":
-                    thread_list = []
-                    for item in json_["search"]:
-                        thread = threading.Thread(target=get_results,
-                                                  args=[item["id"]])
-                        thread.start()
-                        thread_list.append(thread)
-                    for item in thread_list:
-                        item.join()
-                if self.__params["action"] == "wbsearchentities":
-                    if self.__params["search"] not in gl.json_map and len(json_["search"]) != 0:
-                        gl.json_map[self.__params["search"]] = json_
+            if self.__params["action"] == "wbsearchentities":
+                thread_list = []
+                for item in json_["search"]:
+                    thread = threading.Thread(target=get_results,
+                                              args=[item["id"]])
+                    thread.start()
+                    thread_list.append(thread)
+                for item in thread_list:
+                    item.join()
 
 
 
