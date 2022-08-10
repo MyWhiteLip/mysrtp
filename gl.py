@@ -1,4 +1,5 @@
 keymap = {}
+json_map={}
 state_map = {
     "Alabama": "Q173",
     "Arkansas": "Q1612",
