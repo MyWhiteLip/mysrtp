@@ -1,5 +1,6 @@
 keymap = {}
-json_map={}
+result={}
+labelmap={}
 state_map = {
     "Alabama": "Q173",
     "Arkansas": "Q1612",

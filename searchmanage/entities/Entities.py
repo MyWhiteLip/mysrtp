@@ -256,7 +256,7 @@ class Entities(JsonAnalysis):
                 if len(json_['search']) == 0 and not is_number(self.__params["search"]):
                     word = Bing(self.__params["search"])
                     count = 0
-                    while word is None and count <= 2:
+                    while word is None and count <= 5:
                         word = Bing(self.__params["search"])
                         count += 1
                     if word is not None and word != "":
@@ -272,6 +272,8 @@ class Entities(JsonAnalysis):
                     if "lable" in entity:
                         if simi.levenshtein(self.__params["search"], entity["label"]) <= 0.65:
                             json_["search"].remove(entity)
+                        else:
+                            gl.labelmap[entity["id"]]=entity["label"]
             # bing查询
             if self.__params["action"] == "wbsearchentities":
                 if not is_number(self.__params["search"]):
@@ -327,6 +329,8 @@ class Entities(JsonAnalysis):
                                     if simi.levenshtein(self.__params["search"],
                                                         res[entity["id"]]["labels"]["en"]["value"]) <= 0.65:
                                         json_["search"].remove(entity)
+                                    else:
+                                        gl.labelmap[entity["id"]]=res[entity["id"]]["labels"]["en"]["value"]
 
             if self.__params["action"] == "wbsearchentities":
                 thread_list = []

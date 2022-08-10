@@ -8,6 +8,7 @@ import searchmanage.entities.Entities
 import similarity.simi
 from searchmanage import SearchManage
 from test import get_correct_id
+
 spell = SpellChecker()
 
 import torch
@@ -125,46 +126,78 @@ def getsimi_base_on_bert(sentenceA, sentenceB):
     return torch.cosine_similarity(afterA, afterB, dim=0).data.item()
 
 
-def start_write(index, re1, text_col, result):
+def start_write(thisword, re1, text_col, result, col):
     result_1 = result
     tempmark = 0
     ans = ""
-    for i in range(len(re1)):
-        if re1[i] in gl.keymap:
-            claim_mark = 0
-            for item in text_col:
-                mark_item = 0
-                for claim in gl.keymap[re1[i]]:
-                    tempmark_item = getmark(item, claim)
-                    if tempmark_item > mark_item:
-                        mark_item = tempmark_item
-                claim_mark += mark_item
-            if claim_mark > tempmark:
-                ans = re1[i]
-                tempmark = claim_mark
+    if col != 0:
+        key = result_1[0] + " " + result_1[1]
+        if key in gl.result:
+            QID = gl.result[key]
+            if QID in gl.keymap:
+                mark = 0
+                item_list = gl.keymap[QID]
+                for id in re1:
+                    tempmark = 0
+                    for label in item_list:
+                        tempmark = max(tempmark, similarity.simi.ratio_similarity(label, gl.labelmap[id]))
+                    if tempmark > mark:
+                        mark = tempmark
+                        ans = id
+    if ans == "":
+        for i in range(len(re1)):
+            if re1[i] in gl.keymap:
+                claim_mark = 0
+                for item in text_col:
+                    mark_item = 0
+                    for claim in gl.keymap[re1[i]]:
+                        tempmark_item = getmark(item, claim)
+                        if tempmark_item > mark_item:
+                            mark_item = tempmark_item
+                    claim_mark += mark_item
+                if claim_mark > tempmark:
+                    ans = re1[i]
+                    tempmark = claim_mark
+    else:
+        for i in range(len(re1)):
+            if re1[i] in gl.keymap:
+                claim_mark = 0
+                for item in text_col:
+                    mark_item = 0
+                    for claim in gl.keymap[re1[i]]:
+                        tempmark_item = getmark(item, claim)
+                        if tempmark_item > mark_item:
+                            mark_item = tempmark_item
+                    claim_mark += mark_item
+                if claim_mark > tempmark:
+                    ans = re1[i]
+                    tempmark = claim_mark
     if ans != "":
         result_1.append(ans)
         writetocsv(result_1)
+        if col == "0":
+            gl.result[result_1[0] + " " + result_1[1]] = result_1[3]
 
-valid_path="DataSets/ToughTablesR2-WD/Valid/gt/cea_gt.csv"
-test_path="DataSets/ToughTablesR2-WD/Test/target/cea_target.csv"
+
+valid_path = "DataSets/ToughTablesR2-WD/Valid/gt/cea_gt.csv"
+test_path = "DataSets/ToughTablesR2-WD/Test/target/cea_target.csv"
 points = []
 text = []
 file_temp = {}
 
 
-def startserach(start, end, freq,path=""):
+def startserach(start, end, freq, path=""):
     global points, text
     filelist = np.array(
-        pd.read_csv(path+valid_path, usecols=[0], header=None).iloc[start:end]).tolist()
+        pd.read_csv(path + valid_path, usecols=[0], header=None).iloc[start:end]).tolist()
     rowlist_1 = np.array(
-        pd.read_csv(path+valid_path, usecols=[1], header=None).iloc[start:end]).tolist()
+        pd.read_csv(path + valid_path, usecols=[1], header=None).iloc[start:end]).tolist()
     collist_1 = np.array(
-        pd.read_csv(path+valid_path, usecols=[2], header=None).iloc[start:end]).tolist()
+        pd.read_csv(path + valid_path, usecols=[2], header=None).iloc[start:end]).tolist()
     for m in range(len(filelist)):
         df = None
         if filelist[m][0] not in file_temp:
-            file = path+"DataSets/ToughTablesR2-WD/Valid/tables/" + filelist[m][0] + ".csv"
+            file = path + "DataSets/ToughTablesR2-WD/Valid/tables/" + filelist[m][0] + ".csv"
             df = pd.read_csv(file, header=None)
             file_temp[filelist[m][0]] = df
         else:
@@ -186,15 +219,15 @@ def startserach(start, end, freq,path=""):
                 result.append(rowlist_1[index][0])
                 result.append(collist_1[index][0])
                 if "," in points[i] and " " in points[i]:
-                    word=points[i]
-                    word.replace(",","")
-                    word.replace(" ","")
-                    word=get_correct_id(word)
+                    word = points[i]
+                    word.replace(",", "")
+                    word.replace(" ", "")
+                    word = get_correct_id(word)
                     if word is not None:
-                        re1[i]=[word]
+                        re1[i] = [word]
                 if len(re1[i]) != 0:
                     threading.Thread(target=start_write,
-                                     args=(i, re1[i], text[i], result)).start()
+                                     args=(points[i], re1[i], text[i], result, collist_1[m][0])).start()
             points = []
             text = []
 
