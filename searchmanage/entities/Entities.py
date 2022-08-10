@@ -233,8 +233,7 @@ class Entities(JsonAnalysis):
             flag = False
             if self.__params["action"] == "wbsearchentities":
                 if self.__params["search"] in gl.json_map:
-                    json_ = gl.json_map[self.__params["search"]]
-                    flag = True
+                    json_=gl.json_map[self.__params["search"]]
             if not flag:
                 tempword = ""
                 if self.__params["action"] == "wbsearchentities":

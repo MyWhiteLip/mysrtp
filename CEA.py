@@ -185,6 +185,13 @@ def startserach(start, end, freq,path=""):
                 result.append(filelist[index][0])
                 result.append(rowlist_1[index][0])
                 result.append(collist_1[index][0])
+                if "," in points[i] and " " in points[i]:
+                    word=points[i]
+                    word.replace(",","")
+                    word.replace(" ","")
+                    word=get_correct_id(word)
+                    if word is not None:
+                        text[i]=[word]
                 if len(re1[i]) != 0:
                     threading.Thread(target=start_write,
                                      args=(i, re1[i], text[i], result)).start()
