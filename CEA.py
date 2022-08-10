@@ -144,6 +144,9 @@ def start_write(thisword, re1, text_col, result, col):
                     if tempmark > mark:
                         mark = tempmark
                         ans = id
+                if ans < 0.7:
+                    ans=""
+
     if ans == "":
         for i in range(len(re1)):
             if re1[i] in gl.keymap:
