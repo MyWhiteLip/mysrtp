@@ -158,20 +158,6 @@ def start_write(thisword, re1, text_col, result, col):
                 if claim_mark > tempmark:
                     ans = re1[i]
                     tempmark = claim_mark
-    else:
-        for i in range(len(re1)):
-            if re1[i] in gl.keymap:
-                claim_mark = 0
-                for item in text_col:
-                    mark_item = 0
-                    for claim in gl.keymap[re1[i]]:
-                        tempmark_item = getmark(item, claim)
-                        if tempmark_item > mark_item:
-                            mark_item = tempmark_item
-                    claim_mark += mark_item
-                if claim_mark > tempmark:
-                    ans = re1[i]
-                    tempmark = claim_mark
     if ans != "":
         result_1.append(ans)
         writetocsv(result_1)
