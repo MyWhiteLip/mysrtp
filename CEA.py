@@ -7,7 +7,7 @@ import gl
 import searchmanage.entities.Entities
 import similarity.simi
 from searchmanage import SearchManage
-
+from test import get_correct_id
 spell = SpellChecker()
 
 import torch
@@ -15,8 +15,8 @@ from transformers import BertModel, BertTokenizer
 
 tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
 model = BertModel.from_pretrained('bert-base-uncased')
-search_m2 = SearchManage(key='ids', m_num=10000)
-search_m1 = SearchManage(key='search', m_num=10000)
+search_m2 = SearchManage(key='ids', m_num=1000)
+search_m1 = SearchManage(key='search', m_num=1000)
 print("yest")
 
 
@@ -48,7 +48,7 @@ def is_number(s):
 
 def writetocsv(result):
     # python2可以用file替代open
-    with open("content/test/test.csv", "a", newline="") as csvfile:
+    with open("test/test.csv", "a", newline="") as csvfile:
         writer = csv.writer(csvfile)
 
         # 先写入columns_name
@@ -164,7 +164,7 @@ def startserach(start, end, freq,path=""):
     for m in range(len(filelist)):
         df = None
         if filelist[m][0] not in file_temp:
-            file = path+"DataSetS/ToughTablesR2-WD/Valid/tables/" + filelist[m][0] + ".csv"
+            file = path+"DataSets/ToughTablesR2-WD/Valid/tables/" + filelist[m][0] + ".csv"
             df = pd.read_csv(file, header=None)
             file_temp[filelist[m][0]] = df
         else:
@@ -185,6 +185,13 @@ def startserach(start, end, freq,path=""):
                 result.append(filelist[index][0])
                 result.append(rowlist_1[index][0])
                 result.append(collist_1[index][0])
+                if "," in points[i] and " " in points[i]:
+                    word=points[i]
+                    word.replace(",","")
+                    word.replace(" ","")
+                    word=get_correct_id(word)
+                    if word is not None:
+                        re1[i]=[word]
                 if len(re1[i]) != 0:
                     threading.Thread(target=start_write,
                                      args=(i, re1[i], text[i], result)).start()
@@ -192,4 +199,4 @@ def startserach(start, end, freq,path=""):
             text = []
 
 
-startserach(0, 100, 100)
+startserach(2638, 3638, 1000)

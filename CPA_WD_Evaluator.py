@@ -74,7 +74,7 @@ if __name__ == "__main__":
     # and is present at data/ground_truth.csv
     # and a sample submission is present at data/sample_submission.csv
     answer_file_path = "./HardTablesR2/Valid/gt/cpa_gt.csv"
-    d = './SMv4'
+    d = './test'
     for ff in os.listdir(d):
         _client_payload = {}
         print(ff)

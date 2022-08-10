@@ -5,14 +5,21 @@
 # @function: test for searchmanage
 # @version : V0.4.1
 #
+import csv
 import random
-
+import numpy as np
+import pandas as pd
 import requests
+import wikipedia
+from bs4 import BeautifulSoup
+
+import similarity.simi
 from searchmanage.tools.Tools import AGENTS_
 import sys
 from SPARQLWrapper import SPARQLWrapper, JSON
-
+from  gl import state_map
 import gl
+from searchmanage1.tools.Tools import agents
 
 
 def is_number(s):
@@ -42,12 +49,12 @@ def is_number(s):
 
 
 def get_results(QID):
-    flag=True
-    count=0
+    flag = True
+    count = 0
     if QID in gl.keymap:
         return
     while flag:
-        count+=1
+        count += 1
         endpoint_url = "https://query.wikidata.org/sparql"
         query = """SELECT ?wdLabel ?ps_Label ?wdpqLabel ?pq_Label { 
             VALUES (?company) {(wd:""" + QID + """)} 
@@ -76,8 +83,23 @@ def get_results(QID):
             if "ps_Label" in result:
                 if not is_number(result["ps_Label"]["value"]):
                     text.append(result["ps_Label"]["value"])
-        if len(text)!=0 or count>=5:
-            gl.keymap[QID]=text
-            flag=False
-            print(text)
+        if len(text) != 0 or count >= 3:
+            if len(text) != 0:
+                gl.keymap[QID] = text
+            flag = False
+def get_correct_id(item):
+    mark=0
+    res_key=""
+    for key in state_map:
+        tempmark=similarity.simi.ratio_similarity(item,key)
+        if tempmark>mark:
+            mark=tempmark
+            res_key=state_map[key]
+    if res_key!="" and mark>0.7:
+        return  res_key
+    else:
+        return None
+
+
+
 

@@ -15,7 +15,7 @@ from transformers import BertModel, BertTokenizer
 
 tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
 model = BertModel.from_pretrained('bert-base-uncased')
-search_m2 = SearchManage(key='ids', m_num=1000)
+search_m2 = SearchManage(key='ids', m_num=15000)
 search_m1 = SearchManage(key='search', m_num=1000)
 
 
@@ -70,23 +70,14 @@ def getsimi_base_on_bert(sentenceA, sentenceB):
 
 def writetocsv(result):
     # python2可以用file替代open
-    with open("source/test1.csv", "a", newline="") as csvfile:
+    with open("trash/aa.csv", "a", newline="") as csvfile:
         writer = csv.writer(csvfile)
 
         # 先写入columns_name
         # 写入多行用writerows
         writer.writerow(result)
 
-filelist_now = np.array(
-    pd.read_csv('test1.csv', usecols=[0], header=None).iloc[0:3645]).tolist()
-collist_now=np.array(
-    pd.read_csv('test1.csv', usecols=[2], header=None).iloc[0:3645]).tolist()
-# 给定
-def find_exits(filename,col):
-    for i in range(len(filelist_now)):
-        if filelist_now[i][0]==filename and collist_now[i][0]==col:
-            return  True
-    return False
+
 word = SpellChecker.correction(self=spell, word="Gondolin Cdve")
 print(word)
 def start_search(points1, points2):
@@ -101,8 +92,6 @@ def start_write(i,index,re2,re3,search2,filelist,collist_1,collist_2):
     result.append(filelist[index][0])
     result.append(collist_1[index][0])
     result.append(collist_2[index][0])
-    if find_exits(result[0], result[2]):
-        return
     text = []
     puretext = []
     value = re2[i]
@@ -129,7 +118,17 @@ def start_write(i,index,re2,re3,search2,filelist,collist_1,collist_2):
                 tempans = ""
                 for key in ans[j]:
                     flag = False
-                    for item in ans[j][key]:
+                    for itemp in ans[j][key]:
+                        item=itemp[1]
+                        if str(itemp[0])=="time":
+                            time_item=str(itemp[1])[1:5]
+                            if time_item in puretext[k]:
+                                tempans = key
+                                flag = True
+                                break
+                            else: continue
+
+
                         if check(str(item)):
                             if str(item) in text[k]:
                                 tempans = key
@@ -176,13 +175,13 @@ def cpa_search(num,start,end):
     search1 = []
     search2 = []
     filelist = np.array(
-        pd.read_csv('HardTablesR2/Test/target/cpa_target.csv', usecols=[0], header=None).iloc[start:end]).tolist()
+        pd.read_csv('HardTablesR2/Valid/gt/cpa_gt.csv', usecols=[0], header=None).iloc[start:end]).tolist()
     collist_1 = np.array(
-        pd.read_csv('HardTablesR2/Test/target/cpa_target.csv', usecols=[1], header=None).iloc[start:end]).tolist()
+        pd.read_csv('HardTablesR2/Valid/gt/cpa_gt.csv', usecols=[1], header=None).iloc[start:end]).tolist()
     collist_2 = np.array(
-        pd.read_csv('HardTablesR2/Test/target/cpa_target.csv', usecols=[2], header=None).iloc[start:end]).tolist()
+        pd.read_csv('HardTablesR2/Valid/gt/cpa_gt.csv', usecols=[2], header=None).iloc[start:end]).tolist()
     for m in range(len(filelist)):
-        file = "HardTablesR2/Test/tables/" + filelist[m][0] + ".csv"
+        file = "HardTablesR2/Valid/tables/" + filelist[m][0] + ".csv"
         # 对指定列前五行CEA查询
         filecollist_1 = np.array(pd.read_csv(file , usecols=[collist_1[m][0]], header=None).head(10)).tolist()
         filecollist_2 = np.array(pd.read_csv(file, usecols=[collist_2[m][0]], header=None).head(10)).tolist()
@@ -203,7 +202,7 @@ def cpa_search(num,start,end):
             search2 = []
 
 
-cpa_search(300,0,3919)
+cpa_search(319,0,319)
 
 # 对cell1与cell2进行cea查询，若能都出结果，则直接进行查询
 def cpa_1(qid_1, qid_2):

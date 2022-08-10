@@ -20,6 +20,7 @@ from searchmanage.tools import AnalysisTools
 from searchmanage.tools import Tools
 from similarity import simi
 from test import get_results
+from test import get_correct_id
 
 agents = AGENTS_
 
@@ -228,15 +229,28 @@ class Entities(JsonAnalysis):
         self.clear()
 
         try:
+            tempword = ""
+            if self.__params["action"] == "wbsearchentities":
+                tempword = self.__params["search"]
+
             get_ = requests.get(url=url,
                                 params=self.__params,
                                 headers={'User-Agent': random.choice(agents)},
                                 timeout=timeout)
             json_ = get_.json()
-            tempword = ""
-
             if self.__params["action"] == "wbsearchentities":
-                tempword = self.__params["search"]
+                if len(json_['search']) == 0 and not is_number(self.__params["search"]):
+                    word = self.__params["search"]
+                    word = wikipedia.suggest(word)
+                    if word is not None and word != "":
+                        self.__params["search"] = word
+                        get_ = requests.get(url=url,
+                                            params=self.__params,
+                                            headers={'User-Agent': random.choice(agents)},
+                                            timeout=timeout)
+                        json_ = get_.json()
+                        self.__params["search"] = tempword
+            # wikipedia辅助
             if self.__params["action"] == "wbsearchentities":
                 if len(json_['search']) == 0 and not is_number(self.__params["search"]):
                     word = Bing(self.__params["search"])
@@ -251,23 +265,17 @@ class Entities(JsonAnalysis):
                                             headers={'User-Agent': random.choice(agents)},
                                             timeout=timeout)
                         json_ = get_.json()
-            # BING纠正
-            # if self.__params["action"] == "wbsearchentities":
-            #     if len(json_['search']) == 0 and not is_number(self.__params["search"]):
-            #         word = self.__params["search"]
-            #         word = wikipedia.suggest(word)
-            #         if word is not None and word != "":
-            #             self.__params["search"] = word
-            #             get_ = requests.get(url=url,
-            #                                 params=self.__params,
-            #                                 headers={'User-Agent': random.choice(agents)},
-            #                                 timeout=timeout)
-            #             json_ = get_.json()
-            # # wikipedia辅助
+            # bing纠正
+            if self.__params["action"] == "wbsearchentities":
+                for entity in json_["search"]:
+                    if "lable" in entity:
+                        if simi.levenshtein(self.__params["search"], entity["label"]) <= 0.7:
+                            json_["search"].remove(entity)
+            # bing查询
             if self.__params["action"] == "wbsearchentities":
                 if not is_number(self.__params["search"]):
                     count = 0
-                    while len(json_['search']) == 0 and count <= 8:
+                    while len(json_['search']) == 0 and count <= 3:
                         count = count + 1
                         params = {
                             "q": tempword + " site:wikidata.org",
@@ -282,7 +290,7 @@ class Entities(JsonAnalysis):
                         count1 = 0
                         search_list = []
                         for start in res:
-                            if count1 >= 15:
+                            if count1 >= 10:
                                 break
                             index = start + len("https://www.wikidata.org/wiki/")
                             ans = "Q"
@@ -294,7 +302,7 @@ class Entities(JsonAnalysis):
                                 search_list.append(ans)
                             count1 += 1
                         # 对id列表查询
-                        if len(json_["search"]) != 0:
+                        if len(json_["search"]) != 0 and len(search_list) != 0:
                             __params = {
                                 'ids': search_list,
                                 'action': 'wbgetentities',
@@ -309,20 +317,13 @@ class Entities(JsonAnalysis):
                                 'sitefilter': None
                             }
                             res = requests.get(url=url, params=__params, timeout=timeout,
-                                               headers={'User-Agent': random.choice(agents)}).json()[
-                                "entities"]
+                                               headers={'User-Agent': random.choice(agents)}).json()["entities"]
                             for entity in json_["search"]:
-                                if entity["id"] in res and "en" in res[entity["id"]]["labels"]:
+                                if entity["id"] in res and "labels" in res[entity["id"]] and "en" in res[entity["id"]]["labels"]:
                                     if simi.levenshtein(self.__params["search"],
-                                                        res[entity["id"]]["labels"]["en"]["value"]) <= 0.75:
+                                                        res[entity["id"]]["labels"]["en"]["value"]) <= 0.7:
                                         json_["search"].remove(entity)
-            # bing查询
 
-            if self.__params["action"] == "wbsearchentities":
-                for entity in json_["search"]:
-                    if "lable" in entity:
-                        if simi.levenshtein(self.__params["search"], entity["label"]) <= 0.75:
-                            json_["search"].remove(entity)
             if self.__params["action"] == "wbsearchentities":
                 thread_list = []
                 for item in json_["search"]:
