@@ -72,7 +72,6 @@ def get_results(QID):
     
             OPTIONAL { 
             ?statement ?pq ?prop_id . 
-            ?wdpq wikibase:qualifier ?pq . 
             } 
     
             SERVICE wikibase:label { bd:serviceParam wikibase:language "en" } 
@@ -90,16 +89,18 @@ def get_results(QID):
                 if not is_number(result["ps_Label"]["value"]):
                     text.append(result["ps_Label"]["value"])
             if "prop_id" in result:
+
                 if "http://www.wikidata.org/entity/" in str(result["prop_id"]["value"]):
                     word=result["prop_id"]["value"]
-                    word.replace("http://www.wikidata.org/entity/","")
+                    word=word.replace("http://www.wikidata.org/entity/","")
                     text_id.append(word)
         if len(text) != 0 or count >= 2:
             if len(text) != 0:
                 text=list(set(text))
                 gl.keymap[QID] = text
-                gl.idmap[QID]=text_id
+                gl.idmap[QID]=list(set(text_id))
             flag = False
+
 def get_correct_id(item):
     mark=0
     res_key=""

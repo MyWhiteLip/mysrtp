@@ -11,14 +11,9 @@ from test import get_correct_id
 
 spell = SpellChecker()
 
-import torch
-from transformers import BertModel, BertTokenizer
 
-tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
-model = BertModel.from_pretrained('bert-base-uncased')
 search_m2 = SearchManage(key='ids', m_num=40000)
 search_m1 = SearchManage(key='search', m_num=1000)
-print("yest")
 
 
 def is_number(s):
@@ -69,7 +64,7 @@ def getmark(A, B):
         if float(B) != 0:
             return 1 - abs((float(A) - float(B)) / float(B))
     else:
-        return similarity.simi.ratio_similarity(A, B)
+        return similarity.simi.levenshtein(A, B)
 
 
 def start_search(points1):
@@ -111,20 +106,6 @@ def start_search(points1):
     return re1
 
 
-def getsimi_base_on_bert(sentenceA, sentenceB):
-    text_dictA = tokenizer.encode_plus(sentenceA, add_special_tokens=True, return_attention_mask=True)
-    input_ids = torch.tensor(text_dictA['input_ids']).unsqueeze(0)
-    token_type_ids = torch.tensor(text_dictA['token_type_ids']).unsqueeze(0)
-    attention_mask = torch.tensor(text_dictA['attention_mask']).unsqueeze(0)
-    resA = model(input_ids, attention_mask=attention_mask, token_type_ids=token_type_ids)
-    afterA = resA[1].squeeze(0)
-    text_dictB = tokenizer.encode_plus(sentenceB, add_special_tokens=True, return_attention_mask=True)
-    input_ids = torch.tensor(text_dictB['input_ids']).unsqueeze(0)
-    token_type_ids = torch.tensor(text_dictB['token_type_ids']).unsqueeze(0)
-    attention_mask = torch.tensor(text_dictB['attention_mask']).unsqueeze(0)
-    resB = model(input_ids, attention_mask=attention_mask, token_type_ids=token_type_ids)
-    afterB = resB[1].squeeze(0)
-    return torch.cosine_similarity(afterA, afterB, dim=0).data.item()
 
 
 def start_write(thisword, re1, text_col, result, col):
@@ -139,7 +120,15 @@ def start_write(thisword, re1, text_col, result, col):
                 for id in re1:
                     if id in gl.idmap[QID]:
                         ans=id
-
+                        break
+    if str(col) != "0" and ans=="":
+        item_mark=0
+        for id in re1:
+            if id in gl.labelmap:
+                tempscore=similarity.simi.ratio_similarity(thisword,gl.labelmap[id])
+                if tempscore>item_mark:
+                    ans=id
+                    item_mark=tempscore
     if ans == "":
         for i in range(len(re1)):
             if re1[i] in gl.keymap:
@@ -151,14 +140,16 @@ def start_write(thisword, re1, text_col, result, col):
                         if tempmark_item > mark_item:
                             mark_item = tempmark_item
                     claim_mark += mark_item
+
                 if claim_mark > tempmark:
                     ans = re1[i]
                     tempmark = claim_mark
     if ans != "":
         result_1.append(ans)
         writetocsv(result_1)
-        if col == "0":
+        if str(col) == "0":
             gl.result[str(result_1[0]) + " " + str(result_1[1])] = result_1[3]
+
 
 
 valid_path = "DataSets/ToughTablesR2-WD/Valid/gt/cea_gt.csv"
@@ -202,16 +193,16 @@ def startserach(start, end, freq, path=""):
                 result.append(collist_1[index][0])
                 if "," in points[i] and " " in points[i]:
                     word = points[i]
-                    word.replace(",", "")
-                    word.replace(" ", "")
+                    word=word.replace(",", "")
+                    word=word.replace(" ", "")
                     word = get_correct_id(word)
                     if word is not None:
                         re1[i] = [word]
                 if len(re1[i]) != 0:
                     threading.Thread(target=start_write,
-                                     args=(points[i], re1[i], text[i], result, collist_1[m][0])).start()
+                                     args=(points[i], re1[i], text[i], result, collist_1[index][0])).start()
             points = []
             text = []
 
-
-startserach(2638, 3638, 1000)
+startserach(161,162,1)
+startserach(1211, 1212, 1)

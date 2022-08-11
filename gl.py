@@ -2,6 +2,7 @@ keymap = {}
 idmap={}
 result={}
 labelmap={}
+key_result={}
 state_map = {
     "Alabama": "Q173",
     "Arkansas": "Q1612",
