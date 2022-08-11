@@ -11,7 +11,6 @@ from test import get_correct_id
 
 spell = SpellChecker()
 
-
 search_m2 = SearchManage(key='ids', m_num=40000)
 search_m1 = SearchManage(key='search', m_num=1000)
 
@@ -106,8 +105,6 @@ def start_search(points1):
     return re1
 
 
-
-
 def start_write(thisword, re1, text_col, result, col):
     result_1 = result
     tempmark = 0
@@ -119,47 +116,41 @@ def start_write(thisword, re1, text_col, result, col):
             if QID in gl.idmap:
                 for id in re1:
                     if id in gl.idmap[QID]:
-                        ans=id
+                        ans = id
                         break
-    if str(col)!="0" and ans=="":
+    if str(col) != "0" and ans == "":
         key = str(result_1[0]) + " " + str(result_1[1])
         if key in gl.result:
             QID = gl.result[key]
             if QID in gl.keymap:
-                claim_list=gl.keymap[QID]
-                label_score=0
+                claim_list = gl.keymap[QID]
+                label_score = 0
                 for id in re1:
-                    label_mark=0
+                    label_mark = 0
                     if id in gl.labelmap:
                         for claim in claim_list:
-                            label_mark=max(label_mark,similarity.simi.ratio_similarity(gl.labelmap[id],claim))
-                    if label_mark>label_score:
-                        label_score=label_mark
-                        ans=id
-                if label_score<0.7:
-                    ans=""
-
-
-
-
-
-
-    if str(col) != "0" and ans=="":
-        item_mark=0
+                            label_mark = max(label_mark, similarity.simi.ratio_similarity(gl.labelmap[id], claim))
+                    if label_mark > label_score:
+                        label_score = label_mark
+                        ans = id
+                if label_score < 0.7:
+                    ans = ""
+    if str(col) != "0" and ans == "":
+        item_mark = 0
         for id in re1:
             if id in gl.labelmap:
-                tempscore=similarity.simi.ratio_similarity(thisword,gl.labelmap[id])
-                if tempscore>item_mark:
-                    ans=id
-                    item_mark=tempscore
-        if item_mark<0.7:
-            ans=""
+                tempscore = similarity.simi.ratio_similarity(thisword, gl.labelmap[id])
+                if tempscore > item_mark:
+                    ans = id
+                    item_mark = tempscore
+        if item_mark < 0.7:
+            ans = ""
     if ans == "":
         for i in range(len(re1)):
             if re1[i] in gl.keymap:
-                claim_mark=0
+                claim_mark = 0
                 if re1[i] in gl.labelmap:
-                    claim_mark = similarity.simi.ratio_similarity(gl.labelmap[re1[i]],thisword)
+                    claim_mark = similarity.simi.ratio_similarity(gl.labelmap[re1[i]], thisword)
                 for item in text_col:
                     mark_item = 0
                     for claim in gl.keymap[re1[i]]:
@@ -171,18 +162,17 @@ def start_write(thisword, re1, text_col, result, col):
                 if claim_mark > tempmark:
                     ans = re1[i]
                     tempmark = claim_mark
-                elif claim_mark==tempmark and re1[i] in gl.labelmap and ans in gl.labelmap:
-                    score1=similarity.simi.ratio_similarity(gl.labelmap[re1[i]],thisword)
-                    score2=similarity.simi.ratio_similarity(gl.labelmap[ans],thisword)
-                    if score2<score1:
-                        ans=re1[i]
+                elif claim_mark == tempmark and re1[i] in gl.labelmap and ans in gl.labelmap:
+                    score1 = similarity.simi.ratio_similarity(gl.labelmap[re1[i]], thisword)
+                    score2 = similarity.simi.ratio_similarity(gl.labelmap[ans], thisword)
+                    if score2 < score1:
+                        ans = re1[i]
 
     if ans != "":
         result_1.append(ans)
         writetocsv(result_1)
         if str(col) == "0":
             gl.result[str(result_1[0]) + " " + str(result_1[1])] = result_1[3]
-
 
 
 valid_path = "DataSets/ToughTablesR2-WD/Valid/gt/cea_gt.csv"
@@ -226,8 +216,8 @@ def startserach(start, end, freq, path=""):
                 result.append(collist_1[index][0])
                 if "," in points[i] and " " in points[i]:
                     word = points[i]
-                    word=word.replace(",", "")
-                    word=word.replace(" ", "")
+                    word = word.replace(",", "")
+                    word = word.replace(" ", "")
                     word = get_correct_id(word)
                     if word is not None:
                         re1[i] = [word]
@@ -236,5 +226,6 @@ def startserach(start, end, freq, path=""):
             points = []
             text = []
 
-startserach(13097,13098,1)
-startserach(17007,17008,1)
+
+startserach(13097, 13098, 1)
+startserach(17007, 17008, 1)
