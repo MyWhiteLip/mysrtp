@@ -15,10 +15,10 @@ state_map = {
     "Idaho": "Q1221",
     "Illinois": "Q1204",
     "Indiana": "Q1415",
-    "Iowa": "Q1545",
+    "Iowa": "Q1546",
     "Kansas": "Q1558",
     "Kentucky": "Q1603",
-    "Louisiana": "Q1558",
+    "Louisiana": "Q1588",
     "Maine": "Q724",
     "Maryland": "Q1391",
     "Massachusetts": "Q771",
@@ -39,7 +39,7 @@ state_map = {
     "Oklahoma": "Q1649",
     "Oregon": "Q824",
     "Pennsylvania": "Q1400",
-    "Rhode Island": "Q1487",
+    "Rhode Island": "Q1387",
     "South Carolina": "Q1456",
     "South Dakota": "Q1211",
     "Tennessee": "Q1509",
@@ -53,5 +53,5 @@ state_map = {
     "Wyoming": "Q1214",
     "Alaska": "Q797",
     "Arizona":"Q816",
-    "Delaware":"Q1393"
+    "Delaware":"Q1393",
 }

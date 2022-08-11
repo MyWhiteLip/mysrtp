@@ -146,33 +146,37 @@ def start_write(thisword, re1, text_col, result, col):
         if item_mark < 0.7:
             ans = ""
     if ans == "":
-        for i in range(len(re1)):
-            if re1[i] in gl.keymap:
-                claim_mark = 0
-                if re1[i] in gl.labelmap:
-                    claim_mark = similarity.simi.ratio_similarity(gl.labelmap[re1[i]], thisword)
-                for item in text_col:
-                    mark_item = 0
-                    for claim in gl.keymap[re1[i]]:
-                        tempmark_item = getmark(item, claim)
-                        if tempmark_item > mark_item:
-                            mark_item = tempmark_item
-                    claim_mark += mark_item
-
-                if claim_mark > tempmark:
-                    ans = re1[i]
-                    tempmark = claim_mark
-                elif claim_mark == tempmark and re1[i] in gl.labelmap and ans in gl.labelmap:
-                    score1 = similarity.simi.ratio_similarity(gl.labelmap[re1[i]], thisword)
-                    score2 = similarity.simi.ratio_similarity(gl.labelmap[ans], thisword)
-                    if score2 < score1:
+        if len(re1) == 1:
+            ans=re1[0]
+        else:
+            for i in range(len(re1)):
+                if re1[i] in gl.keymap:
+                    claim_mark = 0
+                    if re1[i] in gl.labelmap:
+                        claim_mark = similarity.simi.ratio_similarity(gl.labelmap[re1[i]], thisword)
+                    for item in text_col:
+                        mark_item = 0
+                        for claim in gl.keymap[re1[i]]:
+                            tempmark_item = getmark(item, claim)
+                            if tempmark_item > mark_item:
+                                mark_item = tempmark_item
+                        claim_mark += mark_item
+                    if claim_mark > tempmark:
                         ans = re1[i]
+                        tempmark = claim_mark
+                    elif claim_mark == tempmark and re1[i] in gl.labelmap and ans in gl.labelmap:
+                        score1 = similarity.simi.ratio_similarity(gl.labelmap[re1[i]], thisword)
+                        score2 = similarity.simi.ratio_similarity(gl.labelmap[ans], thisword)
+                        if score2 < score1:
+                            ans = re1[i]
 
     if ans != "":
         result_1.append(ans)
         writetocsv(result_1)
         if str(col) == "0":
             gl.result[str(result_1[0]) + " " + str(result_1[1])] = result_1[3]
+
+
 
 
 valid_path = "DataSets/ToughTablesR2-WD/Valid/gt/cea_gt.csv"
@@ -227,5 +231,5 @@ def startserach(start, end, freq, path=""):
             text = []
 
 
-startserach(13097, 13098, 1)
-startserach(17007, 17008, 1)
+startserach(3623,3624,1)
+
