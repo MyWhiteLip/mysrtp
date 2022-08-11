@@ -239,18 +239,18 @@ class Entities(JsonAnalysis):
                                 headers={'User-Agent': random.choice(agents)},
                                 timeout=timeout)
             json_ = get_.json()
-            if self.__params["action"] == "wbsearchentities":
-                if len(json_['search']) == 0 and not is_number(self.__params["search"]):
-                    word = self.__params["search"]
-                    word = wikipedia.suggest(word)
-                    if word is not None and word != "":
-                        self.__params["search"] = word
-                        get_ = requests.get(url=url,
-                                            params=self.__params,
-                                            headers={'User-Agent': random.choice(agents)},
-                                            timeout=timeout)
-                        json_ = get_.json()
-                        self.__params["search"] = tempword
+            # if self.__params["action"] == "wbsearchentities":
+            #     if len(json_['search']) == 0 and not is_number(self.__params["search"]):
+            #         word = self.__params["search"]
+            #         word = wikipedia.suggest(word)
+            #         if word is not None and word != "":
+            #             self.__params["search"] = word
+            #             get_ = requests.get(url=url,
+            #                                 params=self.__params,
+            #                                 headers={'User-Agent': random.choice(agents)},
+            #                                 timeout=timeout)
+            #             json_ = get_.json()
+            #             self.__params["search"] = tempword
             # wikipedia辅助
             if self.__params["action"] == "wbsearchentities":
                 if len(json_['search']) == 0 and not is_number(self.__params["search"]):
@@ -273,7 +273,7 @@ class Entities(JsonAnalysis):
                         if simi.levenshtein(self.__params["search"], entity["label"]) <= 0.65:
                             json_["search"].remove(entity)
                         else:
-                            gl.labelmap[entity["id"]]=entity["label"]
+                            gl.labelmap[entity["id"]] = entity["label"]
             # bing查询
             if self.__params["action"] == "wbsearchentities":
                 if not is_number(self.__params["search"]):
@@ -330,7 +330,7 @@ class Entities(JsonAnalysis):
                                                         res[entity["id"]]["labels"]["en"]["value"]) <= 0.65:
                                         json_["search"].remove(entity)
                                     else:
-                                        gl.labelmap[entity["id"]]=res[entity["id"]]["labels"]["en"]["value"]
+                                        gl.labelmap[entity["id"]] = res[entity["id"]]["labels"]["en"]["value"]
 
             if self.__params["action"] == "wbsearchentities":
                 thread_list = []
