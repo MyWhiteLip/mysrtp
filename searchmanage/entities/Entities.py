@@ -274,7 +274,7 @@ class Entities(JsonAnalysis):
                 if self.__params["action"] == "wbsearchentities":
                     for entity in json_["search"]:
                         if "display" in entity and "label" in entity["display"] and "value" in entity["display"]["label"]:
-                            if simi.levenshtein(self.__params["search"], entity["display"]["label"]["value"]) <= 0.67:
+                            if simi.ratio_similarity(self.__params["search"], entity["display"]["label"]["value"]) <= 0.67:
                                 json_["search"].remove(entity)
                             else:
                                 gl.labelmap[entity["id"]] = entity["label"]
@@ -330,7 +330,7 @@ class Entities(JsonAnalysis):
                                     if entity["id"] in res and "labels" in res[entity["id"]] and "en" in \
                                             res[entity["id"]][
                                                 "labels"]:
-                                        if simi.levenshtein(self.__params["search"],
+                                        if simi.ratio_similarity(self.__params["search"],
                                                             res[entity["id"]]["labels"]["en"]["value"]) <= 0.67:
                                             json_["search"].remove(entity)
                                         else:
