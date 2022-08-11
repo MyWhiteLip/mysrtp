@@ -130,8 +130,8 @@ def start_write(thisword, re1, text_col, result, col):
     result_1 = result
     tempmark = 0
     ans = ""
-    if col != 0:
-        key = result_1[0] + " " + result_1[1]
+    if str(col) != "0":
+        key = str(result_1[0]) + " " + str(result_1[1])
         if key in gl.result:
             QID = gl.result[key]
             if QID in gl.keymap:
@@ -144,8 +144,8 @@ def start_write(thisword, re1, text_col, result, col):
                     if tempmark > mark:
                         mark = tempmark
                         ans = id
-                if ans < 0.7:
-                    ans=""
+                if mark < 0.7:
+                    ans = ""
 
     if ans == "":
         for i in range(len(re1)):
@@ -165,7 +165,7 @@ def start_write(thisword, re1, text_col, result, col):
         result_1.append(ans)
         writetocsv(result_1)
         if col == "0":
-            gl.result[result_1[0] + " " + result_1[1]] = result_1[3]
+            gl.result[str(result_1[0]) + " " + str(result_1[1])] = result_1[3]
 
 
 valid_path = "DataSets/ToughTablesR2-WD/Valid/gt/cea_gt.csv"
