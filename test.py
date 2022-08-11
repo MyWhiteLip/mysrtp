@@ -47,6 +47,11 @@ def is_number(s):
 
     return False
 
+def check(item):
+    if item[0:4] == "wdt:Q" and item[4:len(item)].isdigit():
+        return True
+    else:
+        return False
 
 def get_results(QID):
     flag = True
@@ -56,7 +61,7 @@ def get_results(QID):
     while flag:
         count += 1
         endpoint_url = "https://query.wikidata.org/sparql"
-        query = """SELECT ?wdLabel ?ps_Label ?wdpqLabel ?pq_Label { 
+        query = """SELECT ?wdLabel ?ps_Label ?prop_id { 
             VALUES (?company) {(wd:""" + QID + """)} 
     
             ?company ?p ?statement . 
@@ -66,7 +71,7 @@ def get_results(QID):
             ?wd wikibase:statementProperty ?ps. 
     
             OPTIONAL { 
-            ?statement ?pq ?pq_ . 
+            ?statement ?pq ?prop_id . 
             ?wdpq wikibase:qualifier ?pq . 
             } 
     
@@ -79,13 +84,21 @@ def get_results(QID):
         sparql.setReturnFormat(JSON)
         results = sparql.query().convert()
         text = []
+        text_id=[]
         for result in results["results"]["bindings"]:
             if "ps_Label" in result:
                 if not is_number(result["ps_Label"]["value"]):
                     text.append(result["ps_Label"]["value"])
+            if "prop_id" in result:
+                if "http://www.wikidata.org/entity/" in str(result["prop_id"]["value"]):
+                    word=result["prop_id"]["value"]
+                    word.replace("http://www.wikidata.org/entity/","")
+                    text_id.append(word)
         if len(text) != 0 or count >= 2:
             if len(text) != 0:
+                text=list(set(text))
                 gl.keymap[QID] = text
+                gl.idmap[QID]=text_id
             flag = False
 def get_correct_id(item):
     mark=0

@@ -16,7 +16,7 @@ from transformers import BertModel, BertTokenizer
 
 tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
 model = BertModel.from_pretrained('bert-base-uncased')
-search_m2 = SearchManage(key='ids', m_num=1000)
+search_m2 = SearchManage(key='ids', m_num=40000)
 search_m1 = SearchManage(key='search', m_num=1000)
 print("yest")
 
@@ -75,6 +75,7 @@ def getmark(A, B):
 def start_search(points1):
     search_1 = search_m1.search_run(points=points1, keys='id')
     re1 = search_1["id"]
+
     # re2 = search_m2.search_run(points=re1,
     #                            keys=['claims/P/value'])['claims/P/value']
     # points2 = []
@@ -134,18 +135,10 @@ def start_write(thisword, re1, text_col, result, col):
         key = str(result_1[0]) + " " + str(result_1[1])
         if key in gl.result:
             QID = gl.result[key]
-            if QID in gl.keymap:
-                mark = 0
-                item_list = gl.keymap[QID]
+            if QID in gl.idmap:
                 for id in re1:
-                    tempmark = 0
-                    for label in item_list:
-                        tempmark = max(tempmark, similarity.simi.ratio_similarity(label, gl.labelmap[id]))
-                    if tempmark > mark:
-                        mark = tempmark
-                        ans = id
-                if mark < 0.7:
-                    ans = ""
+                    if id in gl.idmap[QID]:
+                        ans=id
 
     if ans == "":
         for i in range(len(re1)):
