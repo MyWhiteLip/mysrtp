@@ -43,6 +43,19 @@ def Bing(word):
         return soup.find('div', id='sp_requery').a.text  # 如果爬取成功，返回正确的字符串
     return None  # 否则返回None
 
+def wikipedia_suggest(word):
+    timeout = 30
+    params = {
+        "search": word,
+        "ns0": 1  # Bing国际版
+    }
+    result = requests.get("https://en.wikipedia.org/w/index.php", params=params, timeout=timeout,
+                          headers={'User-Agent': ua.random})
+    page_text = result.text
+    soup = BeautifulSoup(page_text, "html.parser")
+    if soup.find('a', id='mw-search-DYM-rewritten'):
+        return soup.find('a', id='mw-search-DYM-rewritten').text  # 如果爬取成功，返回正确的字符串
+    return None  # 否则返回None
 
 example = {
     "id": "Q214096",
@@ -261,12 +274,26 @@ class Entities(JsonAnalysis):
                 # wikipedia辅助
                 if self.__params["action"] == "wbsearchentities":
                     if len(json_['search']) == 0 and not is_number(self.__params["search"]):
+                        word = wikipedia_suggest(self.__params["search"])
+                        count = 0
+                        while word is None and count <= 3:
+                            word = wikipedia_suggest(self.__params["search"])
+                            count += 1
+                        if word is not None and word != "":
+                            self.__params["search"] = word
+                            get_ = requests.get(url=url,
+                                                params=self.__params,
+                                                headers={'User-Agent':ua.random },
+                                                timeout=timeout)
+                            json_ = get_.json()
+                #wikipedia suggest
+                if self.__params["action"] == "wbsearchentities":
+                    if len(json_['search']) == 0 and not is_number(self.__params["search"]):
                         word = Bing(self.__params["search"])
                         count = 0
                         while word is None and count <= 3:
                             word = Bing(self.__params["search"])
                             count += 1
-                            sleep(0.1)
                         if word is not None and word != "":
                             self.__params["search"] = word
                             get_ = requests.get(url=url,
@@ -282,6 +309,7 @@ class Entities(JsonAnalysis):
                                 json_["search"].remove(entity)
                             else:
                                 gl.labelmap[entity["id"]] = entity["label"]
+
                 # bing查询
                 if self.__params["action"] == "wbsearchentities":
                     if not is_number(self.__params["search"]):
@@ -335,12 +363,11 @@ class Entities(JsonAnalysis):
                                             res[entity["id"]][
                                                 "labels"]:
                                         if simi.ratio_similarity(self.__params["search"],
-                                                            res[entity["id"]]["labels"]["en"]["value"]) <= 0.5:
+                                                            res[entity["id"]]["labels"]["en"]["value"]) <= 0.55:
                                             json_["search"].remove(entity)
                                         else:
                                             gl.labelmap[entity["id"]] = res[entity["id"]]["labels"]["en"]["value"]
-                                if len(json_["search"])==0:
-                                    sleep(0.1)
+
 
             if self.__params["action"] == "wbsearchentities":
                 thread_list = []
