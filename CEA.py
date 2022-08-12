@@ -175,6 +175,8 @@ def start_write(thisword, re1, text_col, result, col):
                         score2 = similarity.simi.ratio_similarity(gl.labelmap[ans], thisword)
                         if score2 < score1:
                             ans = re1[i]
+    if ans=="" and len(re1)!=0:
+        ans=re1[0]
 
     if ans != "":
         result_1.append(ans)
