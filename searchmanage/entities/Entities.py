@@ -5,8 +5,10 @@
 # @function: the class of single entity for querying
 # @version : V0.4.0
 #
+
 import random
 import threading
+from time import sleep
 from warnings import warn
 from typing import Union, List
 import requests
@@ -21,7 +23,8 @@ from searchmanage.tools import Tools
 from similarity import simi
 from test import get_results
 from test import get_correct_id
-
+from fake_useragent import  UserAgent
+ua=UserAgent()
 agents = AGENTS_
 
 
@@ -260,21 +263,22 @@ class Entities(JsonAnalysis):
                     if len(json_['search']) == 0 and not is_number(self.__params["search"]):
                         word = Bing(self.__params["search"])
                         count = 0
-                        while word is None and count <= 5:
+                        while word is None and count <= 3:
                             word = Bing(self.__params["search"])
                             count += 1
+                            sleep(0.1)
                         if word is not None and word != "":
                             self.__params["search"] = word
                             get_ = requests.get(url=url,
                                                 params=self.__params,
-                                                headers={'User-Agent': random.choice(agents)},
+                                                headers={'User-Agent':ua.random },
                                                 timeout=timeout)
                             json_ = get_.json()
                 # bing纠正
                 if self.__params["action"] == "wbsearchentities":
                     for entity in json_["search"]:
                         if "display" in entity and "label" in entity["display"] and "value" in entity["display"]["label"]:
-                            if simi.ratio_similarity(self.__params["search"], entity["display"]["label"]["value"]) <= 0.67:
+                            if simi.ratio_similarity(self.__params["search"], entity["display"]["label"]["value"]) <= 0.63:
                                 json_["search"].remove(entity)
                             else:
                                 gl.labelmap[entity["id"]] = entity["label"]
@@ -291,7 +295,7 @@ class Entities(JsonAnalysis):
                                 "go": "search"
                             }
                             result = str(requests.get("https://www.bing.com/search", params=params, timeout=timeout,
-                                                      headers={'User-Agent': random.choice(agents)}
+                                                      headers={'User-Agent':ua.random}
                                                       ).content)
                             res = [i for i in range(len(result)) if
                                    result.startswith("https://www.wikidata.org/wiki/", i)]
@@ -325,16 +329,18 @@ class Entities(JsonAnalysis):
                                     'sitefilter': None
                                 }
                                 res = requests.get(url=url, params=__params, timeout=timeout,
-                                                   headers={'User-Agent': random.choice(agents)}).json()["entities"]
+                                                   headers={'User-Agent': ua.random}).json()["entities"]
                                 for entity in json_["search"]:
                                     if entity["id"] in res and "labels" in res[entity["id"]] and "en" in \
                                             res[entity["id"]][
                                                 "labels"]:
                                         if simi.ratio_similarity(self.__params["search"],
-                                                            res[entity["id"]]["labels"]["en"]["value"]) <= 0.67:
+                                                            res[entity["id"]]["labels"]["en"]["value"]) <= 0.5:
                                             json_["search"].remove(entity)
                                         else:
                                             gl.labelmap[entity["id"]] = res[entity["id"]]["labels"]["en"]["value"]
+                                if len(json_["search"])==0:
+                                    sleep(0.1)
 
             if self.__params["action"] == "wbsearchentities":
                 thread_list = []

@@ -50,7 +50,13 @@ def writetocsv(result):
         # 写入多行用writerows
         writer.writerow(result)
 
+def writetocsv_other(result):
+    with open("test/test_other.csv", "a", newline="") as csvfile:
+        writer = csv.writer(csvfile)
 
+        # 先写入columns_name
+        # 写入多行用writerows
+        writer.writerow(result)
 def check(item):
     if item[0] == "Q" and item[1:len(item)].isdigit():
         return True
@@ -175,6 +181,8 @@ def start_write(thisword, re1, text_col, result, col):
         writetocsv(result_1)
         if str(col) == "0":
             gl.result[str(result_1[0]) + " " + str(result_1[1])] = result_1[3]
+    else:
+        writetocsv_other(result)
 
 
 
