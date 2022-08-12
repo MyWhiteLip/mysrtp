@@ -36,7 +36,7 @@ def Bing(word):
     }
     agent = random.choice(agents)
     result = requests.get("https://www.bing.com/search", params=params, timeout=timeout,
-                          headers={'User-Agent': random.choice(agents)})
+                          headers={'User-Agent': ua.random})
     page_text = result.text
     soup = BeautifulSoup(page_text, "html.parser")
     if soup.find('div', id='sp_requery'):
