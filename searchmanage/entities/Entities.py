@@ -43,6 +43,30 @@ def ask_suggest(word):
         return soup.find('a', class_='PartialSpellCheck-link').text  # 如果爬取成功，返回正确的字符串
     return None  # 否则返回None
 
+def ask_search(word):
+    timeout = 30
+    params = {
+        "q":word+" site:wikidata.org",
+        "o":0,
+        "l":"dir",
+        "qo":"serpSearchTopBox",
+        "rtb":20000
+    }
+    result = requests.get("https://ask.com/web",params=params, timeout=timeout,headers={'User-Agent': ua.random}
+                          )
+    page_text = result.text
+    soup = BeautifulSoup(page_text, "html.parser")
+    if soup.findAll('div', class_='PartialSearchResults-item-url'):
+        resu_list=[]
+        resu=soup.findAll('div', class_='PartialSearchResults-item-url')
+        for item in resu:
+            if check(item.text.replace("www.wikidata.org/wiki/","")):
+                resu_list.append(item.text.replace("www.wikidata.org/wiki/",""))
+        if len(resu_list)!=0:
+            return  resu_list
+        else:
+            return None
+    return None  # 否则返回None'
 
 def aolsuggest(word):
     timeout = 300
@@ -360,21 +384,21 @@ class Entities(JsonAnalysis):
                                                 timeout=timeout)
                             json_ = get_.json()
                 # yahoo suggest
-                if self.__params["action"] == "wbsearchentities":
-                    if len(json_['search']) == 0 and not is_number(self.__params["search"]):
-                        word = yahoo(self.__params["search"])
-                        count = 0
-                        while word is None and count <= 3:
-                            word = yahoo(self.__params["search"])
-                            count += 1
-                        if word is not None and word != "":
-                            self.__params["search"] = word
-                            get_ = requests.get(url=url,
-                                                params=self.__params,
-                                                headers={'User-Agent': ua.random},
-                                                timeout=timeout)
-                            json_ = get_.json()
-                # yahoo suggest
+                # if self.__params["action"] == "wbsearchentities":
+                #     if len(json_['search']) == 0 and not is_number(self.__params["search"]):
+                #         word = yahoo(self.__params["search"])
+                #         count = 0
+                #         while word is None and count <= 3:
+                #             word = yahoo(self.__params["search"])
+                #             count += 1
+                #         if word is not None and word != "":
+                #             self.__params["search"] = word
+                #             get_ = requests.get(url=url,
+                #                                 params=self.__params,
+                #                                 headers={'User-Agent': ua.random},
+                #                                 timeout=timeout)
+                #             json_ = get_.json()
+                # # yahoo suggest
                 if self.__params["action"] == "wbsearchentities":
                     if len(json_['search']) == 0 and not is_number(self.__params["search"]):
                         word = Bing(self.__params["search"])
@@ -416,8 +440,16 @@ class Entities(JsonAnalysis):
                 if self.__params["action"] == "wbsearchentities":
                     if not is_number(self.__params["search"]):
                         if len(json_['search']) == 0:
-                            search_list = yahoo_search(self.__params["search"])
-                            if len(search_list) == 0:
+                            search_list=ask_search(self.__params["search"])
+                            count_ask=0
+                            while search_list is None and count_ask<=6:
+                              search_list=ask_search(self.__params["search"])
+                              count_ask+=1
+                            if search_list is None:
+                              search_list=[]
+                              count=0
+                              while len(search_list)==0 and count <=2:
+                                count+=1
                                 params = {
                                     "q": tempword + " site:wikidata.org",
                                     "setlang": "en-us",
@@ -428,7 +460,7 @@ class Entities(JsonAnalysis):
                                                           headers={'User-Agent': ua.random}
                                                           ).content)
                                 res = [i for i in range(len(result)) if
-                                       result.startswith("https://www.wikidata.org/wiki/", i)]
+                                        result.startswith("https://www.wikidata.org/wiki/", i)]
                                 count1 = 0
                                 for start in res:
                                     if count1 >= 10:
